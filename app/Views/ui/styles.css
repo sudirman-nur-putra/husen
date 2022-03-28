@@ -9,6 +9,10 @@ input, input:focus, textarea:focus, select:focus {
   background: transparent;
 }
 
+.primaryhusen-color {
+  background-color: #5F93CD;
+}
+
 .pemasukan-color {
   background-color: #A5F0C5;
   color: #035956;
