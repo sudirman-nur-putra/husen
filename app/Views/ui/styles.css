@@ -1,0 +1,25 @@
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EFF4FA;
+}
+
+input, input:focus, textarea:focus, select:focus {
+  border: none;
+  background: transparent;
+}
+
+.pemasukan-color {
+  background-color: #A5F0C5;
+  color: #035956;
+}
+
+.barang-color {
+  background-color: #A3C9FE;
+  color: #303C4C;
+}
+
+.pengeluaran-color {
+  background-color: #EDCAC9;
+  color: #C4504C;
+}
