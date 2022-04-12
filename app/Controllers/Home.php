@@ -6,6 +6,11 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('ui/index.php');
+        $Models = new Home_m;
+    	$result['pendapatan'] = $Models->getJumlahPendapatan();
+    	$result['barang'] = $Models->getJumlahBarang();
+    	$result['penegluaran'] = $Models->getJumlahPengaluaran();
+    	$result['harian'] = $Models->getPendapatanHarian();
+        return view('ui/index.php', $result);
     }
 }
