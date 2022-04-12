@@ -2,25 +2,29 @@
 var ctx = document.getElementById("myChart");
 
 var myChart = new Chart(ctx, {
-  type: "line",
+  type: "bar",
   data: {
     labels: [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
+      "Januari",
+      "Februari",
+      "Maret",
+      "April",
+      "Mei",
+      "Juni",
+      "Juli",
+      "Agustus",
+      "September",
+      "Oktober",
+      "November",
+      "Desember",
     ],
     datasets: [
       {
-        data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-        lineTension: 0,
-        backgroundColor: "transparent",
-        borderColor: "#007bff",
-        borderWidth: 4,
-        pointBackgroundColor: "#007bff",
+        label: 'Grafik Penjualan',
+        data: [15339, 21345, 18483, 24003, 23489, 24092, 12034, 24092, 12910, 20000, 15000, 24000],
+        backgroundColor: "#A3C9FE",
+        hoverBackgroundColor: "#5F93CD",
+        borderRadius: 8,
       },
     ],
   },
