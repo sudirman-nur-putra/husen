@@ -43,165 +43,27 @@
 </head>
 
 <body>
-  <div class="container py-4 px-2">
-    <div class="row">
-      <div class="col-md-2">
-        <div class="card list-group list-group-flush rounded">
-          <h4 class="list-group-item p-4 ">
-            HUSEN VARIASI
-          </h4>
-          <a href="#/" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
-            <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
-          </a>
-          <a href="#/about" class="list-group-item list-group-item-action py-2 ripple">
-            <i class="fas fa-chart-area fa-fw me-3"></i><span>Pemasukan</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-              class="fas fa-lock fa-fw me-3"></i><span>Pengeluaran</span></a>
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-              class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span></a>
-          <a href="#" class="list-group-item list-group-item-action py-2 ripple">
-            <i class="fas fa-chart-pie fa-fw me-3"></i><span>Data Barang</span>
-          </a>
+  <div class="container px-0 mx-0">
+    <div class="row" style="height: 600px;" >
+      <div class="col-md-6">
+        <div class="welcome w-100 h-100">
+          <h6 class="display-6">Welcome back to Husen Variasi</h1>
         </div>
       </div>
-      <div id="app" class="col-md-10 ps-3">
-        <div class="card mb-4">
-          <form class="d-none d-md-flex w-auto my-2">
-            <span class="border-0 mx-3 my-auto">
-              <i class="fas fa-search"></i>
-            </span>
-            <input
-              autocomplete="off"
-              type="search"
-              class="form-control me-3 my-auto border-0"
-              placeholder='Search'
-            />
-          </form>
-        </div>
-        <div class="container mb-4 px-0">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card rounded pemasukan-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                    </div>
-                    <div class="text-end">
-                      <h3>Rp123.123.123</h3>
-                      <p class="mb-0">Total Pemasukan</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card rounded barang-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-shopping-bag fa-3x"></i>
-                    </div>
-                    <div class="text-end">
-                      <h3>123</h3>
-                      <p class="mb-0">Jumlah Barang Terjual</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card rounded pengeluaran-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                    </div>
-                    <div class="text-end">
-                      <h3>Rp123.123.123</h3>
-                      <p class="mb-0">Total Pengeluaran</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col-md-6">
+        <div class="login w-100 h-100">
+          <h6 class="display-6">Login</h1>
+          <div class="form-outline my-3 w-100 bg-light border rounded-3">
+            <input type="text" id="form12" class="form-control form-control-lg" />
+            <label class="form-label" for="form12">Username</label>
           </div>
-        </div>
-        <!-- CHART -->
-        <div class="card mb-4">
-          <div class="card-header d-flex justify-content-between py-3">
-            <h5 class="mb-0 align-self-center">
-              <strong>Grafik Penjualan</strong>
-            </h5>
-            <div class="dropdown align-self-center">
-              <div
-                class="dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-              Bulan ini
-            </div>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-              </ul>
-            </div>
+          <div class="form-outline my-3 w-100 bg-light border rounded-3">
+            <input type="password" id="typePassword" class="form-control form-control-lg" />
+            <label class="form-label" for="typePassword">Password</label>
           </div>
-          <div class="card-body">
-            <canvas class="my-4 w-100" id="myChart" height="200"></canvas>
-          </div>
-        </div>
-        <!-- TABLE -->
-        <div class="card mb-4">
-          <div class="card-header d-flex justify-content-between py-3">
-            <h5 class="mb-0 align-self-center">
-              <strong>Informasi Gaji Dropshipper</strong>
-            </h5>
-            <div class="dropdown align-self-center">
-              <div
-                class="dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-mdb-toggle="dropdown"
-                aria-expanded="false"
-              >
-              Bulan: Februari
-            </div>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Januari</a></li>
-                <li><a class="dropdown-item" href="#">Maret</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-hover text-nowrap">
-                <thead>
-                  <tr>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Gaji</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Alex Purwoto</td>
-                    <td>Rp123.123.123</td>
-                  </tr>
-                  <tr>
-                    <td>Alex Purwoto</td>
-                    <td>Rp123.123.123</td>
-                  </tr>
-                  <tr>
-                    <td>Alex Purwoto</td>
-                    <td>Rp123.123.123</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          <a class="btn btn-primary my-3 w-100" href="dashboard.html" role="button">
+            Login
+          </a>
         </div>
       </div>
     </div>

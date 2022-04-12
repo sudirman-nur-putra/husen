@@ -4,9 +4,9 @@ html, body {
   background-color: #EFF4FA;
 }
 
-input, input:focus, textarea:focus, select:focus {
+.search, .search:focus, .search:focus, .search:focus {
   border: none;
-  background: transparent;
+  background: white;
 }
 
 .primaryhusen-color {
@@ -29,6 +29,16 @@ input, input:focus, textarea:focus, select:focus {
   color: #C4504C;
 }
 
-.btn-primary{
+.btn-primary, .btn-primary:hover {
   background-color: #5F93CD;
+}
+
+.welcome {
+  background-color: #5F93CD;
+  color: #FFFF;
+  padding: 100px;
+}
+
+.login {
+  padding: 150px;
 }
