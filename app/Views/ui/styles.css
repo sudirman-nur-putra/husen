@@ -28,3 +28,7 @@ input, input:focus, textarea:focus, select:focus {
   background-color: #EDCAC9;
   color: #C4504C;
 }
+
+.btn-primary, .active {
+  background-color: #5F93CD;
+}
