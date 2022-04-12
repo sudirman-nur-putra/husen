@@ -16,6 +16,11 @@ class Home_m{
         $result  = $db->query("SELECT count(jml_barang) FROM transaksi");
         return $result->getResultArray();
     }
+     
+    public function getTotalPengeluaran(){
+        $result  = $db->query("SELECT count(total_pengeluaran) FROM pengeluaran");
+        return $result->getResultArray();
+    }
 
     public function getPendapatanHarian(){
         $result  = $db->query("SELECT tanggal, total_pendapatan FROM pendapatan_harian");
