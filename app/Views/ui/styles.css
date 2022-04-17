@@ -29,6 +29,11 @@ html, body {
   color: #C4504C;
 }
 
+.keuntungan-color {
+  background-color: black;
+  color: white;
+}
+
 .btn-primary, .btn-primary:hover {
   background-color: #5F93CD;
 }
