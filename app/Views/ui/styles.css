@@ -4,11 +4,6 @@ html, body {
   background-color: #EFF4FA;
 }
 
-.search, .search:focus, .search:focus, .search:focus {
-  border: none;
-  background: white;
-}
-
 .primaryhusen-color {
   background-color: #5F93CD;
   color: #FFFF;
@@ -46,4 +41,8 @@ html, body {
 
 .login {
   padding: 150px;
+}
+
+.active {
+  background-color: #5F93CD;
 }
