@@ -39,7 +39,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"
   ></script>
 
-  <title>Dashboard Husen Variasi</title>
+  <title>Data Barang Husen</title>
 </head>
 
 <body>
@@ -69,7 +69,66 @@
         </div>
       </div>
       <div id="app" class="col-md-10 ps-3">
-				
+        <!-- SEARCH BOX -->
+        <div class="card mb-4">
+          <form class="d-none d-md-flex w-auto my-2">
+            <span class="border-0 mx-3 my-auto">
+              <i class="fas fa-search"></i>
+            </span>
+            <input
+              autocomplete="off"
+              type="search"
+              class="form-control me-3 my-auto border-0"
+              placeholder='Search'
+            />
+          </form>
+        </div>
+        <!-- TABEL DATA BARANG -->
+				<div class="card my-4 rounded-6">
+          <div class="card-header d-flex justify-content-between py-3">
+            <h5 class="mb-0 align-self-center">
+              <strong>Data Barang</strong>
+            </h5>
+            <a class="btn btn-primary" href="#!" role="button">
+              <i class="fas fa-plus"></i>
+              Tambah Data
+            </a>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover text-nowrap">
+                <thead>
+                  <tr>
+                    <th scope="col">Nama Produk</th>
+                    <th scope="col">Harga Dropshipper</th>
+                    <th scope="col">Harga Reseller</th>
+                    <th scope="col">Jumlah</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Stang</td>
+                    <td>Rp123.123.123</td>
+                    <td>Rp123.123.123</td>
+                    <td>136</td>
+                  </tr>
+                  <tr>
+                    <td>Stang</td>
+                    <td>Rp123.123.123</td>
+                    <td>Rp123.123.123</td>
+                    <td>136</td>
+                  </tr>
+                  <tr>
+                    <td>Stang</td>
+                    <td>Rp123.123.123</td>
+                    <td>Rp123.123.123</td>
+                    <td>136</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
