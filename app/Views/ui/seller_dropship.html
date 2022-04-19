@@ -39,14 +39,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"
   ></script>
 
-  <title>Dashboard Husen Variasi</title>
+  <title>Reseller dan Dropshipper Husen Variasi</title>
 </head>
 
 <body>
   <div class="container py-4 px-2">
     <div class="row">
       <div class="col-md-2">
-<!-- SIDE NAVBAR -->
         <div class="card list-group list-group-flush rounded">
           <h4 class="list-group-item p-4 ">
             HUSEN VARIASI
@@ -57,17 +56,163 @@
           <a href="pemasukan.html" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-area fa-fw me-3"></i><span>Pemasukan</span>
           </a>
-          <a href="pengeluaran.html" class="list-group-item list-group-item-action py-2 ripple">
-            <i class="fas fa-lock fa-fw me-3"></i><span>Pengeluaran</span></a>
-          <a href="seller_dropship.html" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
-            <i class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span></a>
+          <a href="pengeluaran.html" class="list-group-item list-group-item-action py-2 ripple"><i
+              class="fas fa-lock fa-fw me-3"></i><span>Pengeluaran</span></a>
+          <a href="seller_dropship.html" class="list-group-item list-group-item-action py-2 ripple active"><i
+              class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span></a>
           <a href="data_barang.html" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Data Barang</span>
           </a>
         </div>
       </div>
       <div id="app" class="col-md-10 ps-3">
-        
+        <div class="container mb-4 px-0">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- TOTAL GAJI BOX -->
+              <div class="card  rounded-6 primaryhusen-color">
+                <div class="card-body">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <p class="mb-0">Total Gaji Dropshipper</p>
+                      <div class="dropdown align-self-top">
+                        <div
+                          class="dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Bulan ini
+                      </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
+                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
+                      <i class="fas fa-dollar-sign fa-3x"></i>
+                      <div class="text-end ps-3">
+                        <h3>Rp123.123.123</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- BIAYA OVERHEAD BOX -->
+              <div class="card  rounded-6 primaryhusen-color">
+                <div class="card-body">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex flex-row justify-content-between">
+                      <p class="mb-0">Total Dropshipper</p>
+                      <div class="dropdown align-self-top">
+                        <div
+                          class="dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-mdb-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                        Bulan ini
+                      </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
+                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
+                      <i class="fas fa-users fa-3x"></i>
+                      <div class="text-end ps-3">
+                        <h3>120</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- PEMBELIAN BARANG -->
+          <div class="card my-4">
+            <div class="card-header d-flex justify-content-between py-3">
+              <h5 class="mb-0 align-self-center">
+                <strong>Reseller</strong>
+              </h5>
+              <a class="btn btn-primary" href="#!" role="button">
+                <i class="fas fa-plus"></i>
+                Tambah Data
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nama Reseller</th>
+                      <th scope="col">NO HP</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Alex Purwoto</td>
+                      <td>081234567890</td>
+                    </tr>
+                    <tr>
+                      <td>Alex Purwoto</td>
+                      <td>081234567890</td>
+                    </tr>
+                    <tr>
+                      <td>Alex Purwoto</td>
+                      <td>081234567890</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- BIAYA OVERHEAD -->
+          <div class="card my-4">
+            <div class="card-header d-flex justify-content-between py-3">
+              <h5 class="mb-0 align-self-center">
+                <strong>Dropshipper</strong>
+              </h5>
+              <a class="btn btn-primary" href="#!" role="button">
+                <i class="fas fa-plus"></i>
+                Tambah Data
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nama Dropshipper</th>
+                      <th scope="col">Keuntungan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Alex Purwoto</td>
+                      <td>Rp123.123.123</td>
+                    </tr>
+                    <tr>
+                      <td>Alex Purwoto</td>
+                      <td>Rp123.123.123</td>
+                    </tr>
+                    <tr>
+                      <td>Alex Purwoto</td>
+                      <td>Rp123.123.123</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
