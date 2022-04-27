@@ -46,6 +46,12 @@
   <div class="container py-4 px-2">
     <div class="row">
       <div class="col-md-2">
+        <?php
+          if(session()->getFlashdata('status'))
+          {
+            echo '<h4>'.session()->getFlashdata('status').'</h4>';
+          }
+        ?>
 <!-- SIDE NAVBAR -->
         <div class="card list-group list-group-flush rounded">
           <h4 class="list-group-item p-4 ">
@@ -63,7 +69,7 @@
           <a href="seller_dropship.html" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span>
 					</a>
-          <a href="data_barang.html" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+          <a href="" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Data Barang</span>
           </a>
         </div>
@@ -89,7 +95,7 @@
             <h5 class="mb-0 align-self-center">
               <strong>Data Barang</strong>
             </h5>
-            <a class="btn btn-primary" href="form_dataBarang.html" role="button">
+            <a class="btn btn-primary" href="form_dataBarang" role="button">
               <i class="fas fa-plus"></i>
               Tambah Data
             </a>
@@ -100,30 +106,22 @@
                 <thead>
                   <tr>
                     <th scope="col">Nama Barang</th>
+                    <th scope="col">Harga Beli</th>
                     <th scope="col">Harga Dropshipper</th>
                     <th scope="col">Harga Reseller</th>
-                    <th scope="col">Jumlah</th>
+                    <th scope="col">Stok</th>
                   </tr>
                 </thead>
                 <tbody>
+                  <?php foreach($fetch_data as $row) : ?>
                   <tr>
-                    <td>Stang</td>
-                    <td>Rp123.123.123</td>
-                    <td>Rp123.123.123</td>
-                    <td>136</td>
+                    <td><?= $row['nama'];?></td>
+                    <td><?= $row['harga_beli']?></td>
+                    <td><?= $row['harga_jual_dropshipper']?></td>
+                    <td><?= $row['harga_jual_reseller']?></td>
+                    <td><?= $row['stok']?></td>
                   </tr>
-                  <tr>
-                    <td>Stang</td>
-                    <td>Rp123.123.123</td>
-                    <td>Rp123.123.123</td>
-                    <td>136</td>
-                  </tr>
-                  <tr>
-                    <td>Stang</td>
-                    <td>Rp123.123.123</td>
-                    <td>Rp123.123.123</td>
-                    <td>136</td>
-                  </tr>
+                  <?php endforeach; ?>
                 </tbody>
               </table>
             </div>

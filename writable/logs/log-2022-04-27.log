@@ -1,0 +1,508 @@
+CRITICAL - 2022-04-27 00:00:01 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:00:01 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:00:01 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:00:27 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:03:18 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:03:19 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:03:19 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:03:19 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:03:20 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:04:04 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:04:05 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:04:29 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:05:35 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:07:59 --> Cannot call constructor
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(809): App\Controllers\Databarang->__construct()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-27 00:08:00 --> Cannot call constructor
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(809): App\Controllers\Databarang->__construct()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-27 00:08:00 --> Cannot call constructor
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(809): App\Controllers\Databarang->__construct()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-27 00:08:00 --> Cannot call constructor
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(809): App\Controllers\Databarang->__construct()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-04-27 00:08:05 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:08:05 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:08:05 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:09:41 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:11:52 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:11:53 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:14:37 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:14:38 --> Undefined property: App\Controllers\Databarang::$load
+#0 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-04-27 00:17:22 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:17:53 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:19:27 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:20:02 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:20:20 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\husen\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\husen\system\Model.php(693): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\husen\app\Models\DataBarang_Model.php(8): CodeIgniter\Model->__get('load')
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(9): App\Models\DataBarang_Model->__construct()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:25:31 --> Undefined variable $databarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\data_barang.php(110): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 110)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-27 00:25:48 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:26:18 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:26:18 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:26:24 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:26:25 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:28:26 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:28:27 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:29:16 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:29:17 --> Cannot use object of type mysqli as array
+#0 C:\xampp\htdocs\husen\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/data_barang....', Array, true)
+#3 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(12): view('ui/data_barang....', Array)
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->index()
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-04-27 00:33:47 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:34:04 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:35:24 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:35:41 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:38:53 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:38:56 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:39:00 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:39:36 --> syntax error, unexpected variable "$db", expecting "function" or "const"
+#0 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\husen\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Home...')
+#2 C:\xampp\htdocs\husen\app\Controllers\Home.php(9): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Home...')
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-27 00:59:12 --> Allowed fields must be specified for model: App\Models\DataBarang_Model
+#0 C:\xampp\htdocs\husen\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\husen\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(27): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->tambahbarang()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-27 00:59:39 --> Allowed fields must be specified for model: App\Models\DataBarang_Model
+#0 C:\xampp\htdocs\husen\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\husen\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(27): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->tambahbarang()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-27 00:59:42 --> Allowed fields must be specified for model: App\Models\DataBarang_Model
+#0 C:\xampp\htdocs\husen\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\husen\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(27): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->tambahbarang()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-27 01:01:56 --> Allowed fields must be specified for model: App\Models\DataBarang_Model
+#0 C:\xampp\htdocs\husen\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\husen\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(27): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->tambahbarang()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-27 01:01:59 --> Allowed fields must be specified for model: App\Models\DataBarang_Model
+#0 C:\xampp\htdocs\husen\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Data...')
+#1 C:\xampp\htdocs\husen\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\xampp\htdocs\husen\app\Controllers\Databarang.php(27): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Databarang->tambahbarang()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Databarang))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
