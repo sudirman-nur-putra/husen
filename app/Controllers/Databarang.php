@@ -7,7 +7,12 @@ class Databarang extends BaseController
     public function index()
     {
         $databarang = new DataBarang_Model;
+         if($this->request->getGet('keyword')){
+             $keyword=$this->request->getGet('keyword');
+             $data['fetch_data'] = $databarang->like('nama',$keyword)->fetch_data();
+         }else{
         $data['fetch_data'] = $databarang->fetch_data();
+         }
         // return view('ui/data_barang.php');
         return view('ui/data_barang.php', $data);
     }

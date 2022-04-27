@@ -83,10 +83,11 @@
             </span>
             <input
               autocomplete="off"
-              type="search"
-              class="form-control me-3 my-auto border-0"
-              placeholder='Search'
+              type="text"
+              class="form-control form-control me-3 my-auto border-0"
+              placeholder='Search' name="keyword"
             />
+            <button class="btn btn-dark btn-lg" type="submit" id="button-addon2">Search</button>
           </form>
         </div>
         <!-- TABEL DATA BARANG -->
