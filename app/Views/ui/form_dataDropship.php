@@ -56,16 +56,17 @@
 				Masukkan data-data yang diperlukan melalui form di bawah ini. Dan pastikan bahwa data yang Anda<br/>
 				masukan adalah benar.
 			</p>
-			<form>
+			<form action="dropshipper-store" method="post">
 				<h6 class="m-0">Nama Dropshipper</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" class="form-control form-control-md" />
+					<input type="text" name="nama"class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Total Keuntungan</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" class="form-control form-control-md" />
+					<input type="text" name="nomor_hp" class="form-control form-control-md" />
 				</div>
-				<button class="btn btn-primary">
+        <input type="hidden" name="level" value="Dropshipper" />
+				<button type="submit" class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>
 				Tambah
 				</button>

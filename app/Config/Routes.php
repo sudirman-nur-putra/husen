@@ -38,7 +38,8 @@ $routes->get('/seller_dropship', 'SellerDropship::index');
 $routes->get('/form_dataReseller', 'SellerDropship::formreseller');
 $routes->get('/form_dataDropship', 'SellerDropship::formdropshipper');
 $routes->post('/barang-store','Databarang::tambahbarang');
-
+$routes->post('/reseller-store','SellerDropship::tambahreseller');
+$routes->post('/dropshipper-store','SellerDropship::tambahdropshipper');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -46,6 +46,12 @@
   <div class="container py-4 px-2">
     <div class="row">
       <div class="col-md-2">
+      <?php
+          if(session()->getFlashdata('status'))
+          {
+            echo '<h4>'.session()->getFlashdata('status').'</h4>';
+          }
+        ?>
         <div class="card list-group list-group-flush rounded">
           <h4 class="list-group-item p-4 ">
             HUSEN VARIASI
@@ -94,7 +100,7 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
+                      <h3>Rp.<?php echo $sum['total_gaji']; ?></h3>
                       </div>
                     </div>
                   </div>

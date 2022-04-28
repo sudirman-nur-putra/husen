@@ -26,6 +26,10 @@ class SellerDropship_Model extends Model{
         $result  = $this->query("SELECT COUNT(*) as total FROM user WHERE level = 'Dropshipper' ");
         return $result->getRowArray();
     }
+    public function sumDropshipper(){
+        $result  = $this->query("SELECT SUM(nomor_hp) as total_gaji FROM user WHERE level = 'Dropshipper' ");
+        return $result->getRowArray();
+    }
   
 }
 ?>
