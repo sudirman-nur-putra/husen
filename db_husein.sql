@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2022 at 02:11 AM
+-- Generation Time: Apr 28, 2022 at 04:27 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -163,8 +163,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `level`) VALUES
-(1, 'Biman', '123456789', 'Reseller'),
-(2, 'Rico', '987654321', 'Dropshipper');
+(1, 'Biman', '082123456789', 'Reseller'),
+(2, 'Rico', '200000', 'Dropshipper'),
+(3, 'Sudirman', '089897654321', 'Reseller'),
+(4, 'Rizal', '300000', 'Dropshipper');
 
 --
 -- Indexes for dumped tables
@@ -287,7 +289,7 @@ ALTER TABLE `transaksi_reseller`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
