@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 19, 2022 at 06:12 AM
+-- Generation Time: Apr 28, 2022 at 02:11 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -48,6 +48,14 @@ CREATE TABLE `barang` (
   `stok` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `barang`
+--
+
+INSERT INTO `barang` (`id`, `nama`, `harga_beli`, `harga_jual_dropshipper`, `harga_jual_reseller`, `stok`) VALUES
+(1, 'Knalpot', 200000, 250000, 220000, 4),
+(2, 'Stang', 400000, 450000, 420000, 3);
+
 -- --------------------------------------------------------
 
 --
@@ -71,17 +79,6 @@ CREATE TABLE `keuntungan_dropshipper` (
   `id` int(11) NOT NULL,
   `id_user` int(11) NOT NULL,
   `total_keuntungan` int(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `level`
---
-
-CREATE TABLE `level` (
-  `id` int(11) NOT NULL,
-  `level` enum('Dropshipper','Reseller','Admin') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -158,8 +155,16 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `nomor_hp` varchar(255) NOT NULL,
-  `id_level` int(100) NOT NULL
+  `level` enum('Admin','Reseller','Dropshipper','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `level`) VALUES
+(1, 'Biman', '123456789', 'Reseller'),
+(2, 'Rico', '987654321', 'Dropshipper');
 
 --
 -- Indexes for dumped tables
@@ -190,12 +195,6 @@ ALTER TABLE `gaji`
 ALTER TABLE `keuntungan_dropshipper`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user` (`id_user`);
-
---
--- Indexes for table `level`
---
-ALTER TABLE `level`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `overhead`
@@ -230,8 +229,7 @@ ALTER TABLE `transaksi_reseller`
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `level` (`id_level`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -247,7 +245,7 @@ ALTER TABLE `akun`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gaji`
@@ -259,12 +257,6 @@ ALTER TABLE `gaji`
 -- AUTO_INCREMENT for table `keuntungan_dropshipper`
 --
 ALTER TABLE `keuntungan_dropshipper`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `level`
---
-ALTER TABLE `level`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -295,7 +287,7 @@ ALTER TABLE `transaksi_reseller`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
@@ -332,12 +324,6 @@ ALTER TABLE `transaksi_dropshipper`
 ALTER TABLE `transaksi_reseller`
   ADD CONSTRAINT `tbarang` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `tuser` FOREIGN KEY (`id_user`) REFERENCES `user` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `user`
---
-ALTER TABLE `user`
-  ADD CONSTRAINT `level` FOREIGN KEY (`id_level`) REFERENCES `level` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
