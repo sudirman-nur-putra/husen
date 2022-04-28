@@ -34,7 +34,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/data_barang', 'Databarang::index');
 $routes->get('/form_dataBarang', 'Databarang::formdatabarang');
+$routes->get('/seller_dropship', 'SellerDropship::index');
+$routes->get('/form_dataReseller', 'SellerDropship::formreseller');
+$routes->get('/form_dataDropship', 'SellerDropship::formdropshipper');
 $routes->post('/barang-store','Databarang::tambahbarang');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

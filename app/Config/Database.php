@@ -38,8 +38,8 @@ class Database extends Config
         'database' => 'db_husein',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
-        'pConnect' => false,
-        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'pConnect' => true,
+        'DBDebug'  => true,
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
@@ -47,7 +47,6 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
     ];
 
     /**

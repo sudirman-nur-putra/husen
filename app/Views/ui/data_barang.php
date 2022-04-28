@@ -66,7 +66,7 @@
           <a href="pengeluaran.html" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-lock fa-fw me-3"></i><span>Pengeluaran</span>
           </a>
-          <a href="seller_dropship.html" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="seller_dropship" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span>
 					</a>
           <a href="" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
@@ -87,7 +87,6 @@
               class="form-control form-control me-3 my-auto border-0"
               placeholder='Search' name="keyword"
             />
-            <button class="btn btn-dark btn-lg" type="submit" id="button-addon2">Search</button>
           </form>
         </div>
         <!-- TABEL DATA BARANG -->
@@ -114,9 +113,9 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <?php foreach($fetch_data as $row) : ?>
+                  <?php foreach($fetch_data as $row): ?>
                   <tr>
-                    <td><?= $row['nama'];?></td>
+                    <td><?= $row['nama']?></td>
                     <td><?= $row['harga_beli']?></td>
                     <td><?= $row['harga_jual_dropshipper']?></td>
                     <td><?= $row['harga_jual_reseller']?></td>

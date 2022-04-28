@@ -5,7 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class Home_m{
-     $db      = \Config\Database::connect();
+     protected static $db= \Config\Database::connect();
     
     public function getJumlahPendapatan(){
         $result  = $db->query("SELECT count(total_pendapatan) FROM pendapatan_harian");
