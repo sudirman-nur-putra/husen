@@ -4,31 +4,69 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Home_m
-{
-    protected static $db = \Config\Database::connect();
+class Home_m{
+    
+    // get pendapatanb dropshipper perbulan
+    public function getPenDropBulan(){
+        $db      = \Config\Database::connect();
+        // $result = $db->query("SELECT SUM(harga_jual) FROM transaksi_dropshipper WHERE DATE_FORMAT(tanggal,'%Y-%m') == '$tanggal'");
 
-    public function getJumlahPendapatan()
-    {
-        $result  = $db->query("SELECT count(total_pendapatan) FROM pendapatan_harian");
+        $result  = $db->query("SELECT SUM(harga_jual) as harga, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM transaksi_dropshipper GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 1");
+        return $result->getResultArray();
+    }
+    // get pendapatanb Reseller perbulan
+    public function getPenResBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(total_pembelian) as harga, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM transaksi_reseller GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 1");
         return $result->getResultArray();
     }
 
-    public function getJumlahBarang()
-    {
-        $result  = $db->query("SELECT count(jml_barang) FROM transaksi");
+
+    // get jumlah barang keluar Dropshipper perbulan
+    public function getBarDropBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(jumlah_barang) as barang, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM transaksi_dropshipper GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 1");
+        return $result->getResultArray();
+    }
+    // get jumlah barang keluar Reseller perbulan
+    public function getBarResBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(jumlah_barang) as barang, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM transaksi_reseller GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 1");
         return $result->getResultArray();
     }
 
-    public function getTotalPengeluaran()
-    {
-        $result  = $db->query("SELECT count(total_pengeluaran) FROM pengeluaran");
+
+    //GET Pengeluaran overhaed
+    public function getPengOverBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(jumlah_pengeluaran) as pengeluaran, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM overhead GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 1");
+        return $result->getResultArray();
+    }
+    //GET Pengeluaran pembelian
+    public function getPengPemBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(total_harga) as pengeluaran, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM pembelian_barang GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 1");
         return $result->getResultArray();
     }
 
-    public function getPendapatanHarian()
-    {
-        $result  = $db->query("SELECT tanggal, total_pendapatan FROM pendapatan_harian");
+
+    // GET Tabel Data User
+    public function getUser(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT * FROM user");
         return $result->getResultArray();
     }
-}
+
+    // get jumlah barang keluar Dropshipper perbulan
+    public function getBarDropTahunBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(jumlah_barang) as barang, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM transaksi_dropshipper GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 12");
+        return $result->getResultArray();
+    }
+    // get jumlah barang keluar Reseller perbulan
+    public function getBarResTahunBulan(){
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT SUM(jumlah_barang) as barang, CONCAT(YEAR(tanggal),'/',MONTH(tanggal)) as tanggal FROM transaksi_reseller GROUP BY YEAR(tanggal), MONTH(tanggal) DESC LIMIT 12");
+        return $result->getResultArray();
+    }
+} 
