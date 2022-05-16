@@ -64,10 +64,10 @@
                       <p class="mb-0">Total Gaji Dropshipper</p>
                       <div class="dropdown align-self-top">
                         <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
+                          Tahun ini
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="seller_dropshiptahun">Tahun ini</a></li>
+                          <li><a class="dropdown-item" href="seller_dropship">Bulan ini</a></li>
                           <li><a class="dropdown-item" href="seller_dropshiphari">Hari ini</a></li>
                         </ul>
                       </div>
@@ -75,7 +75,7 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>Rp.<?php echo $sum['total_gaji']; ?></h3>
+                        <h3>Rp.<?php echo $sumtahun['total_gaji_tahun']; ?></h3>
                       </div>
                     </div>
                   </div>

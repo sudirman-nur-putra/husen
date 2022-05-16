@@ -31,5 +31,13 @@ class SellerDropship_Model extends Model{
         $result  = $this->query("SELECT SUM(harga_jual - modal) as total_gaji FROM transaksi_dropshipper where tanggal between '2022-05-01' and '2022-05-31' ");
         return $result->getRowArray();
     }
+    public function sumDropshipperTahun(){
+        $result  = $this->query("SELECT SUM(harga_jual - modal) as total_gaji_tahun FROM transaksi_dropshipper where tanggal between '2022-01-01' and '2022-12-31' ");
+        return $result->getRowArray();
+    }
+    public function sumDropshipperHari(){
+        $result  = $this->query("SELECT SUM(harga_jual - modal) as total_gaji_hari FROM transaksi_dropshipper where tanggal between '2022-05-16' and '2022-05-16' ");
+        return $result->getRowArray();
+    }
   
 }
