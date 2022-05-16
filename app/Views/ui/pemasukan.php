@@ -187,7 +187,7 @@
               <h5 class="mb-0 align-self-center">
                 <strong>Pemasukan dari Seller</strong>
               </h5>
-              <a class="btn btn-primary" href="form_reseller" role="button">
+              <a class="btn btn-primary" href="/pemasukan/formtransaksireseller" role="button">
                 <i class="fas fa-plus"></i>
                 Tambah Data
               </a>
@@ -237,7 +237,7 @@
               <h5 class="mb-0 align-self-center">
                 <strong>Pemasukan dari Dropshipper</strong>
               </h5>
-              <a class="btn btn-primary" href="form_dropshipper" role="button">
+              <a class="btn btn-primary" href="/pemasukan/formtranskasidropshipper" role="button">
                 <i class="fas fa-plus"></i>
                 Tambah Data
               </a>

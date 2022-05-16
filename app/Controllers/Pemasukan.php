@@ -8,4 +8,12 @@ class Pemasukan extends BaseController
     {
         return view('ui/pemasukan');
     }
+    public function formtransaksireseller()
+    {
+        return view('ui/form_reseller');
+    }
+    public function formtranskasidropshipper()
+    {
+        return view('ui/form_dropshipper');
+    }
 }
