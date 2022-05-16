@@ -8,4 +8,12 @@ class Pengeluaran extends BaseController
     {
         return view('ui/pengeluaran');
     }
+    public function biayaoverhead()
+    {
+        return view('ui/form_biayaoverhead');
+    }
+    public function pembelianbarang()
+    {
+        return view('ui/form_pembelianBarang');
+    }
 }
