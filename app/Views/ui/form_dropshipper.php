@@ -40,7 +40,7 @@
         Masukkan data-data yang diperlukan melalui form di bawah ini. Dan pastikan bahwa data yang Anda<br />
         masukan adalah benar.
       </p>
-      <form>
+      <form action="/pemasukan" method="post">
         <h6 class="m-0">Nama Dropshipper</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <select class="form-select" aria-label="Default select example">

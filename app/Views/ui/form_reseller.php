@@ -40,8 +40,8 @@
 				Masukkan data-data yang diperlukan melalui form di bawah ini. Dan pastikan bahwa data yang Anda<br />
 				masukan adalah benar.
 			</p>
-			<form action="" method="post">
-				<h6 class="m-0">Nama Dropshipper</h6>
+			<form action="/pemasukan" method="post">
+				<h6 class="m-0">Nama Reseller</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
 					<select class="form-select" aria-label="Default select example">
 						<?php foreach ($reseller as $row) : ?>
@@ -57,10 +57,6 @@
 						<?php endforeach; ?>
 					</select>
 				</div>
-				<h6 class="m-0">Produk</h6>
-				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" class="form-control form-control-md" />
-				</div>
 				<h6 class="m-0">Jumlah</h6>
 				<div class="d-flex  mt-1 mb-3">
 					<button class="btn btn-outline-dark btn-sm">
@@ -73,11 +69,11 @@
 				</div>
 				<h6 class="m-0">Harga</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="number" class="form-control form-control-md" />
+					<input name="harga" type="number" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Tanggal Pembelian</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="date" id="birthday" class="form-control form-control-md">
+					<input type="date" id="birthday" name="tanggal" class="form-control form-control-md">
 				</div>
 				<button class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>
