@@ -42,11 +42,6 @@
       </p>
       <form>
         <h6 class="m-0">Nama Dropshipper</h6>
-        <select class="form-select" aria-label="Default select example">
-          <option value="1">Shopee</option>
-          <option value="2">Lazada</option>
-        </select>
-        <h6 class="m-0">Nama Dropshipper</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <select class="form-select" aria-label="Default select example">
             <?php foreach ($dropshipper as $row) : ?>
@@ -54,13 +49,24 @@
             <?php endforeach; ?>
           </select>
         </div>
+        <h6 class="m-0">Marketplace</h6>
+        <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">Shopee</option>
+            <option value="2">Lazada</option>
+          </select>
+        </div>
         <h6 class="m-0">No Resi</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <input type="number" class="form-control form-control-md" />
         </div>
-        <h6 class="m-0">Produk</h6>
+        <h6 class="m-0">produk</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="text" class="form-control form-control-md" />
+          <select class="form-select" aria-label="Default select example">
+            <?php foreach ($barang as $row) : ?>
+              <option value="<?= $row['id'] ?>" ?><?= $row['nama'] ?></option>
+            <?php endforeach; ?>
+          </select>
         </div>
         <h6 class="m-0">Harga Jual</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
