@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2022 at 04:27 AM
+-- Generation Time: May 16, 2022 at 04:47 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -126,9 +126,17 @@ CREATE TABLE `transaksi_dropshipper` (
   `no resi` varchar(255) NOT NULL,
   `status_packing` enum('Sendiri','Dari Husein') NOT NULL,
   `marketplace` enum('Lazada','Shopee') NOT NULL,
-  `status` enum('Hilang','Sampai','Pengembalian') NOT NULL,
-  `keuntungan` int(100) NOT NULL
+  `status` enum('Hilang','Sampai','Pengembalian') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `transaksi_dropshipper`
+--
+
+INSERT INTO `transaksi_dropshipper` (`id`, `id_user`, `id_barang`, `tanggal`, `modal`, `jumlah_barang`, `harga_jual`, `no resi`, `status_packing`, `marketplace`, `status`) VALUES
+(2, 2, 1, '2022-05-16', 200000, 1, 250000, '123456789', 'Sendiri', 'Lazada', 'Sampai'),
+(3, 4, 2, '2022-05-10', 400000, 1, 450000, '543216789', 'Sendiri', 'Shopee', 'Sampai'),
+(4, 2, 1, '2022-04-05', 400000, 2, 500000, '908765341', 'Sendiri', 'Lazada', 'Sampai');
 
 -- --------------------------------------------------------
 
@@ -155,6 +163,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `nomor_hp` varchar(255) NOT NULL,
+  `keuntungan` varchar(255) NOT NULL,
   `level` enum('Admin','Reseller','Dropshipper','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -162,11 +171,11 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `level`) VALUES
-(1, 'Biman', '082123456789', 'Reseller'),
-(2, 'Rico', '200000', 'Dropshipper'),
-(3, 'Sudirman', '089897654321', 'Reseller'),
-(4, 'Rizal', '300000', 'Dropshipper');
+INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `keuntungan`, `level`) VALUES
+(1, 'Biman', '082123456789', '0', 'Reseller'),
+(2, 'Rico', '089876754321', '200000', 'Dropshipper'),
+(3, 'Sudirman', '089897654321', '0', 'Reseller'),
+(4, 'Rizal', '087987532753', '300000', 'Dropshipper');
 
 --
 -- Indexes for dumped tables
@@ -247,7 +256,7 @@ ALTER TABLE `akun`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `gaji`
@@ -277,7 +286,7 @@ ALTER TABLE `pembelian_barang`
 -- AUTO_INCREMENT for table `transaksi_dropshipper`
 --
 ALTER TABLE `transaksi_dropshipper`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `transaksi_reseller`
