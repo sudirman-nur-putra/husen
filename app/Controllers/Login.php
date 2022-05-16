@@ -1,73 +1,64 @@
-<?php
-
-namespace App\Controllers;
+<?php namespace App\Controllers;
 
 use App\Models\Login_m;
 
-class Login extends BaseController
-{
-
-	public function __construct()
-	{
-
-		// $session = \Config\Services::session($config);
-		// session_start();
+class Login extends BaseController {
+	
+	public function __construct(){
+		
 	}
-	public function index()
-	{
+	// index untuk mesuk ke halaman login
+	public function index() {
 		$session = \Config\Services::session();
-		if ($session->get('id_user') == "") {
-			return view('ui/login');
-			// return redirect()->to('/login');
-		} else {
-			// echo $session->get('id_user');
+
+		echo $session->get('id');
+		// cek status login berdasarkan session
+		if ($session->get('id') == FALSE) {
+			return view('ui/login.php');
+		}else{
 			return redirect()->to('/home');
-			// return view('user/login');
 		}
-		// $data = ['nama' => 'Sudirman Nur Putra', 'kelas' => 'ilkom c1' ];
-		// $session->set($data);
-		// if($session->get('level') != 3){
-		// 	echo "berhasil memasuki pengecekan";
-		// }
-		// echo 'Halaman Login '.$session->get('nama').$session->get('kelas');
-		// return view('welcome_message');
 	}
 
-	public function masuk()
-	{
+	// proses masuk
+	public function masuk(){
+
 		$session = \Config\Services::session();
 		$login = new Login_m;
-		if ($this->request->getMethod() === 'post' && $this->validate([
-			'email' => 'required',
-			'pass' => 'required'
-		])) {
+			
+			// inisialisasi
 			$email = $this->request->getVar('email');
-			$pass = sha1($this->request->getVar('pass'));
+			$pass = MD5($this->request->getVar('password'));
+			
+			// cek data
 			$data = $login->getData($email, $pass);
 			if (count($data) == 1) {
-				foreach ($data as $row) {
-					$data = [
-						'id_user' => $row['id_user'],
-						'nama' => $row['nama'],
-						'email' => $row['email'],
-						'level' => 3
+				// menyimpan data ke session
+				foreach ($data as $row){
+					$data1 = [
+						'id' => $row['id'],
+						'email' => $row['email']
 					];
 				}
-				$session->set($data);
+
+				$session->set($data1);
+				var_dump($data1);
 				return redirect()->to('/home');
-			} else {
-				return view('ui/login');
+			}else{
+				// pesan jika data tidak ditemukan
+				$data['error'] = '<div class="alert alert-danger" style="margin-top: 3px">
+                        <div class="header"><b><i class="fa fa-exclamation-circle"></i> ERROR</b> username atau password salah!</div></div>';
+				return view('ui/login', $data);
 			}
-			# code...
-		} else {
-			return view('ui/login');
-			# code...
-		}
+			// code...
+		
+		
 	}
-	public function logout()
-	{
+	// menghapus session = keluar
+	public function logout(){
 		$session = \Config\Services::session();
-		$data = ['level'];
+		$data = ['id'];
+		// menghapus session
 		$session->remove($data);
 		return redirect()->to('/login');
 	}
