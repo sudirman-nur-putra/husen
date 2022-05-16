@@ -1,20 +1,25 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 use App\Models\Login_m;
 
-class Login extends BaseController {
-	
-	public function __construct(){
-		
+class Login extends BaseController
+{
+
+	public function __construct()
+	{
+
 		// $session = \Config\Services::session($config);
 		// session_start();
 	}
-	public function index() {
+	public function index()
+	{
 		$session = \Config\Services::session();
 		if ($session->get('id_user') == "") {
-			return view('ui/login.html');
+			return view('ui/login');
 			// return redirect()->to('/login');
-		}else{
+		} else {
 			// echo $session->get('id_user');
 			return redirect()->to('/home');
 			// return view('user/login');
@@ -28,7 +33,8 @@ class Login extends BaseController {
 		// return view('welcome_message');
 	}
 
-	public function masuk(){
+	public function masuk()
+	{
 		$session = \Config\Services::session();
 		$login = new Login_m;
 		if ($this->request->getMethod() === 'post' && $this->validate([
@@ -39,7 +45,7 @@ class Login extends BaseController {
 			$pass = sha1($this->request->getVar('pass'));
 			$data = $login->getData($email, $pass);
 			if (count($data) == 1) {
-				foreach ($data as $row){
+				foreach ($data as $row) {
 					$data = [
 						'id_user' => $row['id_user'],
 						'nama' => $row['nama'],
@@ -49,7 +55,7 @@ class Login extends BaseController {
 				}
 				$session->set($data);
 				return redirect()->to('/home');
-			}else{
+			} else {
 				return view('ui/login');
 			}
 			# code...
@@ -57,9 +63,9 @@ class Login extends BaseController {
 			return view('ui/login');
 			# code...
 		}
-		
 	}
-	public function logout(){
+	public function logout()
+	{
 		$session = \Config\Services::session();
 		$data = ['level'];
 		$session->remove($data);
