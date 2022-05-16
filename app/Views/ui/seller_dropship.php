@@ -89,15 +89,6 @@
                   <div class="d-flex flex-column">
                     <div class="d-flex flex-row justify-content-between">
                       <p class="mb-0">Total Dropshipper</p>
-                      <div class="dropdown align-self-top">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                        </ul>
-                      </div>
                     </div>
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-users fa-3x"></i>
