@@ -15,11 +15,11 @@ class SellerDropship_Model extends Model{
         return $this->findAll();
     }
     public function getReseller(){
-        $result  = $this->query("SELECT nama,nomor_hp FROM user WHERE level = 'Reseller' ");
+        $result  = $this->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Reseller' ");
         return $result->getResultArray();
     }
     public function getDropshipper(){
-        $result  = $this->query("SELECT nama,nomor_hp FROM user WHERE level = 'Dropshipper' ");
+        $result  = $this->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Dropshipper' ");
         return $result->getResultArray();
     }
     public function countDropshipper(){
@@ -32,4 +32,3 @@ class SellerDropship_Model extends Model{
     }
   
 }
-?>

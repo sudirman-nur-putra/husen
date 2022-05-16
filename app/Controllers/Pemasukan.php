@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\SellerDropship_Model;
+
 class Pemasukan extends BaseController
 {
     public function index()
@@ -10,10 +12,20 @@ class Pemasukan extends BaseController
     }
     public function formtransaksireseller()
     {
-        return view('ui/form_reseller');
+        $sellerdropship = new SellerDropship_Model;
+        $data['reseller'] = $sellerdropship->getReseller();
+        //$data['dropshipper'] = $sellerdropship->getDropshipper();
+        return view('ui/form_reseller', $data);
     }
     public function formtranskasidropshipper()
     {
-        return view('ui/form_dropshipper');
+        $sellerdropship = new SellerDropship_Model;
+        //$data['reseller'] = $sellerdropship->getReseller();
+        $data['dropshipper'] = $sellerdropship->getDropshipper();
+        return view('ui/form_dropshipper', $data);
+    }
+    public function tambahtransaksireseller()
+    {
+        dd($this->request->getVar());
     }
 }

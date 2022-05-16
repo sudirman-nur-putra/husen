@@ -14,3 +14,51 @@ CRITICAL - 2022-05-16 04:27:01 --> Invalid file: ui/pemasukan.html
 #6 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #8 {main}
+CRITICAL - 2022-05-16 07:52:32 --> Undefined variable: dropshipper
+#0 C:\xampp\htdocs\husen\app\Views\ui\form_dropshipper.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/form_dropshi...', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(17): view('ui/form_dropshi...')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->formtranskasidropshipper()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-16 07:59:15 --> Undefined variable: dropshipper
+#0 C:\xampp\htdocs\husen\app\Views\ui\form_dropshipper.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/form_dropshi...', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(25): view('ui/form_dropshi...')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->formtranskasidropshipper()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-16 07:59:19 --> Undefined variable: dropshipper
+#0 C:\xampp\htdocs\husen\app\Views\ui\form_dropshipper.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/form_dropshi...', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(25): view('ui/form_dropshi...')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->formtranskasidropshipper()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-16 07:59:34 --> Undefined index: id
+#0 C:\xampp\htdocs\husen\app\Views\ui\form_dropshipper.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 53, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/form_dropshi...', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(25): view('ui/form_dropshi...', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->formtranskasidropshipper()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
