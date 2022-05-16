@@ -167,7 +167,7 @@
                     <?php foreach ($dropshipper as $row) : ?>
                       <tr>
                         <td><?= $row['nama'] ?></td>
-                        <td><?= $row['nomor_hp'] ?></td>
+                        <td><?= $row['keuntungan'] ?></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

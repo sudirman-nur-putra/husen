@@ -8,6 +8,7 @@ class SellerDropship_Model extends Model{
     protected $allowedFields = [
         'nama',
         'nomor_hp',
+        'keuntungan',
         'level',
     ];
 
@@ -19,7 +20,7 @@ class SellerDropship_Model extends Model{
         return $result->getResultArray();
     }
     public function getDropshipper(){
-        $result  = $this->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Dropshipper' ");
+        $result  = $this->query("SELECT id,nama,keuntungan FROM user WHERE level = 'Dropshipper' ");
         return $result->getResultArray();
     }
     public function countDropshipper(){
@@ -27,7 +28,7 @@ class SellerDropship_Model extends Model{
         return $result->getRowArray();
     }
     public function sumDropshipper(){
-        $result  = $this->query("SELECT SUM(nomor_hp) as total_gaji FROM user WHERE level = 'Dropshipper' ");
+        $result  = $this->query("SELECT SUM(keuntungan) as total_gaji FROM transaksi_dropshipper where tanggal between '2022-05-01' and '2022-05-31' ");
         return $result->getRowArray();
     }
   

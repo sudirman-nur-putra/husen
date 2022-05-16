@@ -34,7 +34,7 @@ class SellerDropship extends BaseController
         $sellerdropship = new SellerDropship_Model;
         $data =[
             'nama' => $this->request->getPost('nama'),
-            'nomor_hp' => $this->request->getPost('nomor_hp'),
+            'nomor_hp' => $this->request->getPost('keuntungan'),
             'level' => $this->request->getPost('level'),
         ];
         $sellerdropship->save($data);
