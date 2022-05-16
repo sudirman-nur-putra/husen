@@ -214,7 +214,7 @@
               <h5 class="mb-0 align-self-center">
                 <strong>Pembelian Produk</strong>
               </h5>
-              <a class="btn btn-primary" href="form_pembelianBarang.html" role="button">
+              <a class="btn btn-primary" href="/pengeluaran/pembelianBarang" role="button">
                 <i class="fas fa-plus"></i>
                 Tambah Data
               </a>
@@ -264,7 +264,7 @@
               <h5 class="mb-0 align-self-center">
                 <strong>Biaya Overhead</strong>
               </h5>
-              <a class="btn btn-primary" href="form_biayaoverhead.html" role="button">
+              <a class="btn btn-primary" href="/pengeluaran/biayaoverhead" role="button">
                 <i class="fas fa-plus"></i>
                 Tambah Data
               </a>
