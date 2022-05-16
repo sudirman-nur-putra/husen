@@ -52,19 +52,18 @@
         </div>
       </div>
       <div class="col-md">
-        <form class="login w-100 h-100">
+        <form class="login w-100 h-100" method="post" action="<?= base_url().'/login/masuk' ?>">
           <h6 class="display-6">Login</h1>
           <div class="form-outline my-3 w-100 bg-light border rounded-3">
-            <input type="email" id="form12" class="form-control form-control-lg" />
+            <input type="email" id="form12" class="form-control form-control-lg" name="email" required="Jangan dibiarkan kosong" />
             <label class="form-label" for="form12">Username</label>
           </div>
           <div class="form-outline my-3 w-100 bg-light border rounded-3">
-            <input type="password" id="typePassword" class="form-control form-control-lg" />
+            <input type="password" id="typePassword" class="form-control form-control-lg" name="password" required="Jangan dibiarkan kosong" />
             <label class="form-label" for="typePassword">Password</label>
           </div>
-          <a class="btn btn-primary my-3 w-100" href="dashboard.html" role="button">
-            Login
-          </a>
+           <?php if(isset($error)) { echo $error; }; ?>
+          <input type="submit"  class="btn btn-primary my-3 w-100" name="" value="Login">
         </form>
       </div>
     </div>

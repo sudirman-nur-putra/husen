@@ -74,7 +74,15 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
+                        <?php
+                        foreach ($getPenDropBulan as $getPenDropBulan) {
+                          $totpem = $getPenDropBulan['harga'];
+                        }
+                        foreach ($getPenResBulan as $getPenResBulan) {
+                          $totpem = $getPenResBulan['harga'] + $totpem;
+                        }
+                        ?>
+                        <h3>Rp <?= $totpem; ?></h3>
                       </div>
                     </div>
                   </div>
@@ -102,7 +110,15 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-shopping-bag fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>10</h3>
+                        <?php
+                        foreach ($getBarDropBulan as $getBarDropBulan) {
+                          $totbar = $getBarDropBulan['barang'];
+                        }
+                        foreach ($getBarResBulan as $getBarResBulan) {
+                          $totbar = $getBarResBulan['barang'] + $totbar;
+                        }
+                        ?>
+                        <h3><?= $totbar ?></h3>
                       </div>
                     </div>
                   </div>
@@ -130,7 +146,16 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
+                        <?php
+                        foreach ($getPengOverBulan as $getPengOverBulan) {
+                          $luar = $getPengOverBulan['pengeluaran'];
+                        }
+                        foreach ($getPengPemBulan as $getPengPemBulan) {
+                          $luar = $getPengPemBulan['pengeluaran'] + $luar;
+                        }
+                        // var_dump($luar);
+                        ?>
+                        <h3>Rp <?= $luar; ?></h3>
                       </div>
                     </div>
                   </div>
@@ -160,7 +185,18 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-users fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>10</h3>
+                        <?php
+                        $drop = 0;
+                        $keuntungan = 0;
+                        foreach ($getUser as $getUser) {
+                          if ($getUser['level'] == "Dropshipper") {
+                            $drop = $drop + 1;
+                          }
+                          $keuntungan = $getUser['keuntungan'] + $keuntungan;
+                        }
+                        // var_dump($luar);
+                        ?>
+                        <h3><?= $drop ?></h3>
                       </div>
                     </div>
                   </div>
@@ -188,7 +224,7 @@
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
+                        <h3>Rp <?= $keuntungan ?></h3>
                       </div>
                     </div>
                   </div>
