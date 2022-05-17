@@ -40,10 +40,10 @@
         Masukkan data-data yang diperlukan melalui form di bawah ini. Dan pastikan bahwa data yang Anda<br />
         masukan adalah benar.
       </p>
-      <form action="/pemasukan" method="post">
+      <form action="/pemasukan/tambahtransaksidropshipper" method="post">
         <h6 class="m-0">Nama Dropshipper</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <select class="form-select" aria-label="Default select example">
+          <select name="namadropship" class="form-select" aria-label="Default select example">
             <?php foreach ($dropshipper as $row) : ?>
               <option value="<?= $row['id'] ?>" ?><?= $row['nama'] ?></option>
             <?php endforeach; ?>
@@ -51,18 +51,18 @@
         </div>
         <h6 class="m-0">Marketplace</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <select class="form-select" aria-label="Default select example">
-            <option value="1">Shopee</option>
-            <option value="2">Lazada</option>
+          <select name="marketplace" class="form-select" aria-label="Default select example">
+            <option value="Shopee">Shopee</option>
+            <option value="Lazada">Lazada</option>
           </select>
         </div>
         <h6 class="m-0">No Resi</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="number" class="form-control form-control-md" />
+          <input name="noresi" type="text" class="form-control form-control-md" />
         </div>
         <h6 class="m-0">produk</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <select class="form-select" aria-label="Default select example">
+          <select name="produk" class="form-select" aria-label="Default select example">
             <?php foreach ($barang as $row) : ?>
               <option value="<?= $row['id'] ?>" ?><?= $row['nama'] ?></option>
             <?php endforeach; ?>
@@ -70,28 +70,37 @@
         </div>
         <h6 class="m-0">Harga Jual</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="number" class="form-control form-control-md" />
+          <input name="hargajual" type="number" class="form-control form-control-md" />
         </div>
         <h6 class="m-0">Modal</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="number" class="form-control form-control-md" />
+          <input name="modal" type="number" class="form-control form-control-md" />
         </div>
         <h6 class="m-0">Jumlah</h6>
-        <div class="d-flex  mt-1 mb-3">
-          <button class="btn btn-outline-dark btn-sm">
-            <i class="fas fa-minus"></i>
-          </button>
-          <p class="m-0 mx-3">0</p>
-          <button class="btn btn-outline-dark btn-sm">
-            <i class="fas fa-plus"></i>
-          </button>
+        <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
+          <input name="jumlah" type="number" class="form-control form-control-md" />
         </div>
         <h6 class="m-0">Tanggal Pembelian</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="date" id="birthday" class="form-control form-control-md">
+          <input name="tanggal" type="date" id="birthday" class="form-control form-control-md">
+        </div>
+        <h6 class="m-0">Packing</h6>
+        <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
+          <select name="packing" class="form-select" aria-label="Default select example">
+            <option value="Sendiri">Sendiri</option>
+            <option value="Dari Husein">Dari Husein</option>
+          </select>
+        </div>
+        <h6 class="m-0">Status</h6>
+        <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
+          <select name="status" class="form-select" aria-label="Default select example">
+            <option value="Hilang">Hilang</option>
+            <option value="Sampai">Sampai</option>
+            <option value="Pengembalian">Pengembalian</option>
+          </select>
         </div>
     </div>
-    <button class="btn btn-primary">
+    <button type="submit" class="btn btn-primary">
       <i class="fas fa-plus me-2"></i>
       Tambah
     </button>

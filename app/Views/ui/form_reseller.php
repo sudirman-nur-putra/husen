@@ -40,10 +40,10 @@
 				Masukkan data-data yang diperlukan melalui form di bawah ini. Dan pastikan bahwa data yang Anda<br />
 				masukan adalah benar.
 			</p>
-			<form action="/pemasukan" method="post">
+			<form action="/pemasukan/tambahtransaksireseller" method="post">
 				<h6 class="m-0">Nama Reseller</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<select class="form-select" aria-label="Default select example">
+					<select name="namareseller" class="form-select" aria-label="Default select example">
 						<?php foreach ($reseller as $row) : ?>
 							<option value="<?= $row['id'] ?>" ?><?= $row['nama'] ?></option>
 						<?php endforeach; ?>
@@ -51,21 +51,15 @@
 				</div>
 				<h6 class="m-0">produk</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<select class="form-select" aria-label="Default select example">
+					<select name="namaproduk" class="form-select" aria-label="Default select example">
 						<?php foreach ($barang as $row) : ?>
 							<option value="<?= $row['id'] ?>" ?><?= $row['nama'] ?></option>
 						<?php endforeach; ?>
 					</select>
 				</div>
 				<h6 class="m-0">Jumlah</h6>
-				<div class="d-flex  mt-1 mb-3">
-					<button class="btn btn-outline-dark btn-sm">
-						<i class="fas fa-minus"></i>
-					</button>
-					<p class="m-0 mx-3">0</p>
-					<button class="btn btn-outline-dark btn-sm">
-						<i class="fas fa-plus"></i>
-					</button>
+				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
+					<input name="jumlah" type="number" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Harga</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
@@ -75,7 +69,7 @@
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
 					<input type="date" id="birthday" name="tanggal" class="form-control form-control-md">
 				</div>
-				<button class="btn btn-primary">
+				<button type="submit" class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>
 					Tambah
 				</button>
