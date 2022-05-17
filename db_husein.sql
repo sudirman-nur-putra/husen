@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2022 at 04:47 PM
+-- Generation Time: May 17, 2022 at 05:49 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -33,6 +33,13 @@ CREATE TABLE `akun` (
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `akun`
+--
+
+INSERT INTO `akun` (`id`, `email`, `password`) VALUES
+(2, 'bimantoro1@gmail.com', '45ec5d4e6f193aa7fb73708503737dc7');
+
 -- --------------------------------------------------------
 
 --
@@ -54,7 +61,9 @@ CREATE TABLE `barang` (
 
 INSERT INTO `barang` (`id`, `nama`, `harga_beli`, `harga_jual_dropshipper`, `harga_jual_reseller`, `stok`) VALUES
 (1, 'Knalpot', 200000, 250000, 220000, 4),
-(2, 'Stang', 400000, 450000, 420000, 3);
+(2, 'Stang', 400000, 450000, 420000, 3),
+(4, 'Headlamp', 100000, 150000, 130000, 10),
+(5, 'Klakson', 5000000, 5200000, 5100000, 2);
 
 -- --------------------------------------------------------
 
@@ -163,7 +172,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `nomor_hp` varchar(255) NOT NULL,
-  `keuntungan` varchar(255) NOT NULL,
+  `keuntungan` int(255) NOT NULL,
   `level` enum('Admin','Reseller','Dropshipper','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -172,10 +181,14 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `keuntungan`, `level`) VALUES
-(1, 'Biman', '082123456789', '0', 'Reseller'),
-(2, 'Rico', '089876754321', '200000', 'Dropshipper'),
-(3, 'Sudirman', '089897654321', '0', 'Reseller'),
-(4, 'Rizal', '087987532753', '300000', 'Dropshipper');
+(1, 'Biman', '082123456789', 0, 'Reseller'),
+(2, 'Rico', '089876754321', 200000, 'Dropshipper'),
+(3, 'Sudirman', '089897654321', 0, 'Reseller'),
+(4, 'Rizal', '087987532753', 300000, 'Dropshipper'),
+(6, 'Dadang', '', 200000, 'Dropshipper'),
+(7, 'Ahmad', '087635673231', 0, 'Reseller'),
+(9, 'Tatang', '', 500000, 'Dropshipper'),
+(10, 'Dadang', '081324049806', 0, 'Reseller');
 
 --
 -- Indexes for dumped tables
@@ -250,13 +263,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `akun`
 --
 ALTER TABLE `akun`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `gaji`
@@ -298,7 +311,7 @@ ALTER TABLE `transaksi_reseller`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
