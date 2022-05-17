@@ -62,3 +62,154 @@ CRITICAL - 2022-05-16 07:59:34 --> Undefined index: id
 #8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #10 {main}
+ERROR - 2022-05-16 20:03:49 --> Unknown column 'keuntungan' in 'field list'
+CRITICAL - 2022-05-16 20:03:49 --> Unknown column 'keuntungan' in 'field list'
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id,nama,...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,nama,...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,nama,...')
+#3 C:\xampp\htdocs\husen\system\Model.php(726): CodeIgniter\Database\BaseConnection->query('SELECT id,nama,...')
+#4 C:\xampp\htdocs\husen\app\Models\SellerDropship_Model.php(23): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\husen\app\Controllers\SellerDropship.php(11): App\Models\SellerDropship_Model->getDropshipper()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\SellerDropship->index()
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SellerDropship))
+#8 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-05-16 20:04:17 --> Unknown column 'keuntungan' in 'field list'
+CRITICAL - 2022-05-16 20:04:17 --> Unknown column 'keuntungan' in 'field list'
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT id,nama,...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id,nama,...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id,nama,...')
+#3 C:\xampp\htdocs\husen\system\Model.php(726): CodeIgniter\Database\BaseConnection->query('SELECT id,nama,...')
+#4 C:\xampp\htdocs\husen\app\Models\SellerDropship_Model.php(23): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\husen\app\Controllers\SellerDropship.php(11): App\Models\SellerDropship_Model->getDropshipper()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\SellerDropship->index()
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SellerDropship))
+#8 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-05-16 20:52:39 --> Unknown column 'harga' in 'field list'
+CRITICAL - 2022-05-16 20:52:39 --> Unknown column 'harga' in 'field list'
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\husen\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\husen\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\husen\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(44): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksireseller()
+#10 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#11 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-05-16 20:53:29 --> Unknown column 'harga' in 'field list'
+CRITICAL - 2022-05-16 20:53:29 --> Unknown column 'harga' in 'field list'
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\husen\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\husen\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\husen\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(44): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksireseller()
+#10 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#11 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-05-16 20:53:35 --> Unknown column 'harga' in 'field list'
+CRITICAL - 2022-05-16 20:53:35 --> Unknown column 'harga' in 'field list'
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\husen\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\husen\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\husen\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(44): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksireseller()
+#10 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#11 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-05-16 20:55:49 --> Column 'id_barang' cannot be null
+CRITICAL - 2022-05-16 20:55:49 --> Column 'id_barang' cannot be null
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\husen\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\husen\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\husen\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(44): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksireseller()
+#10 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#11 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2022-05-16 21:14:11 --> Class 'App\Models\PemasukanDropshipModel' not found
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksidropshipper()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-16 21:15:13 --> Class 'App\Models\PemasukanDropshipModel' not found
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksidropshipper()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-16 21:15:19 --> Class 'App\Models\PemasukanDropshipModel' not found
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksidropshipper()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2022-05-16 21:16:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`resi`, `status_packing`, `marketplace`) VALUES ('2', '1', '2022-05-17', '350...' at line 1
+CRITICAL - 2022-05-16 21:16:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`resi`, `status_packing`, `marketplace`) VALUES ('2', '1', '2022-05-17', '350...' at line 1
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\husen\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\husen\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\husen\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(63): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksidropshipper()
+#10 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#11 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2022-05-16 21:23:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`resi`, `status_packing`, `marketplace`, `status`) VALUES ('2', '1', '2022-05...' at line 1
+CRITICAL - 2022-05-16 21:23:11 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`resi`, `status_packing`, `marketplace`, `status`) VALUES ('2', '1', '2022-05...' at line 1
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\xampp\htdocs\husen\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', Array, false)
+#4 C:\xampp\htdocs\husen\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\husen\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\husen\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\husen\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(64): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->tambahtransaksidropshipper()
+#10 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#11 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#14 {main}

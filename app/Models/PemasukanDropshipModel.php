@@ -4,18 +4,21 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Pemasukan_Model extends Model
+class PemasukanDropshipModel extends Model
 {
-    protected $table = 'transaksi_reseller';
+    protected $table = 'transaksi_dropshipper';
     protected $allowedFields = [
         'id_user',
         'id_barang',
         'tanggal',
+        'modal',
         'jumlah_barang',
-        'harga',
-        'total_pembelian',
+        'harga_jual',
+        'no resi',
+        'status_packing',
+        'marketplace',
+        'status',
     ];
-
     public function fetch_data()
     {
         return $this->findAll();
