@@ -147,7 +147,6 @@
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
                         <?php
-                        $luar = 0;
                         foreach ($getPengOverBulan as $getPengOverBulan) {
                           $luar = $getPengOverBulan['pengeluaran'];
                         }
@@ -156,7 +155,7 @@
                         }
                         // var_dump($luar);
                         ?>
-                        <h3>Rp <?=  $luar; ?></h3>
+                        <h3>Rp <?= $luar; ?></h3>
                       </div>
                     </div>
                   </div>

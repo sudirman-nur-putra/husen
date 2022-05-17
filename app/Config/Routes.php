@@ -32,7 +32,6 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/dashboard', 'Home::index');
 $routes->get('/data_barang', 'Databarang::index');
 $routes->get('/form_dataBarang', 'Databarang::formdatabarang');
 $routes->get('/seller_dropship', 'SellerDropship::index');
