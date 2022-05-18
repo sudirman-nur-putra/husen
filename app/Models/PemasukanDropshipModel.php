@@ -14,7 +14,7 @@ class PemasukanDropshipModel extends Model
         'modal',
         'jumlah_barang',
         'harga_jual',
-        'no resi',
+        'no_resi',
         'status_packing',
         'marketplace',
         'status',

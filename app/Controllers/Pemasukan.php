@@ -43,8 +43,6 @@ class Pemasukan extends BaseController
         ];
         $pemasukanreseller->save($data);
         return redirect()->to('/pemasukan');
-        //return redirect()->to(base_url('seller_dropship'))->with('status','Reseller Berhasil Ditambahkan');
-        //dd($this->request->getVar());
     }
     public function tambahtransaksidropshipper()
     {
@@ -56,7 +54,7 @@ class Pemasukan extends BaseController
             'modal' => $this->request->getPost('modal'),
             'jumlah_barang' => $this->request->getPost('jumlah'),
             'harga_jual' => $this->request->getPost('hargajual'),
-            'no resi' => $this->request->getPost('noresi'),
+            'no_resi' => $this->request->getPost('noresi'),
             'status_packing' => $this->request->getPost('packing'),
             'marketplace' => $this->request->getPost('marketplace'),
             'status' => $this->request->getPost('status'),

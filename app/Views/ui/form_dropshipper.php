@@ -94,6 +94,7 @@
         <h6 class="m-0">Status</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <select name="status" class="form-select" aria-label="Default select example">
+            <option value="Proses">Proses</option>
             <option value="Hilang">Hilang</option>
             <option value="Sampai">Sampai</option>
             <option value="Pengembalian">Pengembalian</option>
