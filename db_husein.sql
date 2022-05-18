@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2022 at 05:49 AM
+-- Generation Time: May 18, 2022 at 08:54 AM
 -- Server version: 10.4.21-MariaDB
--- PHP Version: 8.0.12
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,7 +38,8 @@ CREATE TABLE `akun` (
 --
 
 INSERT INTO `akun` (`id`, `email`, `password`) VALUES
-(2, 'bimantoro1@gmail.com', '45ec5d4e6f193aa7fb73708503737dc7');
+(2, 'tasyashofa@gmail.com', '04612821a89b643ba01792287a6c7daa'),
+(3, 'bimantoro1@gmail.com', '45ec5d4e6f193aa7fb73708503737dc7');
 
 -- --------------------------------------------------------
 
@@ -61,9 +62,7 @@ CREATE TABLE `barang` (
 
 INSERT INTO `barang` (`id`, `nama`, `harga_beli`, `harga_jual_dropshipper`, `harga_jual_reseller`, `stok`) VALUES
 (1, 'Knalpot', 200000, 250000, 220000, 4),
-(2, 'Stang', 400000, 450000, 420000, 3),
-(4, 'Headlamp', 100000, 150000, 130000, 10),
-(5, 'Klakson', 5000000, 5200000, 5100000, 2);
+(2, 'Stang', 400000, 450000, 420000, 3);
 
 -- --------------------------------------------------------
 
@@ -99,9 +98,16 @@ CREATE TABLE `keuntungan_dropshipper` (
 CREATE TABLE `overhead` (
   `id` int(11) NOT NULL,
   `tanggal` date NOT NULL,
-  `keterangan` enum('TRANSPORT','PERALATAN PACKING') NOT NULL,
+  `keterangan` varchar(11) NOT NULL,
   `jumlah_pengeluaran` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `overhead`
+--
+
+INSERT INTO `overhead` (`id`, `tanggal`, `keterangan`, `jumlah_pengeluaran`) VALUES
+(2, '2022-05-18', 'transportas', 200000);
 
 -- --------------------------------------------------------
 
@@ -114,9 +120,17 @@ CREATE TABLE `pembelian_barang` (
   `id_barang` int(100) NOT NULL,
   `nama_toko` varchar(255) NOT NULL,
   `jumlah_beli` int(100) NOT NULL,
+  `harga` int(11) NOT NULL,
   `total_harga` int(100) NOT NULL,
   `tanggal` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pembelian_barang`
+--
+
+INSERT INTO `pembelian_barang` (`id`, `id_barang`, `nama_toko`, `jumlah_beli`, `harga`, `total_harga`, `tanggal`) VALUES
+(1, 1, 'FamiliVariasi', 100, 50000, 0, '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -132,20 +146,21 @@ CREATE TABLE `transaksi_dropshipper` (
   `modal` int(100) NOT NULL,
   `jumlah_barang` int(100) NOT NULL,
   `harga_jual` int(100) NOT NULL,
-  `no resi` varchar(255) NOT NULL,
-  `status_packing` enum('Sendiri','Dari Husein') NOT NULL,
-  `marketplace` enum('Lazada','Shopee') NOT NULL,
-  `status` enum('Hilang','Sampai','Pengembalian') NOT NULL
+  `no_resi` varchar(255) NOT NULL,
+  `status_packing` varchar(11) NOT NULL,
+  `marketplace` varchar(11) NOT NULL,
+  `status` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `transaksi_dropshipper`
 --
 
-INSERT INTO `transaksi_dropshipper` (`id`, `id_user`, `id_barang`, `tanggal`, `modal`, `jumlah_barang`, `harga_jual`, `no resi`, `status_packing`, `marketplace`, `status`) VALUES
+INSERT INTO `transaksi_dropshipper` (`id`, `id_user`, `id_barang`, `tanggal`, `modal`, `jumlah_barang`, `harga_jual`, `no_resi`, `status_packing`, `marketplace`, `status`) VALUES
 (2, 2, 1, '2022-05-16', 200000, 1, 250000, '123456789', 'Sendiri', 'Lazada', 'Sampai'),
 (3, 4, 2, '2022-05-10', 400000, 1, 450000, '543216789', 'Sendiri', 'Shopee', 'Sampai'),
-(4, 2, 1, '2022-04-05', 400000, 2, 500000, '908765341', 'Sendiri', 'Lazada', 'Sampai');
+(4, 2, 1, '2022-04-05', 400000, 2, 500000, '908765341', 'Sendiri', 'Lazada', 'Sampai'),
+(5, 2, 1, '0000-00-00', 35000, 2, 50000, 'JP041001', 'Sendiri', 'Shopee', 'Proses');
 
 -- --------------------------------------------------------
 
@@ -159,8 +174,16 @@ CREATE TABLE `transaksi_reseller` (
   `id_barang` int(11) NOT NULL,
   `tanggal` date NOT NULL,
   `jumlah_barang` int(100) NOT NULL,
+  `harga` int(11) NOT NULL,
   `total_pembelian` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `transaksi_reseller`
+--
+
+INSERT INTO `transaksi_reseller` (`id`, `id_user`, `id_barang`, `tanggal`, `jumlah_barang`, `harga`, `total_pembelian`) VALUES
+(1, 1, 1, '2022-05-17', 5, 50000, 0);
 
 -- --------------------------------------------------------
 
@@ -172,7 +195,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `nomor_hp` varchar(255) NOT NULL,
-  `keuntungan` int(255) NOT NULL,
+  `keuntungan` varchar(255) NOT NULL,
   `level` enum('Admin','Reseller','Dropshipper','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -181,14 +204,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `keuntungan`, `level`) VALUES
-(1, 'Biman', '082123456789', 0, 'Reseller'),
-(2, 'Rico', '089876754321', 200000, 'Dropshipper'),
-(3, 'Sudirman', '089897654321', 0, 'Reseller'),
-(4, 'Rizal', '087987532753', 300000, 'Dropshipper'),
-(6, 'Dadang', '', 200000, 'Dropshipper'),
-(7, 'Ahmad', '087635673231', 0, 'Reseller'),
-(9, 'Tatang', '', 500000, 'Dropshipper'),
-(10, 'Dadang', '081324049806', 0, 'Reseller');
+(1, 'Biman', '082123456789', '0', 'Reseller'),
+(2, 'Rico', '089876754321', '200000', 'Dropshipper'),
+(3, 'Sudirman', '089897654321', '0', 'Reseller'),
+(4, 'Rizal', '087987532753', '300000', 'Dropshipper');
 
 --
 -- Indexes for dumped tables
@@ -263,13 +282,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `akun`
 --
 ALTER TABLE `akun`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `gaji`
@@ -287,31 +306,31 @@ ALTER TABLE `keuntungan_dropshipper`
 -- AUTO_INCREMENT for table `overhead`
 --
 ALTER TABLE `overhead`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pembelian_barang`
 --
 ALTER TABLE `pembelian_barang`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `transaksi_dropshipper`
 --
 ALTER TABLE `transaksi_dropshipper`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `transaksi_reseller`
 --
 ALTER TABLE `transaksi_reseller`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
