@@ -286,12 +286,31 @@
             <!-- BEBAN GAJI BOX -->
           </div>
         </div>
+
+
+
+
         <!-- CHART PENJUALAN -->
         <div class="card rounded-6 mb-4">
           <div class="card-header d-flex justify-content-between py-3">
             <h5 class="mb-0 align-self-center">
-              <strong>Grafik Penjualan Barang</strong>
+              <strong>Grafik Penjualan Barang <?= $tahun1; ?></strong>
             </h5>
+            <div class="dropdown align-self-top">
+              <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                <p id="text_pemasukan">Pilih Tahun</p> 
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <?php
+                $date = date("Y");
+                for ($i = $date; $i >= $date-5 ; $i-- ) {
+                ?>
+                <li><a class="dropdown-item" href="<?= base_url().'/index.php/home/index/barang/'.$i; ?>"><?= "Tahun ".$i ?></a></li>
+                <?php 
+                }
+                ?>
+              </ul>
+            </div>
           </div>
           <div class="card-body">
             <canvas class="w-100" id="myChart" height="400"></canvas>
@@ -301,8 +320,23 @@
         <div class="card rounded-6 mb-4">
           <div class="card-header d-flex justify-content-between py-3">
             <h5 class="mb-0 align-self-center">
-              <strong>Grafik Pemasukan</strong>
+              <strong>Grafik Pemasukan <?= $tahun2; ?></strong>
             </h5>
+            <div class="dropdown align-self-top">
+              <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                <p id="text_pemasukan">Pilih Tahun</p> 
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <?php
+                $date = date("Y");
+                for ($i = $date; $i >= $date-5 ; $i-- ) {
+                ?>
+                <li><a class="dropdown-item" href="<?= base_url().'/index.php/home/index/pemasukan/'.$i; ?>"><?= "Tahun ".$i ?></a></li>
+                <?php 
+                }
+                ?>
+              </ul>
+            </div>
           </div>
           <div class="card-body">
             <canvas class="w-100" id="ChartPemasukan" height="400"></canvas>
@@ -312,8 +346,23 @@
         <div class="card rounded-6 mb-4">
           <div class="card-header d-flex justify-content-between py-3">
             <h5 class="mb-0 align-self-center">
-              <strong>Grafik Penjualan</strong>
+              <strong>Grafik Penjualan <?= $tahun3 ?></strong>
             </h5>
+            <div class="dropdown align-self-top">
+              <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                <p id="text_pemasukan">Pilih Tahun</p> 
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <?php
+                $date = date("Y");
+                for ($i = $date; $i >= $date-5 ; $i-- ) {
+                ?>
+                <li><a class="dropdown-item" href="<?= base_url().'/index.php/home/index/pengeluaran/'.$i; ?>"><?= "Tahun ".$i ?></a></li>
+                <?php 
+                }
+                ?>
+              </ul>
+            </div>
           </div>
           <div class="card-body">
             <canvas class="w-100" id="ChartPengeluaran" height="400"></canvas>
@@ -322,9 +371,10 @@
       </div>
     </div>
   </div>
+
 <!-- DATA UNTUK CHART -->
   <?php 
-  // var_dump($getBarDropTahunBulan);
+
   $Januari1 = 0;
   $Februari1 = 0;
   $Maret1 = 0;
@@ -343,6 +393,7 @@
     $tgl = $getBarDropTahunBulan['tanggal']; 
     $jml_barang = $getBarDropTahunBulan['barang'];
     $pecah = explode("-", $tgl);
+    $tahun1 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari1 = $jml_barang;
@@ -385,6 +436,7 @@
     $tgl = $getBarResTahunBulan['tanggal']; 
     $jml_barang = $getBarResTahunBulan['barang'];
     $pecah = explode("-", $tgl);
+    $tahun1 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari1 = $jml_barang + $Januari1;
@@ -424,107 +476,6 @@
     }
   }
 
-  // Menghitung unutk penjualan Tahun Lalu
-  // var_dump($getBarDropTahunBulan);
-  $Januari2 = 0;
-  $Februari2 = 0;
-  $Maret2 = 0;
-  $April2 = 0;
-  $Mei2 = 0;
-  $Juni2 = 0;
-  $Juli2 = 0;
-  $Agustus2 = 0;
-  $September2 = 0;
-  $Oktober2 = 0;
-  $November2 = 0;
-  $Desember2 = 0;
-
-  // Menghitung Jumlah Barang Tahun ini
-  foreach ($getBarDropTahunBulanLalu as $getBarDropTahunBulanLalu) {
-    $tgl = $getBarDropTahunBulanLalu['tanggal']; 
-    $jml_barang = $getBarDropTahunBulanLalu['barang'];
-    $pecah = explode("-", $tgl);
-    // echo "<br><br>".$pecah[1]."<br><br>";
-    if ($pecah[1] == '01') {
-      $Januari2 = $jml_barang;
-    }
-    if ($pecah[1] == '02') {
-      $Februari2 = $jml_barang;
-    }
-    if ($pecah[1] == '03') {
-      $Maret2 = $jml_barang;
-    }
-    if ($pecah[1] == '04') {
-      $April2 = $jml_barang;
-    }
-    if ($pecah[1] == '05') {
-      $Mei2 = $jml_barang;
-    }
-    if ($pecah[1] == '06') {
-      $Juni2 = $jml_barang;
-    }
-    if ($pecah[1] == '07') {
-      $Juli2 = $jml_barang;
-    }
-    if ($pecah[1] == '08') {
-      $Agustus2 = $jml_barang;
-    }
-    if ($pecah[1] == '09') {
-      $September2 = $jml_barang;
-    }
-    if ($pecah[1] == '10') {
-      $Oktober2 = $jml_barang;
-    }
-    if ($pecah[1] == '11') {
-      $November2 = $jml_barang;
-    }
-    if ($pecah[1] == '12') {
-      $Desember2 = $jml_barang;
-    }
-  }
-   foreach ($getBarResTahunBulanLalu as $getBarResTahunBulanLalu) {
-    $tgl = $getBarResTahunBulanLalu['tanggal']; 
-    $jml_barang = $getBarResTahunBulanLalu['barang'];
-    $pecah = explode("-", $tgl);
-    // echo "<br><br>".$pecah[1]."<br><br>";
-    if ($pecah[1] == '01') {
-      $Januari2 = $jml_barang + $Januari2;
-    }
-    if ($pecah[1] == '02') {
-      $Februari2 = $jml_barang + $Februari2;
-    }
-    if ($pecah[1] == '03') {
-      $Maret2 = $jml_barang + $Maret2;
-    }
-    if ($pecah[1] == '04') {
-      $April2 = $jml_barang + $April2;
-    }
-    if ($pecah[1] == '05') {
-      $Mei2 = $jml_barang + $Mei2 ;
-    }
-    if ($pecah[1] == '06') {
-      $Juni2 = $jml_barang + $Juni2;
-    }
-    if ($pecah[1] == '07') {
-      $Juli2 = $jml_barang + $Juli2;
-    }
-    if ($pecah[1] == '08') {
-      $Agustus2 = $jml_barang + $Agustus2;
-    }
-    if ($pecah[1] == '09') {
-      $September2 = $jml_barang + $September2;
-    }
-    if ($pecah[1] == '10') {
-      $Oktober2 = $jml_barang + $Oktober2;
-    }
-    if ($pecah[1] == '11') {
-      $November2 = $jml_barang + $November2;
-    }
-    if ($pecah[1] == '12') {
-      $Desember2 = $jml_barang + $Desember2;
-    }
-  }
-
 // CHART PENDAPATAN DROPSHIPPER TAHUN PERBULAN
   $Januari3 = 0;
   $Februari3 = 0;
@@ -544,6 +495,7 @@
     $tgl = $getPenDropTahunBulan['tanggal']; 
     $nominal = $getPenDropTahunBulan['harga'];
     $pecah = explode("-", $tgl);
+    $tahun3 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari3 = $nominal;
@@ -601,6 +553,7 @@
     $tgl = $getPenResTahunBulan['tanggal']; 
     $nominal = $getPenResTahunBulan['harga'];
     $pecah = explode("-", $tgl);
+    $tahun3 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari4 = $nominal;
@@ -660,6 +613,7 @@
     $tgl = $getPengOverTahunBulan['tanggal']; 
     $nominal = $getPengOverTahunBulan['pengeluaran'];
     $pecah = explode("-", $tgl);
+    $tahun4 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari5 = $nominal;
@@ -717,6 +671,7 @@
     $tgl = $getPengPemTahunBulan['tanggal']; 
     $nominal = $getPengPemTahunBulan['pengeluaran'];
     $pecah = explode("-", $tgl);
+    $tahun4 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari6 = $nominal;
@@ -774,6 +729,7 @@
     $tgl = $getPengGajiTahunBulan['tanggal']; 
     $jml_barang = $getPengGajiTahunBulan['pengeluaran'];
     $pecah = explode("-", $tgl);
+    $tahun4 = $pecah[0];
     // echo "<br><br>".$pecah[1]."<br><br>";
     if ($pecah[1] == '01') {
       $Januari7 = $jml_barang;
@@ -891,13 +847,6 @@ var myChart = new Chart(ctx, {
       "Desember",
     ],
     datasets: [
-      {
-        label: 'Grafik Penjualan Barang Tahun Sebelumnya',
-        data: [<?= $Januari2.",".$Februari2.",".$Maret2.",".$April2.",".$Mei2.",".$Juni2.",".$Juli2.",".$Agustus2.",".$September2.",".$Oktober2.",".$November2."".$Desember2; ?>],
-        backgroundColor: "red",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
       {
         label: 'Grafik Penjualan Barang Tahun Ini',
         data: [<?= $Januari1.",".$Februari1.",".$Maret1.",".$April1.",".$Mei1.",".$Juni1.",".$Juli1.",".$Agustus1.",".$September1.",".$Oktober1.",".$November1."".$Desember1; ?>],
