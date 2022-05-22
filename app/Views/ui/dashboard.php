@@ -35,17 +35,17 @@
           <h4 class="list-group-item p-4 ">
             HUSEN VARIASI
           </h4>
-          <a href="dashboard" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+          <a href="<?= base_url();?>/home" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
             <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
           </a>
-          <a href="pemasukan" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url();?>/pemasukan" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-area fa-fw me-3"></i><span>Pemasukan</span>
           </a>
-          <a href="pengeluaran" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url();?>/pengeluaran" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-lock fa-fw me-3"></i><span>Pengeluaran</span></a>
-          <a href="seller_dropship" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url();?>/SellerDropship" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span></a>
-          <a href="data_barang" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url();?>/databarang" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Data Barang</span>
           </a>
         </div>
