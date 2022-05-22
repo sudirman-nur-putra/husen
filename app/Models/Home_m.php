@@ -72,33 +72,18 @@ class Home_m{
 
 
     // get jumlah barang keluar Dropshipper perbulan
-    public function getBarDropTahunBulan(){
+    public function getBarDropTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
         $result  = $db->query("SELECT SUM(jumlah_barang) as barang, tanggal FROM transaksi_dropshipper WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY  MONTH(tanggal)");
         return $result->getResultArray();
     }
     // get jumlah barang keluar Reseller perbulan
-    public function getBarResTahunBulan(){
+    public function getBarResTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
         $result  = $db->query("SELECT SUM(jumlah_barang) as barang, tanggal FROM transaksi_reseller WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal)");
         return $result->getResultArray();
     }
-    // get jumlah barang keluar Dropshipper perbulan Tahun lalu
-    public function getBarDropTahunBulanLalu(){
-        $db      = \Config\Database::connect();
-        $tanggal = date('Y') - 1;
-        $result  = $db->query("SELECT SUM(jumlah_barang) as barang, tanggal FROM transaksi_dropshipper WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY  MONTH(tanggal)");
-        return $result->getResultArray();
-    }
-    // get jumlah barang keluar Reseller perbulan tahun lalu
-    public function getBarResTahunBulanLalu(){
-        $db      = \Config\Database::connect();
-        $tanggal = date('Y') - 1;
-        $result  = $db->query("SELECT SUM(jumlah_barang) as barang, tanggal FROM transaksi_reseller WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal)");
-        return $result->getResultArray();
-    }
+   
 
 
     // get pendapatanb dropshipper hari ini
@@ -212,39 +197,33 @@ class Home_m{
 
 
     // get pendapatanb dropshipper perbulan
-    public function getPenDropTahunBulan(){
+    public function getPenDropTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
-
         $result  = $db->query("SELECT SUM(harga_jual) as harga, tanggal FROM transaksi_dropshipper WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal) ");
         return $result->getResultArray();
     }
     // get pendapatanb Reseller perbulan
-    public function getPenResTahunBulan(){
+    public function getPenResTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
         $result  = $db->query("SELECT SUM(total_pembelian) as harga, tanggal FROM transaksi_reseller WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal)");
         return $result->getResultArray();
     }
 
     //GET Pengeluaran overhaed
-    public function getPengOverTahunBulan(){
+    public function getPengOverTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
         $result  = $db->query("SELECT SUM(jumlah_pengeluaran) as pengeluaran, tanggal FROM overhead WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal)");
         return $result->getResultArray();
     }
     //GET Pengeluaran pembelian
-    public function getPengPemTahunBulan(){
+    public function getPengPemTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
         $result  = $db->query("SELECT SUM(total_harga) as pengeluaran, tanggal FROM pembelian_barang WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal)");
         return $result->getResultArray();
     }
     //GET Pengeluaran Gaji
-    public function getPengGajiTahunBulan(){
+    public function getPengGajiTahunBulan($tanggal){
         $db      = \Config\Database::connect();
-        $tanggal = date('Y');
         $result  = $db->query("SELECT SUM(nominal) as pengeluaran, tanggal FROM gaji WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' GROUP BY MONTH(tanggal)");
         return $result->getResultArray();
     }
