@@ -18,7 +18,7 @@ class Home extends BaseController
 	// 		// return redirect()->to('/login');
 	// 	}
 	// }
-    public function index()
+    public function index($chart="", $tahun="")
     {
         $session = \Config\Services::session();
         if ($session->get('id') == FALSE) {
@@ -55,22 +55,46 @@ class Home extends BaseController
         // DATA PERUNTUKAN DATA ADMIN, DAN DROPSHIPPER
         $result['getUser'] = $Models->getUser();
         
+        if ($chart == "barang") {
+            $tgl1 = $tahun;
+        }else{
+            $tgl1 = date('Y');
+        }
         // DATA PERUNTUKAN CHART PENGELUARAN BARANG
-        $result['getBarDropTahunBulan'] = $Models->getBarDropTahunBulan();
-        $result['getBarResTahunBulan'] = $Models->getBarResTahunBulan();
-        $result['getBarDropTahunBulanLalu'] = $Models->getBarDropTahunBulanLalu();
-        $result['getBarResTahunBulanLalu'] = $Models->getBarResTahunBulanLalu();
-
+        $result['getBarDropTahunBulan'] = $Models->getBarDropTahunBulan($tgl1);
+        $result['getBarResTahunBulan'] = $Models->getBarResTahunBulan($tgl1);
+     
+        // KONDISI SORTING TAHUN CHART PEMASUKAN
+        if ($chart == "pemasukan") {
+            $tgl2 = $tahun;
+        }else{
+            $tgl2 = date("Y");
+        }
         // DATA CHART PENDAPATAN
-        $result['getPenDropTahunBulan'] = $Models->getPenDropTahunBulan();
-        $result['getPenResTahunBulan'] = $Models->getPenResTahunBulan();
+        $result['getPenDropTahunBulan'] = $Models->getPenDropTahunBulan($tgl2);
+        $result['getPenResTahunBulan'] = $Models->getPenResTahunBulan($tgl2);
 
+
+        // SORTING TAHUN UNTUK CHART PENGELUARAN
+        if ($chart == "pengeluaran") {
+            $tgl3 = $tahun;
+        }else{
+            $tgl3 = date("Y");
+        }
         // // DATA CHART PENGELUARAN
-        $result['getPengOverTahunBulan'] = $Models->getPengOverTahunBulan();
-        $result['getPengPemTahunBulan'] = $Models->getPengPemTahunBulan();
-        $result['getPengGajiTahunBulan'] = $Models->getPengGajiTahunBulan();
+        $result['getPengOverTahunBulan'] = $Models->getPengOverTahunBulan($tgl3);
+        $result['getPengPemTahunBulan'] = $Models->getPengPemTahunBulan($tgl3);
+        $result['getPengGajiTahunBulan'] = $Models->getPengGajiTahunBulan($tgl3);
+
+        $result['tahun1'] = $tgl1;
+        $result['tahun2'] = $tgl2;
+        $result['tahun3'] = $tgl3;
 
         // var_dump( $result['getPenDropBulan']);
         return view('ui/dashboard.php', $result);
+    }
+    public function chart($chart, $tahun){
+        echo $chart."<br>";
+        echo $tahun."<br>";
     }
 }
