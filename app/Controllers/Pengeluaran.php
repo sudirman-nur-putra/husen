@@ -33,6 +33,7 @@ class Pengeluaran extends BaseController
             'jumlah_beli' => $this->request->getPost('jumlah'),
             'harga' => $this->request->getPost('harga'),
             'tanggal' => $this->request->getPost('tanggal'),
+            'total_harga' => $this->request->getPost('harga') * $this->request->getPost('jumlah'),
         ];
         $pembelianbarang->save($data);
         return redirect()->to('/pengeluaran');

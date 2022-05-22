@@ -9,10 +9,25 @@ use App\Models\PemasukanDropshipModel;
 
 class Pemasukan extends BaseController
 {
+    public function __construct()
+    {
+        $this->PemasukanModel = new Pemasukan_Model();
+        $this->PemasukanDropshipModel = new PemasukanDropshipModel();
+    }
+
     public function index()
     {
-        return view('ui/pemasukan');
+        $transaksireseller = $this->PemasukanModel->findAll();
+        $transaksidropship = $this->PemasukanDropshipModel->findAll();
+        $sellerdropship = new SellerDropship_Model;
+        $databarang = new DataBarang_Model();
+        $data = [
+            'transaksireseller' => $transaksireseller,
+            'transaksidropship' => $transaksidropship,
+        ];
+        return view('ui/pemasukan', $data);
     }
+
     public function formtransaksireseller()
     {
         $sellerdropship = new SellerDropship_Model;
@@ -22,6 +37,7 @@ class Pemasukan extends BaseController
         //$data['dropshipper'] = $sellerdropship->getDropshipper();
         return view('ui/form_reseller', $data);
     }
+
     public function formtranskasidropshipper()
     {
         $sellerdropship = new SellerDropship_Model;
@@ -40,6 +56,7 @@ class Pemasukan extends BaseController
             'tanggal' => $this->request->getPost('tanggal'),
             'jumlah_barang' => $this->request->getPost('jumlah'),
             'harga' => $this->request->getPost('harga'),
+            'total_pembelian' => $this->request->getPost('jumlah') * $this->request->getPost('harga'),
         ];
         $pemasukanreseller->save($data);
         return redirect()->to('/pemasukan');
@@ -57,7 +74,7 @@ class Pemasukan extends BaseController
             'no_resi' => $this->request->getPost('noresi'),
             'status_packing' => $this->request->getPost('packing'),
             'marketplace' => $this->request->getPost('marketplace'),
-            'status' => $this->request->getPost('status'),
+            'status' => "Proses",
         ];
         $pemasukandropship->save($data);
         return redirect()->to('/pemasukan');

@@ -185,7 +185,7 @@
           <div class="card my-4 rounded-6">
             <div class="card-header d-flex justify-content-between py-3">
               <h5 class="mb-0 align-self-center">
-                <strong>Pemasukan dari Seller</strong>
+                <strong>Pemasukan dari Reseller</strong>
               </h5>
               <a class="btn btn-primary" href="/pemasukan/formtransaksireseller" role="button">
                 <i class="fas fa-plus"></i>
@@ -198,35 +198,25 @@
                   <thead>
                     <tr>
                       <th scope="col">Nama Reseller</th>
+                      <th scope="col">Tanggal Pembelian</th>
                       <th scope="col">Produk</th>
                       <th scope="col">Jumlah</th>
                       <th scope="col">Harga</th>
-                      <th scope="col">Tanggal Pembelian</th>
+                      <th scope="col">Total Harga</th>
                       <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                    </tr>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                    </tr>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                    </tr>
+                    <?php foreach ($transaksireseller as $row) : ?>
+                      <tr>
+                        <td><?= $row['id_user'] ?></td>
+                        <td><?= $row['tanggal'] ?></td>
+                        <td><?= $row['id_barang'] ?></td>
+                        <td><?= $row['jumlah_barang'] ?></td>
+                        <td><?= $row['harga'] ?></td>
+                        <td><?= $row['total_pembelian'] ?></td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>
@@ -248,42 +238,31 @@
                   <thead>
                     <tr>
                       <th scope="col">Nama Dropshipper</th>
+                      <th scope="col">Tanggal Pembelian</th>
+                      <th scope="col">No Resi</th>
                       <th scope="col">Produk</th>
                       <th scope="col">Jumlah</th>
-                      <th scope="col">Harga</th>
-                      <th scope="col">Tanggal Pembelian</th>
+                      <th scope="col">Harga Jual</th>
+                      <th scope="col">Modal</th>
                       <th scope="col">Marketplace</th>
                       <th scope="col">Status</th>
+                      <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                      <td>Shopee</td>
-                      <td>Selesai</td>
-                    </tr>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                      <td>Shopee</td>
-                      <td>Selesai</td>
-                    </tr>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                      <td>Shopee</td>
-                      <td>Selesai</td>
-                    </tr>
+                    <?php foreach ($transaksidropship as $row) : ?>
+                      <tr>
+                        <td><?= $row['id_user'] ?></td>
+                        <td><?= $row['tanggal'] ?></td>
+                        <td><?= $row['no_resi'] ?></td>
+                        <td><?= $row['id_barang'] ?></td>
+                        <td><?= $row['jumlah_barang'] ?></td>
+                        <td><?= $row['harga_jual'] ?></td>
+                        <td><?= $row['modal'] ?></td>
+                        <td><?= $row['marketplace'] ?></td>
+                        <td><?= $row['status'] ?></td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>

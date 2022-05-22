@@ -1,0 +1,96 @@
+CRITICAL - 2022-05-21 23:26:59 --> Undefined variable: transaksireseller
+#0 C:\xampp\htdocs\husen\app\Views\ui\pemasukan.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 209, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pemasukan', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(14): view('ui/pemasukan')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-21 23:46:44 --> Undefined property: App\Controllers\Pemasukan::$PemasukanModel
+#0 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 14, Array)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-21 23:51:01 --> Undefined property: App\Controllers\Pemasukan::$PemasukanModel
+#0 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-21 23:51:07 --> Undefined property: App\Controllers\Pemasukan::$PemasukanModel
+#0 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#3 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-21 23:51:39 --> Undefined variable: transaksireseller
+#0 C:\xampp\htdocs\husen\app\Views\ui\pemasukan.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 209, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pemasukan', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(22): view('ui/pemasukan', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-21 23:52:36 --> Undefined variable: transaksireseller
+#0 C:\xampp\htdocs\husen\app\Views\ui\pemasukan.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 209, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pemasukan', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(23): view('ui/pemasukan', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-21 23:52:37 --> Undefined variable: transaksireseller
+#0 C:\xampp\htdocs\husen\app\Views\ui\pemasukan.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 209, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pemasukan', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(23): view('ui/pemasukan', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-21 23:54:54 --> Undefined variable: transaksireseller
+#0 C:\xampp\htdocs\husen\app\Views\ui\pemasukan.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 209, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pemasukan', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(23): view('ui/pemasukan', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-21 23:54:55 --> Undefined variable: transaksireseller
+#0 C:\xampp\htdocs\husen\app\Views\ui\pemasukan.php(209): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 209, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pemasukan', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(23): view('ui/pemasukan', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
