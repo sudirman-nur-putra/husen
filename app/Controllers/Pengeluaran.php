@@ -11,6 +11,10 @@ class Pengeluaran extends BaseController
 {
     public function index()
     {
+        $session = \Config\Services::session();
+        if ($session->get('id') == FALSE) {
+            return redirect()->to('/login');
+        }
         $belibarang = new PembelianBarangModel();
         $overhead = new OverheadModel();
         $sellerdropship = new SellerDropship_Model;

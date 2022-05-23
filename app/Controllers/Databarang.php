@@ -8,6 +8,10 @@ class Databarang extends BaseController
 {
     public function index()
     {
+        $session = \Config\Services::session();
+        if ($session->get('id') == FALSE) {
+            return redirect()->to('/login');
+        }
         $databarang = new DataBarang_Model;
         if ($this->request->getGet('keyword')) {
             $keyword = $this->request->getGet('keyword');

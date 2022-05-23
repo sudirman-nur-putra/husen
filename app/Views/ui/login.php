@@ -33,7 +33,7 @@
       <div class="col-md">
         <div class="welcome w-100 h-100 d-flex flex-column justify-content-center align-items-center">
           <h6 class="display-6">Welcome back to Husen Variasi</h1>
-            <img src="/img/login_background.png" alt="Login" width="350" height="330" class="pt-3">
+            <img src="/img/login_background.png" alt="Login" width="350" height="335" class="pt-3">
         </div>
       </div>
       <div class="col-md">

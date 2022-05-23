@@ -12,10 +12,15 @@ class Pemasukan extends BaseController
 
     public function index()
     {
+        $session = \Config\Services::session();
+        if ($session->get('id') == FALSE) {
+            return redirect()->to('/login');
+        }
         $transaksireseller = new Pemasukan_Model();
         $transaksidropship = new PemasukanDropshipModel();
         $data['transaksidropship'] = $transaksidropship->getTransaksiDropship();
         $data['transaksireseller'] = $transaksireseller->getTransaksiReseller();
+
         return view('ui/pemasukan', $data);
     }
 

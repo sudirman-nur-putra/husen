@@ -55,6 +55,9 @@
           <a href="" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Data Barang</span>
           </a>
+          <a href="<?= base_url(); ?>/login/logout" class="list-group-item list-group-item-action py-2 ripple">
+            <i class="fas fa-sign-out fa-fw me-3"></i><span>Logout</span>
+          </a>
         </div>
       </div>
       <div id="app" class="col-md-10 ps-3">

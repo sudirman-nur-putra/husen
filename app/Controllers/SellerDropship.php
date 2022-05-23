@@ -8,6 +8,10 @@ class SellerDropship extends BaseController
 {
     public function index()
     {
+        $session = \Config\Services::session();
+        if ($session->get('id') == FALSE) {
+            return redirect()->to('/login');
+        }
         $sellerdropship = new SellerDropship_Model;
         $data['reseller'] = $sellerdropship->getReseller();
         $data['dropshipper'] = $sellerdropship->getDropshipper();
