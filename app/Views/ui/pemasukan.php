@@ -51,137 +51,7 @@
       </div>
       <div id="app" class="col-md-10 ps-3">
         <div class="container mb-4 px-0">
-          <div class="row">
-            <div class="col-md-6">
-              <!-- PEMASUKAN BOX -->
-              <div class="card rounded-6 pemasukan-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                    </div>
-                    <div class="text-start">
-                      <p class="mb-0">Pemasukan dari Reseller</p>
-                      <h3>Rp123.123.123</h3>
-                    </div>
-                    <div class="dropdown align-self-top">
-                      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                        Bulan ini
-                      </div>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                        <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- BARANG TERJUAL BOX -->
-              <div class="card rounded-6 pemasukan-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                    </div>
-                    <div class="text-start">
-                      <p class="mb-0">Pemasukan dari Dropshipper</p>
-                      <h3>Rp123.123.123</h3>
-                    </div>
-                    <div class="dropdown align-self-top">
-                      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                        Bulan ini
-                      </div>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                        <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-md-6">
-              <!-- PEMASUKAN BOX -->
-              <div class="card rounded-6 barang-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-shopping-bag fa-3x"></i>
-                    </div>
-                    <div class="text-start">
-                      <p class="mb-0">Pemasukan dari Shopee</p>
-                      <h3>Rp123.123.123</h3>
-                    </div>
-                    <div class="dropdown align-self-top">
-                      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                        Minggu ini
-                      </div>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                        <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- BARANG TERJUAL BOX -->
-              <div class="card rounded-6 barang-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-shopping-bag fa-3x"></i>
-                    </div>
-                    <div class="text-start">
-                      <p class="mb-0">Pemasukan dari Lazada</p>
-                      <h3>Rp123.123.123</h3>
-                    </div>
-                    <div class="dropdown align-self-top">
-                      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                        Bulan ini
-                      </div>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                        <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-md-6">
-              <!-- PEMASUKAN BOX -->
-              <div class="card rounded-6 keuntungan-color">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between px-md-1">
-                    <div class="align-self-center">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                    </div>
-                    <div class="text-start">
-                      <p class="mb-0">Total Pemasukan</p>
-                      <h3>Rp123.123.123</h3>
-                    </div>
-                    <div class="dropdown align-self-top">
-                      <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                        Minggu ini
-                      </div>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                        <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div class="card my-4 rounded-6">
             <div class="card-header d-flex justify-content-between py-3">
               <h5 class="mb-0 align-self-center">
@@ -215,7 +85,7 @@
                         <td><?= $row['jumlah_barang'] ?></td>
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['total_pembelian'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pemasukan/deletetransaksireseller/<?= $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
@@ -262,7 +132,7 @@
                         <td><?= $row['modal'] ?></td>
                         <td><?= $row['marketplace'] ?></td>
                         <td><?= $row['status'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pemasukan/deletetransaksidropship/<?= $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

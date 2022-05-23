@@ -9,11 +9,6 @@ use App\Models\PemasukanDropshipModel;
 
 class Pemasukan extends BaseController
 {
-    public function __construct()
-    {
-        //$this->PemasukanModel = new Pemasukan_Model();
-        //$this->PemasukanDropshipModel = new PemasukanDropshipModel();
-    }
 
     public function index()
     {
@@ -30,7 +25,6 @@ class Pemasukan extends BaseController
         $databarang = new DataBarang_Model();
         $data['reseller'] = $sellerdropship->getReseller();
         $data['barang'] = $databarang->fetch_data();
-        //$data['dropshipper'] = $sellerdropship->getDropshipper();
         return view('ui/form_reseller', $data);
     }
 
@@ -38,7 +32,6 @@ class Pemasukan extends BaseController
     {
         $sellerdropship = new SellerDropship_Model;
         $databarang = new DataBarang_Model();
-        //$data['reseller'] = $sellerdropship->getReseller();
         $data['dropshipper'] = $sellerdropship->getDropshipper();
         $data['barang'] = $databarang->fetch_data();
         return view('ui/form_dropshipper', $data);
@@ -74,6 +67,19 @@ class Pemasukan extends BaseController
         ];
         $pemasukandropship->save($data);
         return redirect()->to('/pemasukan');
-        //dd($this->request->getVar());
+    }
+
+    public function deletetransaksireseller($id)
+    {
+        $transaksireseller = new Pemasukan_Model();
+        $transaksireseller->delete($id);
+        return redirect()->to('/pemasukan');
+    }
+
+    public function deletetransaksidropship($id)
+    {
+        $transaksidropship = new PemasukanDropshipModel();
+        $transaksidropship->delete($id);
+        return redirect()->to('/pemasukan');
     }
 }

@@ -27,35 +27,35 @@
 </head>
 
 <body>
-  <div class="mx-auto" style="width: 200px;">
-    <div class="container-fluid px-0 mx-0">
-      <div class="row">
-        <div class="col-md">
-          <div class="welcome w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-            <h6 class="display-6">Welcome back to Husen Variasi</h1>
-              <img src="/img/login_background.png" alt="Login" width="350" height="300" class="pt-3">
-          </div>
+
+  <div class="container-fluid px-0 mx-0">
+    <div class="row">
+      <div class="col-md">
+        <div class="welcome w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+          <h6 class="display-6">Welcome back to Husen Variasi</h1>
+            <img src="/img/login_background.png" alt="Login" width="350" height="330" class="pt-3">
         </div>
-        <div class="col-md">
-          <form class="login w-100 h-100" method="post" action="<?= base_url() . '/login/masuk' ?>">
-            <h6 class="display-6">Login</h1>
-              <div class="form-outline my-3 w-100 bg-light border rounded-3">
-                <input type="email" id="form12" class="form-control form-control-lg" name="email" required="Jangan dibiarkan kosong" />
-                <label class="form-label" for="form12">Username</label>
-              </div>
-              <div class="form-outline my-3 w-100 bg-light border rounded-3">
-                <input type="password" id="typePassword" class="form-control form-control-lg" name="password" required="Jangan dibiarkan kosong" />
-                <label class="form-label" for="typePassword">Password</label>
-              </div>
-              <?php if (isset($error)) {
-                echo $error;
-              }; ?>
-              <input type="submit" class="btn btn-primary my-3 w-100" name="" value="Login">
-          </form>
-        </div>
+      </div>
+      <div class="col-md">
+        <form class="login w-100 h-100" method="post" action="<?= base_url() . '/login/masuk' ?>">
+          <h6 class="display-6">Login</h1>
+            <div class="form-outline my-3 w-100 bg-light border rounded-3">
+              <input type="email" id="form12" class="form-control form-control-lg" name="email" required="Jangan dibiarkan kosong" />
+              <label class="form-label" for="form12">Username</label>
+            </div>
+            <div class="form-outline my-3 w-100 bg-light border rounded-3">
+              <input type="password" id="typePassword" class="form-control form-control-lg" name="password" required="Jangan dibiarkan kosong" />
+              <label class="form-label" for="typePassword">Password</label>
+            </div>
+            <?php if (isset($error)) {
+              echo $error;
+            }; ?>
+            <input type="submit" class="btn btn-primary my-3 w-100" name="" value="Login">
+        </form>
       </div>
     </div>
   </div>
+
   <script type="text/javascript" src="script.js"></script>
 </body>
 

@@ -49,125 +49,13 @@
       </div>
       <div id="app" class="col-md-10 ps-3">
         <div class="container mb-4 px-0">
-          <div class="row">
-            <div class="col-md-6">
-              <!-- TOTAL GAJI BOX -->
-              <div class="card  rounded-6 pengeluaran-color">
-                <div class="card-body">
-                  <div class="d-flex flex-column">
-                    <div class="d-flex flex-row justify-content-between">
-                      <p class="mb-0">Total Beban Gaji</p>
-                      <div class="dropdown align-self-top">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                      <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- BIAYA OVERHEAD BOX -->
-              <div class="card  rounded-6 pengeluaran-color">
-                <div class="card-body">
-                  <div class="d-flex flex-column">
-                    <div class="d-flex flex-row justify-content-between">
-                      <p class="mb-0">Biaya Overhead</p>
-                      <div class="dropdown align-self-top">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                      <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row pt-4">
-            <div class="col-md-6">
-              <!-- TOTAL PENGELUARAN BOX -->
-              <div class="card  rounded-6 keuntungan-color">
-                <div class="card-body">
-                  <div class="d-flex flex-column">
-                    <div class="d-flex flex-row justify-content-between">
-                      <p class="mb-0">Total Pengeluaran</p>
-                      <div class="dropdown align-self-top">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                      <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <!-- GAJI ADMIN BOX -->
-              <div class="card  rounded-6 keuntungan-color">
-                <div class="card-body">
-                  <div class="d-flex flex-column">
-                    <div class="d-flex flex-row justify-content-between">
-                      <p class="mb-0">Total Gaji Admin</p>
-                      <div class="dropdown align-self-top">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
-                        </div>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#">Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="#">Hari ini</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
-                      <i class="fas fa-dollar-sign fa-3x"></i>
-                      <div class="text-end ps-3">
-                        <h3>Rp123.123.123</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- TABEL GAJI DROPSHIPPER -->
           <div class="card my-4">
             <div class="card-header d-flex justify-content-between py-3">
               <h5 class="mb-0 align-self-center">
                 <strong>Informasi Gaji Dropshipper</strong>
               </h5>
-              <div class="dropdown align-self-center">
+              <!-- <div class="dropdown align-self-center">
                 <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
                   Bulan: Februari
                 </div>
@@ -175,7 +63,7 @@
                   <li><a class="dropdown-item" href="#">Januari</a></li>
                   <li><a class="dropdown-item" href="#">Maret</a></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -233,7 +121,7 @@
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['jumlah_beli'] ?></td>
                         <td><?= $row['total_harga'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pengeluaran/deletepembelianbarang/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
@@ -269,7 +157,7 @@
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['keterangan'] ?></td>
                         <td><?= $row['jumlah_pengeluaran'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pengeluaran/deleteoverhead/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

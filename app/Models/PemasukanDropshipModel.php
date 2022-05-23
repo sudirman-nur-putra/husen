@@ -8,6 +8,7 @@ class PemasukanDropshipModel extends Model
 {
     protected $table = 'transaksi_dropshipper';
     protected $allowedFields = [
+        'id',
         'id_user',
         'id_barang',
         'tanggal',
@@ -25,7 +26,7 @@ class PemasukanDropshipModel extends Model
     }
     public function getTransaksiDropship()
     {
-        $result  = $this->query("SELECT user.nama, transaksi_dropshipper.tanggal, transaksi_dropshipper.no_resi, barang.nama_barang, transaksi_dropshipper.jumlah_barang, transaksi_dropshipper.harga_jual, transaksi_dropshipper.modal,
+        $result  = $this->query("SELECT transaksi_dropshipper.id, user.nama, transaksi_dropshipper.tanggal, transaksi_dropshipper.no_resi, barang.nama_barang, transaksi_dropshipper.jumlah_barang, transaksi_dropshipper.harga_jual, transaksi_dropshipper.modal,
         transaksi_dropshipper.marketplace, transaksi_dropshipper.status
         FROM  transaksi_dropshipper
         INNER JOIN barang ON transaksi_dropshipper.id_barang = barang.id

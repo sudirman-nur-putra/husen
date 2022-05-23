@@ -59,4 +59,18 @@ class Pengeluaran extends BaseController
         $biayaoverhead->save($data);
         return redirect()->to('/pengeluaran');
     }
+
+    public function deletepembelianbarang($id)
+    {
+        $belibarang = new PembelianBarangModel();
+        $belibarang->delete($id);
+        return redirect()->to('/pengeluaran');
+    }
+
+    public function deleteoverhead($id)
+    {
+        $overhead = new OverheadModel();
+        $overhead->delete($id);
+        return redirect()->to('/pengeluaran');
+    }
 }

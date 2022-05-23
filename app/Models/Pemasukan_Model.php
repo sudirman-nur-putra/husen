@@ -8,6 +8,7 @@ class Pemasukan_Model extends Model
 {
     protected $table = 'transaksi_reseller';
     protected $allowedFields = [
+        'id',
         'id_user',
         'id_barang',
         'tanggal',
@@ -22,7 +23,7 @@ class Pemasukan_Model extends Model
     }
     public function getTransaksiReseller()
     {
-        $result  = $this->query("SELECT user.nama, transaksi_reseller.tanggal, barang.nama_barang, transaksi_reseller.jumlah_barang, transaksi_reseller.harga, transaksi_reseller.total_pembelian 
+        $result  = $this->query("SELECT transaksi_reseller.id, user.nama,  transaksi_reseller.tanggal, barang.nama_barang, transaksi_reseller.jumlah_barang, transaksi_reseller.harga, transaksi_reseller.total_pembelian 
         FROM  transaksi_reseller
         INNER JOIN barang ON transaksi_reseller.id_barang = barang.id
         INNER JOIN user ON transaksi_reseller.id_user = user.id;");

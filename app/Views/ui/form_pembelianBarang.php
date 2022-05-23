@@ -63,7 +63,7 @@
 				</div>
 				<h6 class="m-0">Harga</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input name="harga" type="text" class="form-control form-control-md" />
+					<input name="harga" type="number" class="form-control form-control-md" />
 				</div>
 				<button type="submit" class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>
