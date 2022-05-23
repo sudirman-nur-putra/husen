@@ -132,7 +132,7 @@
                         <td><?= $row['modal'] ?></td>
                         <td><?= $row['marketplace'] ?></td>
                         <td><?= $row['status'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pemasukan/deletetransaksidropship/<?= $row['id'] ?>" class="btn btn-danger">Delete</a></td>
+                        <td><a href="/pemasukan/edittransaksidropship/<?= $row['id'] ?>" class="btn btn-success">Edit</a> <a href="/pemasukan/deletetransaksidropship/<?= $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

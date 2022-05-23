@@ -33,4 +33,10 @@ class PemasukanDropshipModel extends Model
         INNER JOIN user ON transaksi_dropshipper.id_user = user.id;");
         return $result->getResultArray();
     }
+
+    public function getTransDropship($id)
+    {
+        $result = $this->query("SELECT * FROM transaksi_dropshipper WHERE id = '$id'");
+        return $result->getResultArray();
+    }
 }

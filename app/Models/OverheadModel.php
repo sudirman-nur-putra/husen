@@ -17,4 +17,10 @@ class OverheadModel extends Model
     {
         return $this->findAll();
     }
+
+    public function getOverhead($id)
+    {
+        $result = $this->query("SELECT * FROM overhead WHERE id = '$id'");
+        return $result->getResultArray();
+    }
 }

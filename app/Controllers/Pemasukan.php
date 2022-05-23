@@ -110,4 +110,36 @@ class Pemasukan extends BaseController
         $pemasukanreseller->save($data);
         return redirect()->to('/pemasukan');
     }
+
+    public function edittransaksidropship($id)
+    {
+        $sellerdropship = new SellerDropship_Model();
+        $databarang = new DataBarang_Model();
+        $transaksidropship = new PemasukanDropshipModel();
+        $data['dropshipper'] = $sellerdropship->getDropshipper();
+        $data['barang'] = $databarang->fetch_data();
+        $data['transaksidropship'] = $transaksidropship->getTransDropship($id);
+        //dd($data);
+        return view('ui/edittransdropship', $data);
+    }
+
+    public function updatetransaksidropship($id)
+    {
+        $pemasukandropship = new PemasukanDropshipModel();
+        $data = [
+            'id' => $id,
+            'id_user' => $this->request->getPost('namadropship'),
+            'id_barang' => $this->request->getPost('namaproduk'),
+            'tanggal' => $this->request->getPost('tanggal'),
+            'modal' => $this->request->getPost('modal'),
+            'jumlah_barang' => $this->request->getPost('jumlah'),
+            'harga_jual' => $this->request->getPost('hargajual'),
+            'no_resi' => $this->request->getPost('noresi'),
+            'status_packing' => $this->request->getPost('packing'),
+            'marketplace' => $this->request->getPost('marketplace'),
+            'status' => $this->request->getPost('status'),
+        ];
+        $pemasukandropship->save($data);
+        return redirect()->to('/pemasukan');
+    }
 }

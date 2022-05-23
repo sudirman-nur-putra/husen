@@ -28,4 +28,9 @@ class PembelianBarangModel extends Model
         ON pembelian_barang.id_barang = barang.id;");
         return $result->getResultArray();
     }
+    public function getPembelianBarang($id)
+    {
+        $result = $this->query("SELECT * FROM pembelian_barang WHERE id = '$id'");
+        return $result->getResultArray();
+    }
 }

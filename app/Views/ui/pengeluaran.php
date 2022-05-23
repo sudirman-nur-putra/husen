@@ -121,7 +121,7 @@
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['jumlah_beli'] ?></td>
                         <td><?= $row['total_harga'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pengeluaran/deletepembelianbarang/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
+                        <td><a href="/pengeluaran/editpembelianbarang/<?= $row['id']; ?>" class="btn btn-success">Edit</a> <a href="/pengeluaran/deletepembelianbarang/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
@@ -157,7 +157,7 @@
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['keterangan'] ?></td>
                         <td><?= $row['jumlah_pengeluaran'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pengeluaran/deleteoverhead/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
+                        <td><a href="/pengeluaran/editoverhead/<?= $row['id']; ?>" class="btn btn-success">Edit</a> <a href="/pengeluaran/deleteoverhead/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
