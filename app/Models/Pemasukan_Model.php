@@ -29,4 +29,10 @@ class Pemasukan_Model extends Model
         INNER JOIN user ON transaksi_reseller.id_user = user.id;");
         return $result->getResultArray();
     }
+
+    public function getTransReseller($id)
+    {
+        $result = $this->query("SELECT * FROM transaksi_reseller WHERE id = '$id'");
+        return $result->getResultArray();
+    }
 }

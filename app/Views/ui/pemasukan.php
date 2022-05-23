@@ -85,7 +85,7 @@
                         <td><?= $row['jumlah_barang'] ?></td>
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['total_pembelian'] ?></td>
-                        <td><a href="" class="btn btn-success">Edit</a> <a href="/pemasukan/deletetransaksireseller/<?= $row['id'] ?>" class="btn btn-danger">Delete</a></td>
+                        <td><a href="/pemasukan/edittransaksireseller/<?= $row['id'] ?>" class="btn btn-success">Edit</a> <a href="/pemasukan/deletetransaksireseller/<?= $row['id'] ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
