@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\SellerDropship_Model;
+
 class SellerDropship extends BaseController
 {
     public function index()
@@ -13,7 +15,8 @@ class SellerDropship extends BaseController
         $data['sum'] = $sellerdropship->sumDropshipper();
         return view('ui/seller_dropship', $data);
     }
-    public function totalgajitahun(){
+    public function totalgajitahun()
+    {
         $sellerdropshiptahun = new SellerDropship_Model;
         $data['reseller'] = $sellerdropshiptahun->getReseller();
         $data['dropshipper'] = $sellerdropshiptahun->getDropshipper();
@@ -21,8 +24,9 @@ class SellerDropship extends BaseController
         $data['sumtahun'] = $sellerdropshiptahun->sumDropshipperTahun();
         return view('ui/seller_dropshiptahun', $data);
     }
-    
-    public function totalgajihari(){
+
+    public function totalgajihari()
+    {
         $sellerdropshiphari = new SellerDropship_Model;
         $data['reseller'] = $sellerdropshiphari->getReseller();
         $data['dropshipper'] = $sellerdropshiphari->getDropshipper();
@@ -30,33 +34,36 @@ class SellerDropship extends BaseController
         $data['sumhari'] = $sellerdropshiphari->sumDropshipperHari();
         return view('ui/seller_dropshiphari', $data);
     }
-    
-    public function formreseller(){
+
+    public function formreseller()
+    {
         return view('ui/form_dataReseller');
     }
-    public function formdropshipper(){
+    public function formdropshipper()
+    {
         return view('ui/form_dataDropship');
     }
 
-    public function tambahreseller(){
+    public function tambahreseller()
+    {
         $sellerdropship = new SellerDropship_Model;
-        $data =[
+        $data = [
             'nama' => $this->request->getPost('nama'),
             'nomor_hp' => $this->request->getPost('nomor_hp'),
             'level' => $this->request->getPost('level'),
         ];
         $sellerdropship->save($data);
-        return redirect()->to(base_url('seller_dropship'))->with('status','Reseller Berhasil Ditambahkan');
+        return redirect()->to(base_url('seller_dropship'))->with('status', 'Reseller Berhasil Ditambahkan');
     }
-    public function tambahdropshipper(){
+    public function tambahdropshipper()
+    {
         $sellerdropship = new SellerDropship_Model;
-        $data =[
+        $data = [
             'nama' => $this->request->getPost('nama'),
-            'keuntungan' => $this->request->getPost('keuntungan'),
+            'nomor_hp' => $this->request->getPost('no_hp'),
             'level' => $this->request->getPost('level'),
         ];
         $sellerdropship->save($data);
-        return redirect()->to(base_url('seller_dropship'))->with('status','Dropshipper Berhasil Ditambahkan');
+        return redirect()->to(base_url('seller_dropship'))->with('status', 'Dropshipper Berhasil Ditambahkan');
     }
-
 }

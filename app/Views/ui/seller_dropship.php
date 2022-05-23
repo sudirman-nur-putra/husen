@@ -151,6 +151,7 @@
                   <thead>
                     <tr>
                       <th scope="col">Nama Dropshipper</th>
+                      <th scope="col">No HP</th>
                       <th scope="col">Keuntungan</th>
                     </tr>
                   </thead>
@@ -158,6 +159,7 @@
                     <?php foreach ($dropshipper as $row) : ?>
                       <tr>
                         <td><?= $row['nama'] ?></td>
+                        <td><?= $row['nomor_hp'] ?></td>
                         <td><?= $row['keuntungan'] ?></td>
                       </tr>
                     <?php endforeach; ?>

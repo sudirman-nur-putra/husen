@@ -45,9 +45,9 @@
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <input type="text" name="nama" class="form-control form-control-md" />
         </div>
-        <h6 class="m-0">Total Keuntungan</h6>
+        <h6 class="m-0">No HP</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="text" name="keuntungan" class="form-control form-control-md" />
+          <input type="text" name="no_hp" class="form-control form-control-md" />
         </div>
         <input type="hidden" name="level" value="Dropshipper" />
         <button type="submit" class="btn btn-primary">
