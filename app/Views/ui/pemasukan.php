@@ -16,7 +16,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/asset/styles.css">
 
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
@@ -211,10 +211,11 @@
                       <tr>
                         <td><?= $row['nama'] ?></td>
                         <td><?= $row['tanggal'] ?></td>
-                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['nama_barang'] ?></td>
                         <td><?= $row['jumlah_barang'] ?></td>
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['total_pembelian'] ?></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
@@ -255,12 +256,13 @@
                         <td><?= $row['nama'] ?></td>
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['no_resi'] ?></td>
-                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['nama_barang'] ?></td>
                         <td><?= $row['jumlah_barang'] ?></td>
                         <td><?= $row['harga_jual'] ?></td>
                         <td><?= $row['modal'] ?></td>
                         <td><?= $row['marketplace'] ?></td>
                         <td><?= $row['status'] ?></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

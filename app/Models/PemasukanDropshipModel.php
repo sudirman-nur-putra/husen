@@ -25,7 +25,7 @@ class PemasukanDropshipModel extends Model
     }
     public function getTransaksiDropship()
     {
-        $result  = $this->query("SELECT user.nama, transaksi_dropshipper.tanggal, transaksi_dropshipper.no_resi, barang.nama, transaksi_dropshipper.jumlah_barang, transaksi_dropshipper.harga_jual, transaksi_dropshipper.modal,
+        $result  = $this->query("SELECT user.nama, transaksi_dropshipper.tanggal, transaksi_dropshipper.no_resi, barang.nama_barang, transaksi_dropshipper.jumlah_barang, transaksi_dropshipper.harga_jual, transaksi_dropshipper.modal,
         transaksi_dropshipper.marketplace, transaksi_dropshipper.status
         FROM  transaksi_dropshipper
         INNER JOIN barang ON transaksi_dropshipper.id_barang = barang.id

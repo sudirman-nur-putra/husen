@@ -16,7 +16,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/asset/styles.css">
 
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
@@ -93,7 +93,7 @@
                 <tbody>
                   <?php foreach ($fetch_data as $row) : ?>
                     <tr>
-                      <td><?= $row['nama'] ?></td>
+                      <td><?= $row['nama_barang'] ?></td>
                       <td><?= $row['harga_beli'] ?></td>
                       <td><?= $row['harga_jual_dropshipper'] ?></td>
                       <td><?= $row['harga_jual_reseller'] ?></td>

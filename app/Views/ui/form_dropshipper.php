@@ -16,7 +16,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/asset/styles.css">
 
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
@@ -64,7 +64,7 @@
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <select name="produk" class="form-select" aria-label="Default select example">
             <?php foreach ($barang as $row) : ?>
-              <option value="<?= $row['id'] ?>" ?><?= $row['nama'] ?></option>
+              <option value="<?= $row['id'] ?>" ?><?= $row['nama_barang'] ?></option>
             <?php endforeach; ?>
           </select>
         </div>

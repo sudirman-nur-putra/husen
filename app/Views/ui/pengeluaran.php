@@ -16,7 +16,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/asset/styles.css">
 
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
@@ -182,17 +182,17 @@
                 <table class="table table-hover text-nowrap">
                   <thead>
                     <tr>
-                      <th scope="col">Nama</th>
-                      <th scope="col">Gaji</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">Nama Dropshipper</th>
+                      <th scope="col">Keuntungan</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Rp123.123.123</td>
-                      <td></td>
-                    </tr>
+                    <?php foreach ($dropshipper as $row) : ?>
+                      <tr>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['keuntungan'] ?></td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>
@@ -220,6 +220,8 @@
                       <th scope="col">Jumlah</th>
                       <th scope="col">Harga</th>
                       <th scope="col">Total</th>
+                      <th scope="col">Aksi</th>
+
                     </tr>
                   </thead>
                   <tbody>
@@ -227,10 +229,11 @@
                       <tr>
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['nama_toko'] ?></td>
-                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['nama_barang'] ?></td>
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['jumlah_beli'] ?></td>
                         <td><?= $row['total_harga'] ?></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
@@ -257,6 +260,7 @@
                       <th scope="col">Tanggal</th>
                       <th scope="col">Keterangan</th>
                       <th scope="col">Jumlah Pengeluaran</th>
+                      <th scope="col">Aksi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -265,6 +269,7 @@
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['keterangan'] ?></td>
                         <td><?= $row['jumlah_pengeluaran'] ?></td>
+                        <td><a href="" class="btn btn-success">Edit</a> <a href="" class="btn btn-danger">Delete</a></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

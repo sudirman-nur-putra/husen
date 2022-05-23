@@ -16,7 +16,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/asset/styles.css">
 
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
@@ -35,17 +35,17 @@
           <h4 class="list-group-item p-4 ">
             HUSEN VARIASI
           </h4>
-          <a href="<?= base_url();?>/home" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
+          <a href="<?= base_url(); ?>/home" class="list-group-item list-group-item-action py-2 ripple active" aria-current="true">
             <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
           </a>
-          <a href="<?= base_url();?>/pemasukan" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url(); ?>/pemasukan" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-area fa-fw me-3"></i><span>Pemasukan</span>
           </a>
-          <a href="<?= base_url();?>/pengeluaran" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url(); ?>/pengeluaran" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-lock fa-fw me-3"></i><span>Pengeluaran</span></a>
-          <a href="<?= base_url();?>/SellerDropship" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url(); ?>/SellerDropship" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-line fa-fw me-3"></i><span>Reseller & Dropship</span></a>
-          <a href="<?= base_url();?>/databarang" class="list-group-item list-group-item-action py-2 ripple">
+          <a href="<?= base_url(); ?>/databarang" class="list-group-item list-group-item-action py-2 ripple">
             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Data Barang</span>
           </a>
         </div>
@@ -63,11 +63,11 @@
                       <p class="mb-0">Total Pemasukan</p>
                       <div class="dropdown align-self-top">
                         <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          <p id="text_pemasukan">Bulan ini</p> 
+                          <p id="text_pemasukan">Bulan ini</p>
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="#" onclick="pemasukanTahun()" >Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="#" onclick="pemasukanBulan()" >Bulan ini</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="pemasukanTahun()">Tahun ini</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="pemasukanBulan()">Bulan ini</a></li>
                           <li><a class="dropdown-item" href="#" onclick="pemasukanHari()">Hari ini</a></li>
                         </ul>
                       </div>
@@ -298,15 +298,15 @@
             </h5>
             <div class="dropdown align-self-top">
               <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                <p id="text_pemasukan">Pilih Tahun</p> 
+                <p id="text_pemasukan">Pilih Tahun</p>
               </div>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <?php
                 $date = date("Y");
-                for ($i = $date; $i >= $date-5 ; $i-- ) {
+                for ($i = $date; $i >= $date - 5; $i--) {
                 ?>
-                <li><a class="dropdown-item" href="<?= base_url().'/index.php/home/index/barang/'.$i; ?>"><?= "Tahun ".$i ?></a></li>
-                <?php 
+                  <li><a class="dropdown-item" href="<?= base_url() . '/index.php/home/index/barang/' . $i; ?>"><?= "Tahun " . $i ?></a></li>
+                <?php
                 }
                 ?>
               </ul>
@@ -324,15 +324,15 @@
             </h5>
             <div class="dropdown align-self-top">
               <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                <p id="text_pemasukan">Pilih Tahun</p> 
+                <p id="text_pemasukan">Pilih Tahun</p>
               </div>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <?php
                 $date = date("Y");
-                for ($i = $date; $i >= $date-5 ; $i-- ) {
+                for ($i = $date; $i >= $date - 5; $i--) {
                 ?>
-                <li><a class="dropdown-item" href="<?= base_url().'/index.php/home/index/pemasukan/'.$i; ?>"><?= "Tahun ".$i ?></a></li>
-                <?php 
+                  <li><a class="dropdown-item" href="<?= base_url() . '/index.php/home/index/pemasukan/' . $i; ?>"><?= "Tahun " . $i ?></a></li>
+                <?php
                 }
                 ?>
               </ul>
@@ -350,15 +350,15 @@
             </h5>
             <div class="dropdown align-self-top">
               <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                <p id="text_pemasukan">Pilih Tahun</p> 
+                <p id="text_pemasukan">Pilih Tahun</p>
               </div>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <?php
                 $date = date("Y");
-                for ($i = $date; $i >= $date-5 ; $i-- ) {
+                for ($i = $date; $i >= $date - 5; $i--) {
                 ?>
-                <li><a class="dropdown-item" href="<?= base_url().'/index.php/home/index/pengeluaran/'.$i; ?>"><?= "Tahun ".$i ?></a></li>
-                <?php 
+                  <li><a class="dropdown-item" href="<?= base_url() . '/index.php/home/index/pengeluaran/' . $i; ?>"><?= "Tahun " . $i ?></a></li>
+                <?php
                 }
                 ?>
               </ul>
@@ -372,8 +372,8 @@
     </div>
   </div>
 
-<!-- DATA UNTUK CHART -->
-  <?php 
+  <!-- DATA UNTUK CHART -->
+  <?php
 
   $Januari1 = 0;
   $Februari1 = 0;
@@ -390,7 +390,7 @@
 
   // Menghitung Jumlah Barang Tahun ini
   foreach ($getBarDropTahunBulan as $getBarDropTahunBulan) {
-    $tgl = $getBarDropTahunBulan['tanggal']; 
+    $tgl = $getBarDropTahunBulan['tanggal'];
     $jml_barang = $getBarDropTahunBulan['barang'];
     $pecah = explode("-", $tgl);
     $tahun1 = $pecah[0];
@@ -432,8 +432,8 @@
       $Desember1 = $jml_barang;
     }
   }
-   foreach ($getBarResTahunBulan as $getBarResTahunBulan) {
-    $tgl = $getBarResTahunBulan['tanggal']; 
+  foreach ($getBarResTahunBulan as $getBarResTahunBulan) {
+    $tgl = $getBarResTahunBulan['tanggal'];
     $jml_barang = $getBarResTahunBulan['barang'];
     $pecah = explode("-", $tgl);
     $tahun1 = $pecah[0];
@@ -451,7 +451,7 @@
       $April1 = $jml_barang + $April1;
     }
     if ($pecah[1] == '05') {
-      $Mei1 = $jml_barang + $Mei1 ;
+      $Mei1 = $jml_barang + $Mei1;
     }
     if ($pecah[1] == '06') {
       $Juni1 = $jml_barang + $Juni1;
@@ -476,7 +476,7 @@
     }
   }
 
-// CHART PENDAPATAN DROPSHIPPER TAHUN PERBULAN
+  // CHART PENDAPATAN DROPSHIPPER TAHUN PERBULAN
   $Januari3 = 0;
   $Februari3 = 0;
   $Maret3 = 0;
@@ -492,7 +492,7 @@
 
   // Menghitung Jumlah Barang Tahun ini
   foreach ($getPenDropTahunBulan as $getPenDropTahunBulan) {
-    $tgl = $getPenDropTahunBulan['tanggal']; 
+    $tgl = $getPenDropTahunBulan['tanggal'];
     $nominal = $getPenDropTahunBulan['harga'];
     $pecah = explode("-", $tgl);
     $tahun3 = $pecah[0];
@@ -534,7 +534,7 @@
       $Desember3 = $nominal;
     }
   }
-// CHART PENDAPATAN RESELLER TAHUNAN PERBULAN
+  // CHART PENDAPATAN RESELLER TAHUNAN PERBULAN
   $Januari4 = 0;
   $Februari4 = 0;
   $Maret4 = 0;
@@ -550,7 +550,7 @@
 
   // Menghitung Jumlah Barang Tahun ini
   foreach ($getPenResTahunBulan as $getPenResTahunBulan) {
-    $tgl = $getPenResTahunBulan['tanggal']; 
+    $tgl = $getPenResTahunBulan['tanggal'];
     $nominal = $getPenResTahunBulan['harga'];
     $pecah = explode("-", $tgl);
     $tahun3 = $pecah[0];
@@ -610,7 +610,7 @@
 
   // Menghitung Jumlah Barang Tahun ini
   foreach ($getPengOverTahunBulan as $getPengOverTahunBulan) {
-    $tgl = $getPengOverTahunBulan['tanggal']; 
+    $tgl = $getPengOverTahunBulan['tanggal'];
     $nominal = $getPengOverTahunBulan['pengeluaran'];
     $pecah = explode("-", $tgl);
     $tahun4 = $pecah[0];
@@ -668,7 +668,7 @@
 
   // Menghitung Jumlah Barang Tahun ini
   foreach ($getPengPemTahunBulan as $getPengPemTahunBulan) {
-    $tgl = $getPengPemTahunBulan['tanggal']; 
+    $tgl = $getPengPemTahunBulan['tanggal'];
     $nominal = $getPengPemTahunBulan['pengeluaran'];
     $pecah = explode("-", $tgl);
     $tahun4 = $pecah[0];
@@ -710,7 +710,7 @@
       $Desember6 = $nominal;
     }
   }
-// CHART JUMLAH PENGELUARAN UNTUK GAJI TAHUN PERBULAN
+  // CHART JUMLAH PENGELUARAN UNTUK GAJI TAHUN PERBULAN
   $Januari7 = 0;
   $Februari7 = 0;
   $Maret7 = 0;
@@ -726,7 +726,7 @@
 
   // Menghitung Jumlah Barang Tahun ini
   foreach ($getPengGajiTahunBulan as $getPengGajiTahunBulan) {
-    $tgl = $getPengGajiTahunBulan['tanggal']; 
+    $tgl = $getPengGajiTahunBulan['tanggal'];
     $jml_barang = $getPengGajiTahunBulan['pengeluaran'];
     $pecah = explode("-", $tgl);
     $tahun4 = $pecah[0];
@@ -775,287 +775,280 @@
     // Graph
     // Pemasukan 
     function pemasukanHari() {
-    document.getElementById("pemasukan").innerHTML = 'Rp <?= $totpemh; ?>';
-    document.getElementById("text_pemasukan").innerHTML = 'Hari ini';
-        }
+      document.getElementById("pemasukan").innerHTML = 'Rp <?= $totpemh; ?>';
+      document.getElementById("text_pemasukan").innerHTML = 'Hari ini';
+    }
+
     function pemasukanBulan() {
-    document.getElementById("pemasukan").innerHTML = 'Rp <?= $totpemb; ?>';
-    document.getElementById("text_pemasukan").innerHTML = 'Bulan ini';
-        }
+      document.getElementById("pemasukan").innerHTML = 'Rp <?= $totpemb; ?>';
+      document.getElementById("text_pemasukan").innerHTML = 'Bulan ini';
+    }
+
     function pemasukanTahun() {
-    document.getElementById("pemasukan").innerHTML = 'Rp <?= $totpemt; ?>';
-    document.getElementById("text_pemasukan").innerHTML = 'Tahun ini';
-        }
+      document.getElementById("pemasukan").innerHTML = 'Rp <?= $totpemt; ?>';
+      document.getElementById("text_pemasukan").innerHTML = 'Tahun ini';
+    }
 
 
     // Barang Terjual
     function barangTerjualHari() {
-    document.getElementById("barangKeluar").innerHTML = '<?= $totbarh; ?>';
-    document.getElementById("text_barangKeluar").innerHTML = 'Hari ini';
-        }
+      document.getElementById("barangKeluar").innerHTML = '<?= $totbarh; ?>';
+      document.getElementById("text_barangKeluar").innerHTML = 'Hari ini';
+    }
+
     function barangTerjualBulan() {
-    console.log("Berhasil!");
-    document.getElementById("barangKeluar").innerHTML = '<?= $totbarb; ?>';
-    document.getElementById("text_barangKeluar").innerHTML = 'Bulan ini';
-        }
+      console.log("Berhasil!");
+      document.getElementById("barangKeluar").innerHTML = '<?= $totbarb; ?>';
+      document.getElementById("text_barangKeluar").innerHTML = 'Bulan ini';
+    }
+
     function barangTerjualTahun() {
-    document.getElementById("barangKeluar").innerHTML = "<?= $totbart; ?>";
-    document.getElementById("text_barangKeluar").innerHTML = 'Tahun ini';
-        }
+      document.getElementById("barangKeluar").innerHTML = "<?= $totbart; ?>";
+      document.getElementById("text_barangKeluar").innerHTML = 'Tahun ini';
+    }
 
 
     // Total Pengeluaran
     function totalPengeluaranHari() {
-    document.getElementById("pengeluaran").innerHTML = "Rp <?= $luarh; ?>";
-    document.getElementById("text_pengeluaran").innerHTML = 'Hari ini';
-        }
-    function totalPengeluaranBulan() {
-    document.getElementById("pengeluaran").innerHTML = "Rp <?= $luarb; ?>";
-    document.getElementById("text_pengeluaran").innerHTML = 'Bulan ini';
-        }
-    function totalPengeluaranTahun() {
-    document.getElementById("pengeluaran").innerHTML = "Rp <?= $luart ?>";
-    document.getElementById("text_pengeluaran").innerHTML = 'Tahun ini';
-        }
-
-
-function grafiktahunlalu(){
-    document.getElementById("text_grafik").innerHTML = 'Tahun sebelumnya';
-}
-
-function grafiktahunini(){
-    document.getElementById("text_grafik").innerHTML = 'Tahun ini';
-}
-
-var ctx = document.getElementById("myChart");
-
-var myChart = new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: [
-      "Januari",
-      "Februari",
-      "Maret",
-      "April",
-      "Mei",
-      "Juni",
-      "Juli",
-      "Agustus",
-      "September",
-      "Oktober",
-      "November",
-      "Desember",
-    ],
-    datasets: [
-      {
-        label: 'Grafik Penjualan Barang Tahun Ini',
-        data: [<?= $Januari1.",".$Februari1.",".$Maret1.",".$April1.",".$Mei1.",".$Juni1.",".$Juli1.",".$Agustus1.",".$September1.",".$Oktober1.",".$November1."".$Desember1; ?>],
-        backgroundColor: "blue",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: false,
-          },
-        },
-      ],
-    },
-    legend: {
-      display: false,
-    },
-  },
-});
-
-var pemasukan = document.getElementById("ChartPemasukan");
-
-var ChartPemasukan = new Chart(pemasukan, {
-  type: "bar",
-  data: {
-    labels: [
-      "Januari",
-      "Februari",
-      "Maret",
-      "April",
-      "Mei",
-      "Juni",
-      "Juli",
-      "Agustus",
-      "September",
-      "Oktober",
-      "November",
-      "Desember",
-    ],
-    datasets: [
-      {
-        label: 'Pemasukan dari Dropshipper',
-        data: [<?= $Januari3.",".$Februari3.",".$Maret3.",".$April3.",".$Mei3.",".$Juni3.",".$Juli3.",".$Agustus3.",".$September3.",".$Oktober3.",".$November3."".$Desember3; ?>],
-        backgroundColor: "red",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
-      {
-        label: 'pemasukan dari Reseller',
-        data: [<?= $Januari4.",".$Februari4.",".$Maret4.",".$April4.",".$Mei4.",".$Juni4.",".$Juli4.",".$Agustus4.",".$September4.",".$Oktober4.",".$November4."".$Desember4; ?>],
-        backgroundColor: "blue",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: false,
-          },
-        },
-      ],
-    },
-    legend: {
-      display: false,
-    },
-  },
-});
-
-var pengeluaran = document.getElementById("ChartPengeluaran");
-
-var ChartPengeluaran = new Chart(pengeluaran, {
-  type: "bar",
-  data: {
-    labels: [
-      "Januari",
-      "Februari",
-      "Maret",
-      "April",
-      "Mei",
-      "Juni",
-      "Juli",
-      "Agustus",
-      "September",
-      "Oktober",
-      "November",
-      "Desember",
-    ],
-    datasets: [
-      {
-        label: 'Pengeluaran Overhead',
-        data: [<?= $Januari5.",".$Februari5.",".$Maret5.",".$April5.",".$Mei5.",".$Juni5.",".$Juli5.",".$Agustus5.",".$September5.",".$Oktober5.",".$November5."".$Desember5; ?>],
-        backgroundColor: "red",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
-      {
-        label: 'Pengeluaran Pembeliann Barang',
-        data: [<?= $Januari6.",".$Februari6.",".$Maret6.",".$April6.",".$Mei6.",".$Juni6.",".$Juli6.",".$Agustus6.",".$September6.",".$Oktober6.",".$November6."".$Desember6; ?>],
-        backgroundColor: "blue",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
-      {
-        label: 'Pengeluaran Gaji Bulanan',
-        data: [<?= $Januari7.",".$Februari7.",".$Maret7.",".$April7.",".$Mei7.",".$Juni7.",".$Juli7.",".$Agustus7.",".$September7.",".$Oktober7.",".$November7."".$Desember7; ?>],
-        backgroundColor: "yellow",
-        hoverBackgroundColor: "green",
-        borderRadius: 5,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: false,
-          },
-        },
-      ],
-    },
-    legend: {
-      display: false,
-    },
-  },
-});
-
-
-
-let routes = {};
-let templates = {};
-
-let app_div = document.getElementById('app');
-
-function home() {
-    let div = document.createElement('div');
-    let link = document.createElement('a');
-    link.href = '#/about';
-    link.innerText = 'About';
-
-    div.innerHTML = '<h1>Home</h1>';
-    div.appendChild(link);
-
-    app_div.appendChild(div);
-};
-
-function about() {
-    let div = document.createElement('div');
-    let link = document.createElement('a');
-    link.href = '#/';
-    link.innerText = 'Home';
-
-    div.innerHTML = '<h1>About</h1>';
-    div.appendChild(link);
-
-    app_div.appendChild(div);
-};
-
-function route (path, template) {
-    if (typeof template === 'function') {
-        return routes[path] = template;
+      document.getElementById("pengeluaran").innerHTML = "Rp <?= $luarh; ?>";
+      document.getElementById("text_pengeluaran").innerHTML = 'Hari ini';
     }
-    else if (typeof template === 'string') {
+
+    function totalPengeluaranBulan() {
+      document.getElementById("pengeluaran").innerHTML = "Rp <?= $luarb; ?>";
+      document.getElementById("text_pengeluaran").innerHTML = 'Bulan ini';
+    }
+
+    function totalPengeluaranTahun() {
+      document.getElementById("pengeluaran").innerHTML = "Rp <?= $luart ?>";
+      document.getElementById("text_pengeluaran").innerHTML = 'Tahun ini';
+    }
+
+
+    function grafiktahunlalu() {
+      document.getElementById("text_grafik").innerHTML = 'Tahun sebelumnya';
+    }
+
+    function grafiktahunini() {
+      document.getElementById("text_grafik").innerHTML = 'Tahun ini';
+    }
+
+    var ctx = document.getElementById("myChart");
+
+    var myChart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: [
+          "Januari",
+          "Februari",
+          "Maret",
+          "April",
+          "Mei",
+          "Juni",
+          "Juli",
+          "Agustus",
+          "September",
+          "Oktober",
+          "November",
+          "Desember",
+        ],
+        datasets: [{
+          label: 'Grafik Penjualan Barang Tahun Ini',
+          data: [<?= $Januari1 . "," . $Februari1 . "," . $Maret1 . "," . $April1 . "," . $Mei1 . "," . $Juni1 . "," . $Juli1 . "," . $Agustus1 . "," . $September1 . "," . $Oktober1 . "," . $November1 . "" . $Desember1; ?>],
+          backgroundColor: "blue",
+          hoverBackgroundColor: "green",
+          borderRadius: 5,
+        }, ],
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false,
+            },
+          }, ],
+        },
+        legend: {
+          display: false,
+        },
+      },
+    });
+
+    var pemasukan = document.getElementById("ChartPemasukan");
+
+    var ChartPemasukan = new Chart(pemasukan, {
+      type: "bar",
+      data: {
+        labels: [
+          "Januari",
+          "Februari",
+          "Maret",
+          "April",
+          "Mei",
+          "Juni",
+          "Juli",
+          "Agustus",
+          "September",
+          "Oktober",
+          "November",
+          "Desember",
+        ],
+        datasets: [{
+            label: 'Pemasukan dari Dropshipper',
+            data: [<?= $Januari3 . "," . $Februari3 . "," . $Maret3 . "," . $April3 . "," . $Mei3 . "," . $Juni3 . "," . $Juli3 . "," . $Agustus3 . "," . $September3 . "," . $Oktober3 . "," . $November3 . "" . $Desember3; ?>],
+            backgroundColor: "red",
+            hoverBackgroundColor: "green",
+            borderRadius: 5,
+          },
+          {
+            label: 'pemasukan dari Reseller',
+            data: [<?= $Januari4 . "," . $Februari4 . "," . $Maret4 . "," . $April4 . "," . $Mei4 . "," . $Juni4 . "," . $Juli4 . "," . $Agustus4 . "," . $September4 . "," . $Oktober4 . "," . $November4 . "" . $Desember4; ?>],
+            backgroundColor: "blue",
+            hoverBackgroundColor: "green",
+            borderRadius: 5,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false,
+            },
+          }, ],
+        },
+        legend: {
+          display: false,
+        },
+      },
+    });
+
+    var pengeluaran = document.getElementById("ChartPengeluaran");
+
+    var ChartPengeluaran = new Chart(pengeluaran, {
+      type: "bar",
+      data: {
+        labels: [
+          "Januari",
+          "Februari",
+          "Maret",
+          "April",
+          "Mei",
+          "Juni",
+          "Juli",
+          "Agustus",
+          "September",
+          "Oktober",
+          "November",
+          "Desember",
+        ],
+        datasets: [{
+            label: 'Pengeluaran Overhead',
+            data: [<?= $Januari5 . "," . $Februari5 . "," . $Maret5 . "," . $April5 . "," . $Mei5 . "," . $Juni5 . "," . $Juli5 . "," . $Agustus5 . "," . $September5 . "," . $Oktober5 . "," . $November5 . "" . $Desember5; ?>],
+            backgroundColor: "red",
+            hoverBackgroundColor: "green",
+            borderRadius: 5,
+          },
+          {
+            label: 'Pengeluaran Pembeliann Barang',
+            data: [<?= $Januari6 . "," . $Februari6 . "," . $Maret6 . "," . $April6 . "," . $Mei6 . "," . $Juni6 . "," . $Juli6 . "," . $Agustus6 . "," . $September6 . "," . $Oktober6 . "," . $November6 . "" . $Desember6; ?>],
+            backgroundColor: "blue",
+            hoverBackgroundColor: "green",
+            borderRadius: 5,
+          },
+          {
+            label: 'Pengeluaran Gaji Bulanan',
+            data: [<?= $Januari7 . "," . $Februari7 . "," . $Maret7 . "," . $April7 . "," . $Mei7 . "," . $Juni7 . "," . $Juli7 . "," . $Agustus7 . "," . $September7 . "," . $Oktober7 . "," . $November7 . "" . $Desember7; ?>],
+            backgroundColor: "yellow",
+            hoverBackgroundColor: "green",
+            borderRadius: 5,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: false,
+            },
+          }, ],
+        },
+        legend: {
+          display: false,
+        },
+      },
+    });
+
+
+
+    let routes = {};
+    let templates = {};
+
+    let app_div = document.getElementById('app');
+
+    function home() {
+      let div = document.createElement('div');
+      let link = document.createElement('a');
+      link.href = '#/about';
+      link.innerText = 'About';
+
+      div.innerHTML = '<h1>Home</h1>';
+      div.appendChild(link);
+
+      app_div.appendChild(div);
+    };
+
+    function about() {
+      let div = document.createElement('div');
+      let link = document.createElement('a');
+      link.href = '#/';
+      link.innerText = 'Home';
+
+      div.innerHTML = '<h1>About</h1>';
+      div.appendChild(link);
+
+      app_div.appendChild(div);
+    };
+
+    function route(path, template) {
+      if (typeof template === 'function') {
+        return routes[path] = template;
+      } else if (typeof template === 'string') {
         return routes[path] = templates[template];
-    } else {
+      } else {
         return;
+      };
     };
-};
 
-function template (name, templateFunction) {
-    return templates[name] = templateFunction;
-};
+    function template(name, templateFunction) {
+      return templates[name] = templateFunction;
+    };
 
-template('home', function(){
-    home();
-});
+    template('home', function() {
+      home();
+    });
 
-template('about', function(){
-    about();
-});
+    template('about', function() {
+      about();
+    });
 
-// route('/', 'home');
-// route('/about', 'about');
+    // route('/', 'home');
+    // route('/about', 'about');
 
-function resolveRoute(route) {
-    try {
+    function resolveRoute(route) {
+      try {
         return routes[route];
-    } catch (e) {
+      } catch (e) {
         throw new Error(`Route ${route} not found`);
+      };
     };
-};
 
-function router(evt) {
-    let url = window.location.hash.slice(1) || '/';
-    let route = resolveRoute(url);
+    function router(evt) {
+      let url = window.location.hash.slice(1) || '/';
+      let route = resolveRoute(url);
 
-    route();
-};
-
-
+      route();
+    };
   </script>
 </body>
 

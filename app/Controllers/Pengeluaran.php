@@ -5,15 +5,17 @@ namespace App\Controllers;
 use App\Models\DataBarang_Model;
 use App\Models\PembelianBarangModel;
 use App\Models\OverheadModel;
+use App\Models\SellerDropship_Model;
 
 class Pengeluaran extends BaseController
 {
     public function index()
     {
-        //$belibarang = $this->pembelianbarangModel->findAll();
         $belibarang = new PembelianBarangModel();
         $overhead = new OverheadModel();
-        //$overhead = $this->overheadModel->findAll();
+        $sellerdropship = new SellerDropship_Model;
+        $data['dropshipper'] = $sellerdropship->getDropshipper();
+        $data['sum'] = $sellerdropship->sumDropshipper();
         $data['blbarang'] = $belibarang->getNamaBarang();
         $data['overhead'] = $overhead->fetch_data();
         return view('ui/pengeluaran', $data);
