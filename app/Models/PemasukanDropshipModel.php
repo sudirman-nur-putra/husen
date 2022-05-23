@@ -23,4 +23,13 @@ class PemasukanDropshipModel extends Model
     {
         return $this->findAll();
     }
+    public function getTransaksiDropship()
+    {
+        $result  = $this->query("SELECT user.nama, transaksi_dropshipper.tanggal, transaksi_dropshipper.no_resi, barang.nama, transaksi_dropshipper.jumlah_barang, transaksi_dropshipper.harga_jual, transaksi_dropshipper.modal,
+        transaksi_dropshipper.marketplace, transaksi_dropshipper.status
+        FROM  transaksi_dropshipper
+        INNER JOIN barang ON transaksi_dropshipper.id_barang = barang.id
+        INNER JOIN user ON transaksi_dropshipper.id_user = user.id;");
+        return $result->getResultArray();
+    }
 }

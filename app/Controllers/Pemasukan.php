@@ -11,20 +11,16 @@ class Pemasukan extends BaseController
 {
     public function __construct()
     {
-        $this->PemasukanModel = new Pemasukan_Model();
-        $this->PemasukanDropshipModel = new PemasukanDropshipModel();
+        //$this->PemasukanModel = new Pemasukan_Model();
+        //$this->PemasukanDropshipModel = new PemasukanDropshipModel();
     }
 
     public function index()
     {
-        $transaksireseller = $this->PemasukanModel->findAll();
-        $transaksidropship = $this->PemasukanDropshipModel->findAll();
-        $sellerdropship = new SellerDropship_Model;
-        $databarang = new DataBarang_Model();
-        $data = [
-            'transaksireseller' => $transaksireseller,
-            'transaksidropship' => $transaksidropship,
-        ];
+        $transaksireseller = new Pemasukan_Model();
+        $transaksidropship = new PemasukanDropshipModel();
+        $data['transaksidropship'] = $transaksidropship->getTransaksiDropship();
+        $data['transaksireseller'] = $transaksireseller->getTransaksiReseller();
         return view('ui/pemasukan', $data);
     }
 

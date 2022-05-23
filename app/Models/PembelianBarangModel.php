@@ -19,4 +19,12 @@ class PembelianBarangModel extends Model
     {
         return $this->findAll();
     }
+    public function getNamaBarang()
+    {
+        $result  = $this->query("SELECT pembelian_barang.tanggal, pembelian_barang.nama_toko, barang.nama, pembelian_barang.jumlah_beli, pembelian_barang.harga, pembelian_barang.total_harga
+        FROM pembelian_barang
+        INNER JOIN barang
+        ON pembelian_barang.id_barang = barang.id;");
+        return $result->getResultArray();
+    }
 }

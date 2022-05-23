@@ -193,16 +193,6 @@
                       <td>Rp123.123.123</td>
                       <td></td>
                     </tr>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Rp123.123.123</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Alex Purwoto</td>
-                      <td>Rp123.123.123</td>
-                      <td></td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -224,35 +214,25 @@
                 <table class="table table-hover text-nowrap">
                   <thead>
                     <tr>
-                      <th scope="col">Nama Produk</th>
-                      <th scope="col">Nama Toko</th>
-                      <th scope="col">Jumlah</th>
                       <th scope="col">Tanggal Pembelian</th>
+                      <th scope="col">Nama Toko</th>
+                      <th scope="col">Nama Produk</th>
+                      <th scope="col">Jumlah</th>
                       <th scope="col">Harga</th>
+                      <th scope="col">Total</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Stang</td>
-                      <td>Toko A</td>
-                      <td>10</td>
-                      <td>23 Maret 2022</td>
-                      <td>Rp123.123.123</td>
-                    </tr>
-                    <tr>
-                      <td>Stang</td>
-                      <td>Toko A</td>
-                      <td>10</td>
-                      <td>23 Maret 2022</td>
-                      <td>Rp123.123.123</td>
-                    </tr>
-                    <tr>
-                      <td>Stang</td>
-                      <td>Toko A</td>
-                      <td>10</td>
-                      <td>23 Maret 2022</td>
-                      <td>Rp123.123.123</td>
-                    </tr>
+                    <?php foreach ($blbarang as $row) : ?>
+                      <tr>
+                        <td><?= $row['tanggal'] ?></td>
+                        <td><?= $row['nama_toko'] ?></td>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['harga'] ?></td>
+                        <td><?= $row['jumlah_beli'] ?></td>
+                        <td><?= $row['total_harga'] ?></td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>
@@ -274,31 +254,19 @@
                 <table class="table table-hover text-nowrap">
                   <thead>
                     <tr>
-                      <th scope="col">Nama Produk</th>
-                      <th scope="col">Jumlah</th>
-                      <th scope="col">Harga</th>
-                      <th scope="col">Tanggal Pembelian</th>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">Keterangan</th>
+                      <th scope="col">Jumlah Pengeluaran</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>Rp123.123.123</td>
-                      <td>23 Maret 2022</td>
-                    </tr>
-                    <tr>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>23 Maret 2022</td>
-                      <td>Rp123.123.123</td>
-                    </tr>
-                    <tr>
-                      <td>Stang</td>
-                      <td>10</td>
-                      <td>23 Maret 2022</td>
-                      <td>Rp123.123.123</td>
-                    </tr>
+                    <?php foreach ($overhead as $row) : ?>
+                      <tr>
+                        <td><?= $row['tanggal'] ?></td>
+                        <td><?= $row['keterangan'] ?></td>
+                        <td><?= $row['jumlah_pengeluaran'] ?></td>
+                      </tr>
+                    <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>

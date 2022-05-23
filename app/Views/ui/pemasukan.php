@@ -209,9 +209,9 @@
                   <tbody>
                     <?php foreach ($transaksireseller as $row) : ?>
                       <tr>
-                        <td><?= $row['id_user'] ?></td>
+                        <td><?= $row['nama'] ?></td>
                         <td><?= $row['tanggal'] ?></td>
-                        <td><?= $row['id_barang'] ?></td>
+                        <td><?= $row['nama'] ?></td>
                         <td><?= $row['jumlah_barang'] ?></td>
                         <td><?= $row['harga'] ?></td>
                         <td><?= $row['total_pembelian'] ?></td>
@@ -252,10 +252,10 @@
                   <tbody>
                     <?php foreach ($transaksidropship as $row) : ?>
                       <tr>
-                        <td><?= $row['id_user'] ?></td>
+                        <td><?= $row['nama'] ?></td>
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['no_resi'] ?></td>
-                        <td><?= $row['id_barang'] ?></td>
+                        <td><?= $row['nama'] ?></td>
                         <td><?= $row['jumlah_barang'] ?></td>
                         <td><?= $row['harga_jual'] ?></td>
                         <td><?= $row['modal'] ?></td>

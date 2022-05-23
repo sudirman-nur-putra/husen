@@ -1,0 +1,214 @@
+CRITICAL - 2022-05-22 22:08:17 --> Undefined variable: pembelianbarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(24): view('ui/pengeluaran')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:09:02 --> Undefined variable: pembelianbarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(24): view('ui/pengeluaran')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:09:03 --> Undefined variable: pembelianbarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(24): view('ui/pengeluaran')
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:29:00 --> Call to a member function getNamaBarang() on array
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-22 22:34:28 --> Undefined variable: belibarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(25): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:35:23 --> Undefined variable: belibarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(25): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:36:14 --> Undefined variable: blbarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(25): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:38:21 --> Undefined variable: blbarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(25): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:39:02 --> Undefined variable: blbarang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(226): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 226, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(25): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:39:58 --> Undefined variable: overhead
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(263): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 263, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(23): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:41:25 --> Call to a member function fetch_data() on array
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-22 22:42:23 --> Call to a member function fetch_data() on array
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-22 22:45:13 --> Call to a member function fetch_data() on array
+#0 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#1 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#2 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-22 22:46:56 --> Undefined index: nama
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 230, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(24): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-05-22 22:47:40 --> Undefined index: id_barang
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(230): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 230, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(24): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2022-05-22 23:05:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  transaksi_dropshipper
+        INNER JOIN barang
+        ON transaksi_...' at line 3
+CRITICAL - 2022-05-22 23:05:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  transaksi_dropshipper
+        INNER JOIN barang
+        ON transaksi_...' at line 3
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT user.nam...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT user.nam...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT user.nam...')
+#3 C:\xampp\htdocs\husen\system\Model.php(726): CodeIgniter\Database\BaseConnection->query('SELECT user.nam...')
+#4 C:\xampp\htdocs\husen\app\Models\PemasukanDropshipModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(22): App\Models\PemasukanDropshipModel->getTransaksiDropship()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#8 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-05-22 23:05:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  transaksi_dropshipper
+        INNER JOIN barang
+        ON transaksi_...' at line 3
+CRITICAL - 2022-05-22 23:05:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  transaksi_dropshipper
+        INNER JOIN barang
+        ON transaksi_...' at line 3
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT user.nam...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT user.nam...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT user.nam...')
+#3 C:\xampp\htdocs\husen\system\Model.php(726): CodeIgniter\Database\BaseConnection->query('SELECT user.nam...')
+#4 C:\xampp\htdocs\husen\app\Models\PemasukanDropshipModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(22): App\Models\PemasukanDropshipModel->getTransaksiDropship()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#8 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-05-22 23:05:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  transaksi_dropshipper
+        INNER JOIN barang
+        ON transaksi_...' at line 3
+CRITICAL - 2022-05-22 23:05:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM  transaksi_dropshipper
+        INNER JOIN barang
+        ON transaksi_...' at line 3
+#0 C:\xampp\htdocs\husen\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT user.nam...', 0)
+#1 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT user.nam...')
+#2 C:\xampp\htdocs\husen\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT user.nam...')
+#3 C:\xampp\htdocs\husen\system\Model.php(726): CodeIgniter\Database\BaseConnection->query('SELECT user.nam...')
+#4 C:\xampp\htdocs\husen\app\Models\PemasukanDropshipModel.php(28): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\husen\app\Controllers\Pemasukan.php(22): App\Models\PemasukanDropshipModel->getTransaksiDropship()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pemasukan->index()
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemasukan))
+#8 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

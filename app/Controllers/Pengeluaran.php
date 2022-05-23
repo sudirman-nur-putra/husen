@@ -10,7 +10,13 @@ class Pengeluaran extends BaseController
 {
     public function index()
     {
-        return view('ui/pengeluaran');
+        //$belibarang = $this->pembelianbarangModel->findAll();
+        $belibarang = new PembelianBarangModel();
+        $overhead = new OverheadModel();
+        //$overhead = $this->overheadModel->findAll();
+        $data['blbarang'] = $belibarang->getNamaBarang();
+        $data['overhead'] = $overhead->fetch_data();
+        return view('ui/pengeluaran', $data);
     }
     public function biayaoverhead()
     {
