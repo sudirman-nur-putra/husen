@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2022 at 08:54 AM
+-- Generation Time: May 23, 2022 at 01:24 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -49,7 +49,7 @@ INSERT INTO `akun` (`id`, `email`, `password`) VALUES
 
 CREATE TABLE `barang` (
   `id` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
+  `nama_barang` varchar(255) NOT NULL,
   `harga_beli` int(100) NOT NULL,
   `harga_jual_dropshipper` int(100) NOT NULL,
   `harga_jual_reseller` int(100) NOT NULL,
@@ -60,7 +60,7 @@ CREATE TABLE `barang` (
 -- Dumping data for table `barang`
 --
 
-INSERT INTO `barang` (`id`, `nama`, `harga_beli`, `harga_jual_dropshipper`, `harga_jual_reseller`, `stok`) VALUES
+INSERT INTO `barang` (`id`, `nama_barang`, `harga_beli`, `harga_jual_dropshipper`, `harga_jual_reseller`, `stok`) VALUES
 (1, 'Knalpot', 200000, 250000, 220000, 4),
 (2, 'Stang', 400000, 450000, 420000, 3);
 
@@ -98,7 +98,7 @@ CREATE TABLE `keuntungan_dropshipper` (
 CREATE TABLE `overhead` (
   `id` int(11) NOT NULL,
   `tanggal` date NOT NULL,
-  `keterangan` varchar(11) NOT NULL,
+  `keterangan` varchar(255) NOT NULL,
   `jumlah_pengeluaran` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -107,7 +107,7 @@ CREATE TABLE `overhead` (
 --
 
 INSERT INTO `overhead` (`id`, `tanggal`, `keterangan`, `jumlah_pengeluaran`) VALUES
-(2, '2022-05-18', 'transportas', 200000);
+(4, '2022-05-23', 'Transportasi', 200000);
 
 -- --------------------------------------------------------
 
@@ -130,7 +130,7 @@ CREATE TABLE `pembelian_barang` (
 --
 
 INSERT INTO `pembelian_barang` (`id`, `id_barang`, `nama_toko`, `jumlah_beli`, `harga`, `total_harga`, `tanggal`) VALUES
-(1, 1, 'FamiliVariasi', 100, 50000, 0, '0000-00-00');
+(3, 1, 'FamiliVariasi', 100, 50000, 5000000, '2022-05-23');
 
 -- --------------------------------------------------------
 
@@ -158,7 +158,6 @@ CREATE TABLE `transaksi_dropshipper` (
 
 INSERT INTO `transaksi_dropshipper` (`id`, `id_user`, `id_barang`, `tanggal`, `modal`, `jumlah_barang`, `harga_jual`, `no_resi`, `status_packing`, `marketplace`, `status`) VALUES
 (2, 2, 1, '2022-05-16', 200000, 1, 250000, '123456789', 'Sendiri', 'Lazada', 'Sampai'),
-(3, 4, 2, '2022-05-10', 400000, 1, 450000, '543216789', 'Sendiri', 'Shopee', 'Sampai'),
 (4, 2, 1, '2022-04-05', 400000, 2, 500000, '908765341', 'Sendiri', 'Lazada', 'Sampai'),
 (5, 2, 1, '0000-00-00', 35000, 2, 50000, 'JP041001', 'Sendiri', 'Shopee', 'Proses');
 
@@ -183,7 +182,7 @@ CREATE TABLE `transaksi_reseller` (
 --
 
 INSERT INTO `transaksi_reseller` (`id`, `id_user`, `id_barang`, `tanggal`, `jumlah_barang`, `harga`, `total_pembelian`) VALUES
-(1, 1, 1, '2022-05-17', 5, 50000, 0);
+(3, 1, 1, '2022-05-23', 2, 420000, 840000);
 
 -- --------------------------------------------------------
 
@@ -306,25 +305,25 @@ ALTER TABLE `keuntungan_dropshipper`
 -- AUTO_INCREMENT for table `overhead`
 --
 ALTER TABLE `overhead`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `pembelian_barang`
 --
 ALTER TABLE `pembelian_barang`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `transaksi_dropshipper`
 --
 ALTER TABLE `transaksi_dropshipper`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `transaksi_reseller`
 --
 ALTER TABLE `transaksi_reseller`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
