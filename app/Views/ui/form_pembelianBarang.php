@@ -43,11 +43,11 @@
 			<form action="/pengeluaran/tambahpembelianbarang" method="POST">
 				<h6 class="m-0">Tanggal Pembelian</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input name="tanggal" type="date" id="birthday" class="form-control form-control-md">
+					<input required name="tanggal" type="date" id="birthday" class="form-control form-control-md">
 				</div>
 				<h6 class="m-0">Nama Toko</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input name="namatoko" type="text" class="form-control form-control-md" />
+					<input required name="namatoko" type="text" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">produk</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
@@ -59,11 +59,11 @@
 				</div>
 				<h6 class="m-0">Jumlah</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input name="jumlah" type="number" class="form-control form-control-md" />
+					<input required name="jumlah" type="number" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Harga</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input name="harga" type="number" class="form-control form-control-md" />
+					<input required name="harga" type="number" class="form-control form-control-md" />
 				</div>
 				<button type="submit" class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>

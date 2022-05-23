@@ -44,15 +44,15 @@
                 <form action="/pengeluaran/updateoverhead/<?= $row['id'] ?>" method="post">
                     <h6 class="m-0">Keterangan</h6>
                     <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-                        <input name="keterangan" value="<?= $row['keterangan'] ?>" type="text" class="form-control form-control-md" />
+                        <input required name="keterangan" value="<?= $row['keterangan'] ?>" type="text" class="form-control form-control-md" />
                     </div>
                     <h6 class="m-0">Tanggal Pembelian</h6>
                     <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-                        <input name="tanggal" value="<?= $row['tanggal'] ?>" type="date" id="birthday" class="form-control form-control-md">
+                        <input required name="tanggal" value="<?= $row['tanggal'] ?>" type="date" id="birthday" class="form-control form-control-md">
                     </div>
                     <h6 class="m-0">Total Pengeluaran</h6>
                     <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-                        <input name="total" value="<?= $row['jumlah_pengeluaran'] ?>" type="text" class="form-control form-control-md" />
+                        <input required name="total" value="<?= $row['jumlah_pengeluaran'] ?>" type="text" class="form-control form-control-md" />
                     </div>
                     <button type="submit" class="btn btn-primary">
                         Ubah

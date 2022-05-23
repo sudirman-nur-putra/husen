@@ -75,15 +75,15 @@
                     </div>
                     <h6 class="m-0">Jumlah</h6>
                     <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-                        <input name="jumlah" value="<?= $row['jumlah_barang'] ?>" type="number" class="form-control form-control-md" />
+                        <input required name="jumlah" value="<?= $row['jumlah_barang'] ?>" type="number" class="form-control form-control-md" />
                     </div>
                     <h6 class="m-0">Harga</h6>
                     <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-                        <input name="harga" value="<?= $row['harga'] ?>" type="number" class="form-control form-control-md" />
+                        <input required name="harga" value="<?= $row['harga'] ?>" type="number" class="form-control form-control-md" />
                     </div>
                     <h6 class="m-0">Tanggal Pembelian</h6>
                     <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-                        <input type="date" value="<?= $row['tanggal'] ?>" id="birthday" name="tanggal" class="form-control form-control-md">
+                        <input required type="date" value="<?= $row['tanggal'] ?>" id="birthday" name="tanggal" class="form-control form-control-md">
                     </div>
                     <button type="submit" class="btn btn-primary">
 

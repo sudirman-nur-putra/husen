@@ -43,13 +43,13 @@
       <form action="dropshipper-store" method="post">
         <h6 class="m-0">Nama Dropshipper</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="text" name="nama" class="form-control form-control-md" />
+          <input required type="text" name="nama" class="form-control form-control-md" />
         </div>
         <h6 class="m-0">No HP</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input type="text" name="no_hp" class="form-control form-control-md" />
+          <input required type="text" name="no_hp" class="form-control form-control-md" />
         </div>
-        <input type="hidden" name="level" value="Dropshipper" />
+        <input required type="hidden" name="level" value="Dropshipper" />
         <button type="submit" class="btn btn-primary">
           <i class="fas fa-plus me-2"></i>
           Tambah

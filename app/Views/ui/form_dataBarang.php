@@ -43,23 +43,23 @@
 			<form action="barang-store" method="POST">
 				<h6 class="m-0">Nama Barang</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" name="nama" class="form-control form-control-md" />
+					<input required type="text" name="nama" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Harga Beli</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" name="harga_beli" class="form-control form-control-md" />
+					<input required type="text" name="harga_beli" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Harga Dropshipper</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" name="harga_jual_dropshipper" class="form-control form-control-md" />
+					<input required required type="text" name="harga_jual_dropshipper" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Harga Reseller</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" name="harga_jual_reseller" class="form-control form-control-md" />
+					<input required type="text" name="harga_jual_reseller" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Stok</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input type="text" name="stok" class="form-control form-control-md" />
+					<input required type="text" name="stok" class="form-control form-control-md" />
 				</div>
 				<button type="submit" class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>
