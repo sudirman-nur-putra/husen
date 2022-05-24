@@ -349,7 +349,7 @@
         <div class="card rounded-6 mb-4">
           <div class="card-header d-flex justify-content-between py-3">
             <h5 class="mb-0 align-self-center">
-              <strong>Grafik Penjualan <?= $tahun3 ?></strong>
+              <strong>Grafik Pengeluaran <?= $tahun3 ?></strong>
             </h5>
             <div class="dropdown align-self-top">
               <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
