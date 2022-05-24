@@ -91,11 +91,12 @@
             <option value="Dari Husein">Dari Husein</option>
           </select>
         </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-plus me-2"></i>
+          Tambah
+        </button>
     </div>
-    <button type="submit" class="btn btn-primary">
-      <i class="fas fa-plus me-2"></i>
-      Tambah
-    </button>
+
     </form>
   </div>
   </div>
