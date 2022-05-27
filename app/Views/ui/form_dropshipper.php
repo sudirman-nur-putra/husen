@@ -74,7 +74,12 @@
         </div>
         <h6 class="m-0">Modal</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-          <input required name="modal" type="number" class="form-control form-control-md" />
+
+          <select name="modal" class="form-select" aria-label="Default select example">
+            <?php foreach ($barang as $row) : ?>
+              <option value="<?= $row['harga_jual_dropshipper'] ?>" ?><?= $row['harga_jual_dropshipper'] ?></option>
+            <?php endforeach; ?>
+          </select>
         </div>
         <h6 class="m-0">Jumlah</h6>
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">

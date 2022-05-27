@@ -19,11 +19,9 @@ class DataBarang_Model extends Model
     {
         return $this->findAll();
     }
-    // public function getDataBarang(){
-    //     $result  = $this->query("SELECT id,nama,nomor_hp FROM user");
-    //     return $result->getResultArray();
-    // }
-    // public function search($keyword){
-    //     return $this->table('barang')->like('nama',$keyword);
-    // }
+    public function getDataBarang($id)
+    {
+        $result = $this->query("SELECT * FROM barang WHERE id = '$id'");
+        return $result->getResultArray();
+    }
 }

@@ -44,6 +44,15 @@ class Pemasukan extends BaseController
     public function tambahtransaksireseller()
     {
         $pemasukanreseller = new Pemasukan_Model();
+        $databarang = new DataBarang_Model();
+        $barang = $databarang->getDataBarang($this->request->getPost('namaproduk'));
+        $stoksisa =  $barang[0]['stok'] - $this->request->getPost('jumlah');
+
+        $updatebarang = [
+            'id' => $this->request->getPost('namaproduk'),
+            'stok' => $stoksisa,
+        ];
+
         $data = [
             'id_user' => $this->request->getPost('namareseller'),
             'id_barang' => $this->request->getPost('namaproduk'),
@@ -53,11 +62,20 @@ class Pemasukan extends BaseController
             'total_pembelian' => $this->request->getPost('jumlah') * $this->request->getPost('harga'),
         ];
         $pemasukanreseller->save($data);
+        $databarang->save($updatebarang);
         return redirect()->to('/pemasukan');
     }
     public function tambahtransaksidropshipper()
     {
         $pemasukandropship = new PemasukanDropshipModel();
+        $databarang = new DataBarang_Model();
+        $barang = $databarang->getDataBarang($this->request->getPost('produk'));
+        $stoksisa =  $barang[0]['stok'] - $this->request->getPost('jumlah');
+
+        $updatebarang = [
+            'id' => $this->request->getPost('produk'),
+            'stok' => $stoksisa,
+        ];
         $data = [
             'id_user' => $this->request->getPost('namadropship'),
             'id_barang' => $this->request->getPost('produk'),
@@ -71,6 +89,7 @@ class Pemasukan extends BaseController
             'status' => "Proses",
         ];
         $pemasukandropship->save($data);
+        $databarang->save($updatebarang);
         return redirect()->to('/pemasukan');
     }
 

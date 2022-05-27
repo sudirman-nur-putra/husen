@@ -39,6 +39,14 @@ class Pengeluaran extends BaseController
     {
 
         $pembelianbarang = new PembelianBarangModel();
+        $databarang = new DataBarang_Model();
+        $barang = $databarang->getDataBarang($this->request->getPost('produk'));
+        $stoksisa =  $barang[0]['stok'] + $this->request->getPost('jumlah');
+
+        $updatebarang = [
+            'id' => $this->request->getPost('produk'),
+            'stok' => $stoksisa,
+        ];
         $data = [
             'id_barang' => $this->request->getPost('produk'),
             'nama_toko' => $this->request->getPost('namatoko'),
@@ -48,6 +56,7 @@ class Pengeluaran extends BaseController
             'total_harga' => $this->request->getPost('harga') * $this->request->getPost('jumlah'),
         ];
         $pembelianbarang->save($data);
+        $databarang->save($updatebarang);
         return redirect()->to('/pengeluaran');
     }
 

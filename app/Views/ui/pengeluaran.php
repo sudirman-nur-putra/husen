@@ -121,8 +121,9 @@
                         <td><?= $row['tanggal'] ?></td>
                         <td><?= $row['nama_toko'] ?></td>
                         <td><?= $row['nama_barang'] ?></td>
-                        <td><?= $row['harga'] ?></td>
                         <td><?= $row['jumlah_beli'] ?></td>
+                        <td><?= $row['harga'] ?></td>
+
                         <td><?= $row['total_harga'] ?></td>
                         <td><a href="/pengeluaran/editpembelianbarang/<?= $row['id']; ?>" class="btn btn-success">Edit</a> <a href="/pengeluaran/deletepembelianbarang/<?= $row['id']; ?>" class="btn btn-danger">Delete</a></td>
                       </tr>
