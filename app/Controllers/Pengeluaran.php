@@ -40,15 +40,15 @@ class Pengeluaran extends BaseController
 
         $pembelianbarang = new PembelianBarangModel();
         $databarang = new DataBarang_Model();
-        $barang = $databarang->getDataBarang($this->request->getPost('produk'));
+        $barang = $databarang->getDataBarang($this->request->getPost('namaproduk'));
         $stoksisa =  $barang[0]['stok'] + $this->request->getPost('jumlah');
 
         $updatebarang = [
-            'id' => $this->request->getPost('produk'),
+            'id' => $this->request->getPost('namaproduk'),
             'stok' => $stoksisa,
         ];
         $data = [
-            'id_barang' => $this->request->getPost('produk'),
+            'id_barang' => $this->request->getPost('namaproduk'),
             'nama_toko' => $this->request->getPost('namatoko'),
             'jumlah_beli' => $this->request->getPost('jumlah'),
             'harga' => $this->request->getPost('harga'),

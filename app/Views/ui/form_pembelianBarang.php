@@ -51,20 +51,32 @@
 				</div>
 				<h6 class="m-0">produk</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<select name="produk" class="form-select" aria-label="Default select example">
-						<?php foreach ($barang as $row) : ?>
-							<option value="<?= $row['id'] ?>" ?><?= $row['nama_barang'] ?></option>
-						<?php endforeach; ?>
-					</select>
+					<?php
+					$jsArray = "var prdName = new Array();\n";
+					echo '
+				   <select name="namaproduk" class="form-select" aria-label="Default select example" onchange="document.getElementById(\'prd_name\').value = prdName[this.value]">
+				   <option>Pilih Barang</option>';
+					foreach ($barang as $row) :
+						echo '
+				  <option value="' . $row['id'] . '">' . $row['nama_barang'] . '</option>';
+						$jsArray .= "prdName['" . $row['id'] . "'] = '" . addslashes($row['harga_jual_reseller']) . "';\n";
+					endforeach;
+					echo '
+				     </select>';
+					?>
+					<script type="text/javascript">
+						<?php echo $jsArray; ?>
+					</script>
+				</div>
+				<h6 class="m-0">Harga</h6>
+				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
+					<input required id="prd_name" name="harga" type="number" class="form-control form-control-md" />
 				</div>
 				<h6 class="m-0">Jumlah</h6>
 				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
 					<input required name="jumlah" type="number" class="form-control form-control-md" />
 				</div>
-				<h6 class="m-0">Harga</h6>
-				<div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
-					<input required name="harga" type="number" class="form-control form-control-md" />
-				</div>
+
 				<button type="submit" class="btn btn-primary">
 					<i class="fas fa-plus me-2"></i>
 					Tambah
