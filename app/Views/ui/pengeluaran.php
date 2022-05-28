@@ -78,10 +78,10 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <?php foreach ($dropshipper as $row) : ?>
+                    <?php foreach ($dropshipperkeuntungan as $row) : ?>
                       <tr>
                         <td><?= $row['nama'] ?></td>
-                        <td><?= $row['keuntungan'] ?></td>
+                        <td><?= $row['total_gaji'] ?></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

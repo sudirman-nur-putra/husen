@@ -96,7 +96,7 @@
                 <tbody>
                   <?php foreach ($fetch_data as $row) : ?>
                     <tr>
-                      <td><?= $row['nama'] ?></td>
+                      <td><?= $row['nama_barang'] ?></td>
                       <td><?= $row['harga_beli'] ?></td>
                       <td><?= $row['harga_jual_dropshipper'] ?></td>
                       <td><?= $row['harga_jual_reseller'] ?></td>

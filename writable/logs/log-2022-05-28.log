@@ -1,0 +1,12 @@
+CRITICAL - 2022-05-28 14:43:22 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\husen\app\Views\ui\pengeluaran.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 C:\xampp\htdocs\husen\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\husen\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\husen\system\Common.php(1089): CodeIgniter\View\View->render('ui/pengeluaran', Array, true)
+#4 C:\xampp\htdocs\husen\app\Controllers\Pengeluaran.php(25): view('ui/pengeluaran', Array)
+#5 C:\xampp\htdocs\husen\system\CodeIgniter.php(832): App\Controllers\Pengeluaran->index()
+#6 C:\xampp\htdocs\husen\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengeluaran))
+#7 C:\xampp\htdocs\husen\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\husen\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\husen\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

@@ -18,6 +18,7 @@ class Pengeluaran extends BaseController
         $belibarang = new PembelianBarangModel();
         $overhead = new OverheadModel();
         $sellerdropship = new SellerDropship_Model;
+        $data['dropshipperkeuntungan'] = $sellerdropship->getDropshipperKeuntungan();
         $data['dropshipper'] = $sellerdropship->getDropshipper();
         $data['sum'] = $sellerdropship->sumDropshipper();
         $data['blbarang'] = $belibarang->getNamaBarang();
