@@ -31,7 +31,7 @@ class Databarang extends BaseController
     {
         $databarang = new DataBarang_Model;
         $data = [
-            'nama_barang' => $this->request->getPost('nama'),
+            'nama' => $this->request->getPost('nama'),
             'harga_beli' => $this->request->getPost('harga_beli'),
             'harga_jual_dropshipper' => $this->request->getPost('harga_jual_dropshipper'),
             'harga_jual_reseller' => $this->request->getPost('harga_jual_reseller'),

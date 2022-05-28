@@ -15,28 +15,12 @@ class SellerDropship extends BaseController
         $sellerdropship = new SellerDropship_Model;
         $data['reseller'] = $sellerdropship->getReseller();
         $data['dropshipper'] = $sellerdropship->getDropshipper();
+        $data['dropshipperkeuntungan'] = $sellerdropship->getDropshipperKeuntungan();
         $data['count'] = $sellerdropship->countDropshipper();
         $data['sum'] = $sellerdropship->sumDropshipper();
+        $data['sumhari'] = $sellerdropship->sumDropshipperHari();
+        $data['sumtahun']= $sellerdropship->sumDropshipperTahun();
         return view('ui/seller_dropship', $data);
-    }
-    public function totalgajitahun()
-    {
-        $sellerdropshiptahun = new SellerDropship_Model;
-        $data['reseller'] = $sellerdropshiptahun->getReseller();
-        $data['dropshipper'] = $sellerdropshiptahun->getDropshipper();
-        $data['count'] = $sellerdropshiptahun->countDropshipper();
-        $data['sumtahun'] = $sellerdropshiptahun->sumDropshipperTahun();
-        return view('ui/seller_dropshiptahun', $data);
-    }
-
-    public function totalgajihari()
-    {
-        $sellerdropshiphari = new SellerDropship_Model;
-        $data['reseller'] = $sellerdropshiphari->getReseller();
-        $data['dropshipper'] = $sellerdropshiphari->getDropshipper();
-        $data['count'] = $sellerdropshiphari->countDropshipper();
-        $data['sumhari'] = $sellerdropshiphari->sumDropshipperHari();
-        return view('ui/seller_dropshiphari', $data);
     }
 
     public function formreseller()

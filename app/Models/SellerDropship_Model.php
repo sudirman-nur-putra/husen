@@ -21,32 +21,47 @@ class SellerDropship_Model extends Model
     }
     public function getReseller()
     {
-        $result  = $this->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Reseller' ");
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Reseller' ");
         return $result->getResultArray();
     }
     public function getDropshipper()
     {
-        $result  = $this->query("SELECT id,nama,nomor_hp, keuntungan FROM user WHERE level = 'Dropshipper' ");
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT id,nama,nomor_hp,keuntungan FROM user WHERE level = 'Dropshipper' ");
+        return $result->getResultArray();
+    }
+    public function getDropshipperKeuntungan()
+    {
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT nama,nomor_hp, (harga_jual - modal) as total_gaji FROM user RIGHT JOIN transaksi_dropshipper ON user.id = transaksi_dropshipper.id_user WHERE level = 'Dropshipper' ");
         return $result->getResultArray();
     }
     public function countDropshipper()
     {
-        $result  = $this->query("SELECT COUNT(*) as total FROM user WHERE level = 'Dropshipper' ");
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT COUNT(*) as total FROM user WHERE level = 'Dropshipper' ");
         return $result->getRowArray();
     }
     public function sumDropshipper()
-    {
-        $result  = $this->query("SELECT SUM(harga_jual - modal) as total_gaji FROM transaksi_dropshipper where tanggal between '2022-05-01' and '2022-05-31' ");
-        return $result->getRowArray();
+    {   
+        $db      = \Config\Database::connect();
+        $tanggal = date('Y-m');
+        $result  = $db->query("SELECT SUM(harga_jual - modal) as total_gaji FROM transaksi_dropshipper JOIN user ON transaksi_dropshipper.id_user = user.id WHERE DATE_FORMAT(tanggal,'%Y-%m') = '$tanggal' ");
+        return $result->getResultArray();
     }
     public function sumDropshipperTahun()
     {
-        $result  = $this->query("SELECT SUM(harga_jual - modal) as total_gaji_tahun FROM transaksi_dropshipper where tanggal between '2022-01-01' and '2022-12-31' ");
-        return $result->getRowArray();
+        $db      = \Config\Database::connect();
+        $tanggal = date('Y');
+        $result  = $db->query("SELECT SUM(harga_jual - modal) as total_gaji FROM transaksi_dropshipper JOIN user ON transaksi_dropshipper.id_user = user.id WHERE DATE_FORMAT(tanggal,'%Y') = '$tanggal' ");
+        return $result->getResultArray();
     }
     public function sumDropshipperHari()
     {
-        $result  = $this->query("SELECT SUM(harga_jual - modal) as total_gaji_hari FROM transaksi_dropshipper where tanggal between '2022-05-16' and '2022-05-16' ");
-        return $result->getRowArray();
+        $db      = \Config\Database::connect();
+        $tanggal = date('Y-m-d');
+        $result  = $db->query("SELECT SUM(harga_jual - modal) as total_gaji FROM transaksi_dropshipper JOIN user ON transaksi_dropshipper.id_user = user.id  WHERE DATE_FORMAT(tanggal,'%Y-%m-%d') = '$tanggal' ");
+        return $result->getResultArray();
     }
 }

@@ -66,19 +66,38 @@
                     <div class="d-flex flex-row justify-content-between">
                       <p class="mb-0">Total Gaji Dropshipper</p>
                       <div class="dropdown align-self-top">
-                        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
-                          Bulan ini
+                        <div id="text_total_gaji" class="dropdown-toggle" type="button" href="#" onclick="total_gajiBulan()" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+                        Bulan ini
                         </div>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <li><a class="dropdown-item" href="seller_dropshiptahun">Tahun ini</a></li>
-                          <li><a class="dropdown-item" href="seller_dropshiphari">Hari ini</a></li>
+                        <li><a id="text_total_gaji" class="dropdown-item" href="#" onclick="total_gajiBulan()">Bulan ini</a></li>
+                          <li><a id="text_total_gaji" class="dropdown-item" href="#" onclick="total_gajiTahun()">Tahun ini</a></li>
+                          <li><a id="text_total_gaji" class="dropdown-item" href="#" onclick="total_gajiHari()">Hari ini</a></li>
                         </ul>
                       </div>
                     </div>
                     <div class="pt-3 d-flex flex-row justify-content-start align-items-end">
                       <i class="fas fa-dollar-sign fa-3x"></i>
                       <div class="text-end ps-3">
-                        <h3>Rp.<?php echo $sum['total_gaji']; ?></h3>
+                      <?php
+                        // Menghitung Jumlah Pemasukan Bulanan
+                        $totpemb = 0;
+                        foreach ($sum as $sumDropshipper) {
+                          $totpemb = $sumDropshipper['total_gaji'];
+                        }
+
+                        // Menghitung Jumlah Pemasukan harian
+                        $totpemh = 0;
+                        foreach ($sumhari as $sumDropshipperHari) {
+                          $totpemh = $sumDropshipperHari['total_gaji'];
+                        }
+
+                        $totpemt = 0;
+                        foreach ($sumtahun as $sumDropshipperTahun) {
+                          $totpemt = $sumDropshipperTahun['total_gaji'];
+                        }
+                        ?>
+                        <h3 id="total_gaji">Rp <?= $totpemb; ?></h3>
                       </div>
                     </div>
                   </div>
@@ -159,11 +178,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <?php foreach ($dropshipper as $row) : ?>
+                    <?php foreach ($dropshipperkeuntungan as $row) : ?>
                       <tr>
                         <td><?= $row['nama'] ?></td>
                         <td><?= $row['nomor_hp'] ?></td>
-                        <td><?= $row['keuntungan'] ?></td>
+                        <td><?= $row['total_gaji'] ?></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>
@@ -176,6 +195,22 @@
     </div>
   </div>
   <script type="text/javascript" src="script.js"></script>
+    <script>
+      function total_gajiHari() {
+      document.getElementById("total_gaji").innerHTML = 'Rp <?= $totpemh; ?>';
+      document.getElementById("text_total_gaji").innerHTML = 'Hari ini';
+    }
+
+    function total_gajiBulan() {
+      document.getElementById("total_gaji").innerHTML = 'Rp <?= $totpemb; ?>';
+      document.getElementById("text_total_gaji").innerHTML = 'Bulan ini';
+    }
+
+    function total_gajiTahun() {
+      document.getElementById("total_gaji").innerHTML = 'Rp <?= $totpemt; ?>';
+      document.getElementById("text_total_gaji").innerHTML = 'Tahun ini';
+    }
+    </script>
 </body>
 
 </html>

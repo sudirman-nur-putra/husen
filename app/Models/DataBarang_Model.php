@@ -9,7 +9,7 @@ class DataBarang_Model extends Model
     protected $table = 'barang';
     protected $primaryKey = 'id';
     protected $allowedFields = [
-        'nama_barang',
+        'nama',
         'harga_beli',
         'harga_jual_dropshipper',
         'harga_jual_reseller',

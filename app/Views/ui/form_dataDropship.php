@@ -49,6 +49,7 @@
         <div class="form-outline mt-1 mb-3 w-100 bg-light border rounded-3">
           <input required type="text" name="no_hp" class="form-control form-control-md" />
         </div>
+        <input required type="hidden" name="keuntungan" value="0" />
         <input required type="hidden" name="level" value="Dropshipper" />
         <button type="submit" class="btn btn-primary">
           <i class="fas fa-plus me-2"></i>
