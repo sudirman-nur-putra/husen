@@ -75,6 +75,7 @@
                     <tr>
                       <th scope="col">Nama Dropshipper</th>
                       <th scope="col">Keuntungan</th>
+                      <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -82,6 +83,42 @@
                       <tr>
                         <td><?= $row['nama'] ?></td>
                         <td><?= $row['total_gaji'] ?></td>
+                        <td><a href="" class="btn btn-success">Gaji</a></td>
+
+                      </tr>
+                    <?php endforeach; ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- GAJI  -->
+          <div class="card my-4">
+            <div class="card-header d-flex justify-content-between py-3">
+              <h5 class="mb-0 align-self-center">
+                <strong>Informasi Gaji</strong>
+              </h5>
+              <a class="btn btn-primary" href="/pengeluaran/gaji" role="button">
+                <i class="fas fa-plus"></i>
+                Tambah Data
+              </a>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nama </th>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">nominal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php foreach ($gaji as $row) : ?>
+                      <tr>
+                        <td><?= $row['nama'] ?></td>
+                        <td><?= $row['tanggal'] ?></td>
+                        <td><?= $row['nominal'] ?></td>
                       </tr>
                     <?php endforeach; ?>
                   </tbody>

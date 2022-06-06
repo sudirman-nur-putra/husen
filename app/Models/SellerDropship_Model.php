@@ -25,6 +25,12 @@ class SellerDropship_Model extends Model
         $result  = $db->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Reseller' ");
         return $result->getResultArray();
     }
+    public function getAdmin()
+    {
+        $db      = \Config\Database::connect();
+        $result  = $db->query("SELECT id,nama,nomor_hp FROM user WHERE level = 'Admin' ");
+        return $result->getResultArray();
+    }
     public function getDropshipper()
     {
         $db      = \Config\Database::connect();
@@ -44,7 +50,7 @@ class SellerDropship_Model extends Model
         return $result->getRowArray();
     }
     public function sumDropshipper()
-    {   
+    {
         $db      = \Config\Database::connect();
         $tanggal = date('Y-m');
         $result  = $db->query("SELECT SUM(harga_jual - modal) as total_gaji FROM transaksi_dropshipper JOIN user ON transaksi_dropshipper.id_user = user.id WHERE DATE_FORMAT(tanggal,'%Y-%m') = '$tanggal' ");

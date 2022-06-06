@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2022 at 05:45 PM
+-- Generation Time: May 28, 2022 at 09:48 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -61,9 +61,10 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id`, `nama_barang`, `harga_beli`, `harga_jual_dropshipper`, `harga_jual_reseller`, `stok`) VALUES
-(1, 'Knalpot', 200000, 250000, 220000, 4),
-(2, 'Stang', 400000, 450000, 420000, 3),
-(4, 'Klakson', 35000, 45000, 40000, 100);
+(1, 'Knalpot', 200000, 250000, 220000, 80),
+(2, 'Stang', 400000, 450000, 420000, 200),
+(4, 'Klakson', 35000, 45000, 40000, 94),
+(5, 'Lampu', 25000, 35000, 30000, 100);
 
 -- --------------------------------------------------------
 
@@ -132,7 +133,8 @@ CREATE TABLE `pembelian_barang` (
 --
 
 INSERT INTO `pembelian_barang` (`id`, `id_barang`, `nama_toko`, `jumlah_beli`, `harga`, `total_harga`, `tanggal`) VALUES
-(4, 1, 'BintangVariasi', 50, 50000, 2500000, '2022-05-18');
+(8, 1, 'FamiliVariasi', 100, 220000, 22000000, '2022-05-27'),
+(9, 2, 'BintangVariasi', 100, 420000, 42000000, '2022-05-27');
 
 -- --------------------------------------------------------
 
@@ -159,9 +161,9 @@ CREATE TABLE `transaksi_dropshipper` (
 --
 
 INSERT INTO `transaksi_dropshipper` (`id`, `id_user`, `id_barang`, `tanggal`, `modal`, `jumlah_barang`, `harga_jual`, `no_resi`, `status_packing`, `marketplace`, `status`) VALUES
-(2, 4, 1, '2022-05-16', 200000, 1, 250000, '123456789', 'Sendiri', 'Lazada', 'Barang Dikembalikan'),
-(4, 2, 1, '2022-04-05', 400000, 2, 500000, '908765341', 'Sendiri', 'Lazada', 'Sampai'),
-(7, 2, 2, '2022-05-23', 120000, 2, 130000, 'JP041003', 'Dari Husein', 'Shopee', 'Proses');
+(13, 8, 5, '2022-05-27', 35000, 1, 50000, 'JP041007', 'Sendiri', 'Shopee', 'Sampai'),
+(15, 2, 2, '2022-05-27', 450000, 1, 500000, 'JP041009', 'Sendiri', 'Lazada', 'Sampai'),
+(16, 10, 1, '2022-05-27', 250000, 2, 300000, 'JP0410010', 'Sendiri', 'Shopee', 'Sampai');
 
 -- --------------------------------------------------------
 
@@ -184,8 +186,8 @@ CREATE TABLE `transaksi_reseller` (
 --
 
 INSERT INTO `transaksi_reseller` (`id`, `id_user`, `id_barang`, `tanggal`, `jumlah_barang`, `harga`, `total_pembelian`) VALUES
-(3, 1, 1, '2022-05-23', 2, 420000, 840000),
-(5, 3, 2, '2022-05-14', 5, 50000, 250000);
+(11, 3, 1, '2022-05-27', 20, 220000, 4400000),
+(12, 5, 4, '2022-05-27', 1, 40000, 40000);
 
 -- --------------------------------------------------------
 
@@ -211,7 +213,8 @@ INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `keuntungan`, `level`) VALUES
 (3, 'Sudirman', '089897654321', 0, 'Reseller'),
 (4, 'Rizal', '087987532753', 300000, 'Dropshipper'),
 (5, 'Aliffia', '089123456789', 0, 'Reseller'),
-(8, 'Tasya ', '082111222333', 0, 'Dropshipper');
+(8, 'Tasya ', '082111222333', 0, 'Dropshipper'),
+(10, 'Annisa', '089768563524', 0, 'Dropshipper');
 
 --
 -- Indexes for dumped tables
@@ -292,7 +295,7 @@ ALTER TABLE `akun`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `gaji`
@@ -310,31 +313,31 @@ ALTER TABLE `keuntungan_dropshipper`
 -- AUTO_INCREMENT for table `overhead`
 --
 ALTER TABLE `overhead`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pembelian_barang`
 --
 ALTER TABLE `pembelian_barang`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `transaksi_dropshipper`
 --
 ALTER TABLE `transaksi_dropshipper`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `transaksi_reseller`
 --
 ALTER TABLE `transaksi_reseller`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables

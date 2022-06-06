@@ -6,6 +6,7 @@ use App\Models\DataBarang_Model;
 use App\Models\PembelianBarangModel;
 use App\Models\OverheadModel;
 use App\Models\SellerDropship_Model;
+use App\Models\GajiModel;
 
 class Pengeluaran extends BaseController
 {
@@ -18,22 +19,34 @@ class Pengeluaran extends BaseController
         $belibarang = new PembelianBarangModel();
         $overhead = new OverheadModel();
         $sellerdropship = new SellerDropship_Model;
+        $gaji = new GajiModel();
+        $data['gaji'] = $gaji->getGaji();
         $data['dropshipperkeuntungan'] = $sellerdropship->getDropshipperKeuntungan();
         $data['dropshipper'] = $sellerdropship->getDropshipper();
+
         $data['sum'] = $sellerdropship->sumDropshipper();
         $data['blbarang'] = $belibarang->getNamaBarang();
         $data['overhead'] = $overhead->fetch_data();
         return view('ui/pengeluaran', $data);
     }
+
     public function biayaoverhead()
     {
         return view('ui/form_biayaoverhead');
     }
+
     public function pembelianbarang()
     {
         $databarang = new DataBarang_Model();
         $data['barang'] = $databarang->fetch_data();
         return view('ui/form_pembelianBarang', $data);
+    }
+
+    public function gaji()
+    {
+        $sellerdropship = new SellerDropship_Model;
+        $data['admin'] = $sellerdropship->getAdmin();
+        return view('ui/form_gaji', $data);
     }
 
     public function tambahpembelianbarang()
@@ -71,6 +84,20 @@ class Pengeluaran extends BaseController
             'jumlah_pengeluaran' => $this->request->getPost('total'),
         ];
         $biayaoverhead->save($data);
+        return redirect()->to('/pengeluaran');
+    }
+
+    public function tambahgaji()
+    {
+
+        $gaji = new GajiModel();
+
+        $data = [
+            'id_user' => $this->request->getPost('namaadmin'),
+            'tanggal' => $this->request->getPost('tanggal'),
+            'nominal' => $this->request->getPost('nominal'),
+        ];
+        $gaji->save($data);
         return redirect()->to('/pengeluaran');
     }
 

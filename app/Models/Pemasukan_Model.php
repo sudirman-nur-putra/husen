@@ -21,6 +21,7 @@ class Pemasukan_Model extends Model
     {
         return $this->findAll();
     }
+
     public function getTransaksiReseller()
     {
         $result  = $this->query("SELECT transaksi_reseller.id, user.nama,  transaksi_reseller.tanggal, barang.nama_barang, transaksi_reseller.jumlah_barang, transaksi_reseller.harga, transaksi_reseller.total_pembelian 
