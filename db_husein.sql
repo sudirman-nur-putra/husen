@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2022 at 09:48 AM
+-- Generation Time: Jun 06, 2022 at 03:37 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -78,6 +78,13 @@ CREATE TABLE `gaji` (
   `tanggal` date NOT NULL,
   `nominal` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `gaji`
+--
+
+INSERT INTO `gaji` (`id`, `id_user`, `tanggal`, `nominal`) VALUES
+(1, 11, '2022-06-06', 2000000);
 
 -- --------------------------------------------------------
 
@@ -214,7 +221,9 @@ INSERT INTO `user` (`id`, `nama`, `nomor_hp`, `keuntungan`, `level`) VALUES
 (4, 'Rizal', '087987532753', 300000, 'Dropshipper'),
 (5, 'Aliffia', '089123456789', 0, 'Reseller'),
 (8, 'Tasya ', '082111222333', 0, 'Dropshipper'),
-(10, 'Annisa', '089768563524', 0, 'Dropshipper');
+(10, 'Annisa', '089768563524', 0, 'Dropshipper'),
+(11, 'Silvi', '089675423124', 0, 'Admin'),
+(12, 'Hizbi', '085443224123', 0, 'Admin');
 
 --
 -- Indexes for dumped tables
@@ -301,7 +310,7 @@ ALTER TABLE `barang`
 -- AUTO_INCREMENT for table `gaji`
 --
 ALTER TABLE `gaji`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `keuntungan_dropshipper`
@@ -337,7 +346,7 @@ ALTER TABLE `transaksi_reseller`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
